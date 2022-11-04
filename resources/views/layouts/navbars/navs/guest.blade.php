@@ -26,7 +26,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="{{ route('home') }}">
-                        <i class="ni ni-planet"></i>
+                        <i class="fas fa-home"></i>
                         <span class="nav-link-inner--text">{{ __('Inicio') }}</span>
                     </a>
                 </li>

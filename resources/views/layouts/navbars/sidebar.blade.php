@@ -72,25 +72,35 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="ni ni-tv-2 text-primary"></i> {{ __('Inicio') }}
+                        <i class="fas fa-home text-default"></i>
+                        <span class="nav-link-text" style="color: #000000;">{{ __('Inicio') }}
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
-                        <i class="ni ni-single-02" style="color: #f4645f;"></i>
-                        <span class="nav-link-text" style="color: #f4645f;">{{ __('Perfiles') }}</span>
+                    <a class="nav-link" href="{{ route('profile.edit') }}">
+                        <i class="ni ni-single-02 text-default"></i>
+                        <span class="nav-link-text" style="color: #000000;">{{ __('Perfil') }}
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#navbar-reports" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-reports">
+                        <i class="ni ni-ruler-pencil" style="color: #000000;"></i>
+                        <span class="nav-link-text" style="color: #000000;">{{ __('Reportes') }}</span>
                     </a>
 
-                    <div class="collapse show" id="navbar-examples">
+                    <div class="collapse show" id="navbar-reports">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('profile.edit') }}">
-                                    {{ __('Perfil de usuario') }}
+                                <a class="nav-link" href="{{ route('blogs.index') }}">
+                                    {{ __('Reporte de Muestreo') }}
                                 </a>
                             </li>
+                        </ul>
+                        <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('user.index') }}">
-                                    {{ __('Gestión de usuarios') }}
+                                <a class="nav-link" href="{{ route('blogs.index') }}">
+                                    {{ __('Reporte de Ensayo') }}
                                 </a>
                             </li>
                         </ul>
@@ -98,21 +108,23 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
-                        <i class="ni ni-ruler-pencil" style="color: #f4645f;"></i>
-                        <span class="nav-link-text" style="color: #f4645f;">{{ __('Roles') }}</span>
+                    <a class="nav-link active" href="#navbar-records" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-records">
+                        <i class="ni ni-archive-2" style="color: #000000;"></i>
+                        <span class="nav-link-text" style="color: #000000;">{{ __('Registros') }}</span>
                     </a>
 
-                    <div class="collapse show" id="navbar-examples">
+                    <div class="collapse show" id="navbar-records">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="">
-                                    {{ __('Participantes') }}
+                                <a class="nav-link" href="{{ route('blogs.index') }}">
+                                    {{ __('Manipulación de ITEMS') }}
                                 </a>
                             </li>
+                        </ul>
+                        <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="">
-                                    {{ __('Gallos') }}
+                                <a class="nav-link" href="{{ route('blogs.index') }}">
+                                    {{ __('Condiciones Ambientales') }}
                                 </a>
                             </li>
                         </ul>
@@ -120,41 +132,26 @@
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link" href="{{ route('icons') }}">
-                    <i class="ni ni-planet text-blue"></i> {{ __('Icons') }}
-                </a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="{{ route('map') }}">
-                    <i class="ni ni-pin-3 text-orange"></i> {{ __('Maps') }}
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('table') }}">
-                  <i class="ni ni-bullet-list-67 text-default"></i>
-                  <span class="nav-link-text">Tables</span>
-                </a>
-            </li>
+                    <a class="nav-link" href="{{ route('table') }}">
+                        <i class="ni ni-single-copy-04 text-default"></i>
+                        <span class="nav-link-text" style="color: #000000;">{{ __('Informe Final') }}</span>
+                    </a>
+                </li>
             </ul>
             <!-- Divider -->
             <hr class="my-3">
             <!-- Heading -->
-            <h6 class="navbar-heading text-muted">Documentation</h6>
+            <h6 class="navbar-heading text-muted">Funciones Avanzadas</h6>
             <!-- Navigation -->
             <ul class="navbar-nav mb-md-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html">
-                        <i class="ni ni-spaceship"></i> Getting started
+                    <a class="nav-link" href="/roles">
+                        <i class="fas fa-user-lock"></i> Roles
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/foundation/colors.html">
-                        <i class="ni ni-palette"></i> Foundation
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/components/alerts.html">
-                        <i class="ni ni-ui-04"></i> Components
+                    <a class="nav-link" href="/users">
+                        <i class="fas fa-users"></i> Gestion de usuarios
                     </a>
                 </li>
             </ul>

@@ -2,8 +2,8 @@
 
 @section('content')
     @include('users.partials.header', [
-        'title' => __('Hola') . ' '. auth()->user()->name,
-        'description' => __('Esta es tu página de perfil. Puedes ver tus datos previamente ingresados y hacer cambios en ellos'),
+        'title' => __('¡Hola') . ' '. auth()->user()->name . '!',
+        'description' => __('Esta es tu página de perfil. Aquí puedes ver tus datos y hacer cambios en ellos'),
         'class' => 'col-lg-7'
     ])   
 
@@ -69,7 +69,7 @@
                 <div class="card bg-secondary shadow">
                     <div class="card-header bg-white border-0">
                         <div class="row align-items-center">
-                            <h3 class="mb-0">{{ __('Editar Perfil') }}</h3>
+                        &nbsp&nbsp&nbsp<h3 class="mb-0">{{ __('Editar Perfil') }}</h3>
                         </div>
                     </div>
                     <div class="card-body">
