@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,3 +44,4 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('reporte-muestreos', App\Http\Controllers\ReporteMuestreoController::class);
 });
 
+require __DIR__.'/auth.php';

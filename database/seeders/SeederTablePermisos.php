@@ -34,7 +34,13 @@ class SeederTablePermisos extends Seeder
             'ver-blog',
             'crear-blog',
             'editar-blog',
-            'borrar-blog'
+            'borrar-blog',
+
+            //Operacions sobre tabla reporte de muestreos
+            'ver-reporte-muestreo',
+            'crear-reporte-muestreo',
+            'editar-reporte-muestreo',
+            'borrar-reporte-muestreo',
         ];
 
         foreach($permisos as $permiso) {
