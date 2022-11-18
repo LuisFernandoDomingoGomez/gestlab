@@ -37,11 +37,14 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('table-list', function () {return view('pages.tables');})->name('table');
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\Controllers\ProfileController@password']);
 	
-	
+	//Vistas de Crud
 	Route::resource('roles', App\Http\Controllers\RolController::class);
 	Route::resource('users', App\Http\Controllers\UserController::class);
 	Route::resource('blogs', App\Http\Controllers\BlogController::class);
 	Route::resource('reporte-muestreos', App\Http\Controllers\ReporteMuestreoController::class);
+
+	//Generacion de listado de PDF
+	Route::get('reporte-muestreo/pdf', 'App\Http\Controllers\ReporteMuestreoController@pdf')->name('reporte-muestreo.pdf');
 });
 
 require __DIR__.'/auth.php';

@@ -31,9 +31,14 @@ class UserController extends Controller
     public function index(User $model)
     {
         $users = User::paginate(5);
+        $user = User::count();
+        $role = Role::count();
 
-        return view('users.index', compact('users'))
-            ->with('i', (request()->input('page', 1) - 1) * $users->perPage());
+        return view('users.index', compact('users'), [
+            'role' => $role,
+            'user' => $user
+        ])
+        ->with('i', (request()->input('page', 1) - 1) * $users->perPage());
     }
 
     public function create()

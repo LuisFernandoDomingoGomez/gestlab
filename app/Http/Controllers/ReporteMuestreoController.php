@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ReporteMuestreo;
 use Illuminate\Http\Request;
+use PDF;
 
 /**
  * Class ReporteMuestreoController
@@ -13,10 +14,11 @@ class ReporteMuestreoController extends Controller
 {
     function __construct()
     {
-         $this->middleware('permission:ver-reporte-muestreo|crear-reporte-muestreo|editar-reporte-muestreo|borrar-reporte-muestreo')->only('index');
+         $this->middleware('permission:ver-reporte-muestreo|crear-reporte-muestreo|editar-reporte-muestreo|borrar-reporte-muestreo|generar-pdf-reporte-muestreo')->only('index');
          $this->middleware('permission:crear-reporte-muestreo', ['only' => ['create','store']]);
          $this->middleware('permission:editar-reporte-muestreo', ['only' => ['edit','update']]);
          $this->middleware('permission:borrar-reporte-muestreo', ['only' => ['destroy']]);
+         $this->middleware('permission:generar-pdf-reporte-muestreo', ['only' => ['pdf']]);
     }
 
     /**
@@ -30,6 +32,14 @@ class ReporteMuestreoController extends Controller
 
         return view('reporte-muestreo.index', compact('reporteMuestreos'))
             ->with('i', (request()->input('page', 1) - 1) * $reporteMuestreos->perPage());
+    }
+
+    public function pdf()
+    {
+        $reporteMuestreos = ReporteMuestreo::paginate(128);
+
+        $pdf = PDF::loadView('reporte-muestreo.pdf',['reporteMuestreos'=>$reporteMuestreos]);
+        return $pdf->stream();
     }
 
     /**

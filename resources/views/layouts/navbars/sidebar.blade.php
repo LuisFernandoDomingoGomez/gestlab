@@ -85,7 +85,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-reports" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-reports">
-                        <i class="ni ni-ruler-pencil" style="color: #000000;"></i>
+                        <i class="ni ni-folder-17" style="color: #000000;"></i>
                         <span class="nav-link-text" style="color: #000000;">{{ __('Reportes') }}</span>
                     </a>
 

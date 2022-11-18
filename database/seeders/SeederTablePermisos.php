@@ -41,6 +41,7 @@ class SeederTablePermisos extends Seeder
             'crear-reporte-muestreo',
             'editar-reporte-muestreo',
             'borrar-reporte-muestreo',
+            'generar-pdf-reporte-muestreo',
         ];
 
         foreach($permisos as $permiso) {

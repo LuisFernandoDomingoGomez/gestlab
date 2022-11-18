@@ -36,6 +36,10 @@
 								</span>
 
 								<div class="float-right">
+									<a href="{{ route('reporte-muestreo.pdf') }}" class="btn btn-primary btn-sm"  data-placement="left">
+									{{ __('PDF') }}
+									</a>
+									&nbsp;
 									<a href="{{ route('reporte-muestreos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
 									{{ __('Crear Nuevo') }}
 									</a>

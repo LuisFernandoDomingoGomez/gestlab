@@ -33,11 +33,11 @@
                             <div class="row">
                                 <div class="col">
                                     <h5 class="card-title text-uppercase text-muted mb-0">Editores</h5>
-                                    <span class="h2 font-weight-bold mb-0">14</span>
+                                    <span class="h2 font-weight-bold mb-0">1</span>
                                 </div>
                                 <div class="col-auto">
                                     <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
-                                        <i class="fas fa-chart-bar"></i>
+                                        <i class="ni ni-ruler-pencil"></i>
                                     </div>
                                 </div>
                             </div>
@@ -54,11 +54,11 @@
                             <div class="row">
                                 <div class="col">
                                     <h5 class="card-title text-uppercase text-muted mb-0">Admins</h5>
-                                    <span class="h2 font-weight-bold mb-0">8</span>
+                                    <span class="h2 font-weight-bold mb-0">1</span>
                                 </div>
                                 <div class="col-auto">
                                     <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
-                                        <i class="fas fa-users"></i>
+                                        <i class="ni ni-circle-08"></i>
                                     </div>
                                 </div>
                             </div>
@@ -76,11 +76,11 @@
                             <div class="row">
                                 <div class="col">
                                     <h5 class="card-title text-uppercase text-muted mb-0">Usuarios</h5>
-                                    <span class="h2 font-weight-bold mb-0">2</span>
+                                    <span class="h2 font-weight-bold mb-0">{{$user}}</span>
                                 </div>
                                 <div class="col-auto">
                                     <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
-                                        <i class="ni ni-circle-08"></i>
+                                        <i class="fas fa-users"></i>
                                     </div>
                                 </div>
                             </div>
@@ -97,11 +97,11 @@
                             <div class="row">
                                 <div class="col">
                                     <h5 class="card-title text-uppercase text-muted mb-0">Roles</h5>
-                                    <span class="h2 font-weight-bold mb-0">6</span>
+                                    <span class="h2 font-weight-bold mb-0">{{$role}}</span>
                                 </div>
                                 <div class="col-auto">
                                     <div class="icon icon-shape bg-info text-white rounded-circle shadow">
-                                        <i class="ni ni-trophy"></i>
+                                        <i class="fas fa-user-lock"></i>
                                     </div>
                                 </div>
                             </div>

@@ -1,225 +1,310 @@
-@extends('layouts.app')
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
 
-@section('template_title')
-    {{ $reporteMuestreo->name ?? 'Show Reporte Muestreo' }}
-@endsection
 
-@section('content')
-    <!-- Header -->
-    <div class="header bg-primary pb-6">
-        <div class="container-fluid">
-        <div class="header-body">
-            <div class="row align-items-center py-4">
-            <div class="col-lg-6 col-7">
-                <h6 class="h2 text-white d-inline-block mb-0">GESTLAB</h6>
-                <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
-                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                    <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="fas fa-home"></i></a></li>
-                    <li class="breadcrumb-item"><a href="{{ route('blogs.index') }}">Reporte de Muestreo</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Detalles</li>
-                </ol>
-                </nav>
-            </div>
-            </div>
-        </div>
-        </div>
-        <br>
-        <section class="content container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="float-left">
-                                <span class="card-title">Detalles de Reporte</span>
-                            </div>
-                            <div class="float-right">
-                                <a class="btn btn-primary" href="{{ route('reporte-muestreos.index') }}"> Atras</a>
-                            </div>
-                        </div>
+<head>
 
-                        <div class="card-body">
-                            
-                            <div class="form-group">
-                                <strong>Cliente:</strong>
-                                {{ $reporteMuestreo->cliente }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Atencion A:</strong>
-                                {{ $reporteMuestreo->atencion_a }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Obra:</strong>
-                                {{ $reporteMuestreo->obra }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Ubicación:</strong>
-                                {{ $reporteMuestreo->ubicación }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Clave Obra:</strong>
-                                {{ $reporteMuestreo->clave_obra }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Orden Servicio:</strong>
-                                {{ $reporteMuestreo->orden_servicio }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Fecha Muestreo:</strong>
-                                {{ $reporteMuestreo->fecha_muestreo }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Muestreador Asignado:</strong>
-                                {{ $reporteMuestreo->muestreador_asignado }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Resistencia:</strong>
-                                {{ $reporteMuestreo->resistencia }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Tipo Aditivo:</strong>
-                                {{ $reporteMuestreo->tipo_aditivo }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Tamano Agregado Maximo:</strong>
-                                {{ $reporteMuestreo->tamano_agregado_maximo }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Tipo Agregado:</strong>
-                                {{ $reporteMuestreo->tipo_agregado }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Premezcadora:</strong>
-                                {{ $reporteMuestreo->premezcadora }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Edad Ensayo:</strong>
-                                {{ $reporteMuestreo->edad_ensayo }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Revenimiento:</strong>
-                                {{ $reporteMuestreo->revenimiento }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Tipo Cemento:</strong>
-                                {{ $reporteMuestreo->tipo_cemento }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Dosificacion:</strong>
-                                {{ $reporteMuestreo->dosificacion }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Marca Cemento:</strong>
-                                {{ $reporteMuestreo->marca_cemento }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Volumen Colado:</strong>
-                                {{ $reporteMuestreo->volumen_colado }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Numero Olla:</strong>
-                                {{ $reporteMuestreo->numero_olla }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Numero Remision:</strong>
-                                {{ $reporteMuestreo->numero_remision }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Hora Salida Planta:</strong>
-                                {{ $reporteMuestreo->hora_salida_planta }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Hora Entrega Obra:</strong>
-                                {{ $reporteMuestreo->hora_entrega_obra }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Hora Toma Muestra:</strong>
-                                {{ $reporteMuestreo->hora_toma_muestra }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Temperatura Ambiental Muestra:</strong>
-                                {{ $reporteMuestreo->temperatura_ambiental_muestra }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Hora Termino Descarga:</strong>
-                                {{ $reporteMuestreo->hora_termino_descarga }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Volumen M3:</strong>
-                                {{ $reporteMuestreo->volumen_m3 }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Uno Cm:</strong>
-                                {{ $reporteMuestreo->uno_cm }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Tiempo Empleado:</strong>
-                                {{ $reporteMuestreo->tiempo_empleado }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Dos Cm:</strong>
-                                {{ $reporteMuestreo->dos_cm }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Numero Muestra:</strong>
-                                {{ $reporteMuestreo->numero_muestra }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Numero Molde:</strong>
-                                {{ $reporteMuestreo->numero_molde }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Elemento:</strong>
-                                {{ $reporteMuestreo->elemento }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Nivel:</strong>
-                                {{ $reporteMuestreo->nivel }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Ejes:</strong>
-                                {{ $reporteMuestreo->ejes }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Hora Llegada Muestreador:</strong>
-                                {{ $reporteMuestreo->hora_llegada_muestreador }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Entrega Transportista:</strong>
-                                {{ $reporteMuestreo->entrega_transportista }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Muestreador:</strong>
-                                {{ $reporteMuestreo->muestreador }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Transportista 1:</strong>
-                                {{ $reporteMuestreo->transportista_1 }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Hora Salida Muestreador:</strong>
-                                {{ $reporteMuestreo->hora_salida_muestreador }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Entrega Laboratorista:</strong>
-                                {{ $reporteMuestreo->entrega_laboratorista }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Transportista 2:</strong>
-                                {{ $reporteMuestreo->transportista_2 }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Laboratorista:</strong>
-                                {{ $reporteMuestreo->laboratorista }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Condicion Ambiental Muestreo:</strong>
-                                {{ $reporteMuestreo->condicion_ambiental_muestreo }}
-                            </div>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-@endsection
+<style>
+.sinborde {
+  border: 0;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="icon" type="image/png" href="{{asset('login/images/icons/favicon3.ico')}}"/>
+<style type="text/css" media="print">
+.nover {display:none}
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!-- Bootstrap Core CSS -->
+<link href="{{asset('HistoriaCG/jquery/bootstrap.min.css')}}" rel="stylesheet">
+<!-- Custom CSS -->
+<script type="text/javascript" src="{{asset('HistoriaCG/jquery/jquery-3.2.1.js')}}"></script> 
+
+<link rel=File-List href="{{asset('ConsultaU/filelist.xml')}}">
+<link rel=Edit-Time-Data
+href="{{asset('ConsultaU/editdata.mso')}}">
+<link rel=OLE-Object-Data
+href="{{asset('ConsultaU/oledata.mso')}}">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Consulta de Urgencia</title>
+<link rel=themeData
+href="{{asset('ConsultaU/themedata.thmx')}}">
+<link rel=colorSchemeMapping
+href="{{asset('ConsultaU/colorschememapping.xml')}}">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Wingdings 2";
+	panose-1:5 2 1 2 1 5 7 7 7 7;
+	mso-font-charset:2;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:ES;
+	mso-fareast-language:ES;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-font-kerning:0pt;
+	mso-ansi-language:ES;
+	mso-fareast-language:ES;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:6.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ansi-language:ES;
+	mso-fareast-language:ES;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ansi-language:ES;
+	mso-fareast-language:ES;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:8.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ansi-language:ES;
+	mso-fareast-language:ES;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:8.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ansi-language:ES;
+	mso-fareast-language:ES;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 220.95pt right 441.9pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:ES;
+	mso-fareast-language:ES;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 220.95pt right 441.9pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:ES;
+	mso-fareast-language:ES;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("027%20Consulta%20de%20Urgencia_archivos/header.htm") fs;
+	mso-footnote-continuation-separator:url("027%20Consulta%20de%20Urgencia_archivos/header.htm") fcs;
+	mso-endnote-separator:url("027%20Consulta%20de%20Urgencia_archivos/header.htm") es;
+	mso-endnote-continuation-separator:url("027%20Consulta%20de%20Urgencia_archivos/header.htm") ecs;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:14.2pt 1.0cm 1.0cm 2.0cm;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-header:url("027%20Consulta%20de%20Urgencia_archivos/header.htm") h1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+</head>
+
+<body lang=ES-MX style='tab-interval:35.4pt'>
+<!-- <div align="left"><img src="{{asset('ConsultaU/image003.png')}}" width="201" height="107"HSPACE="200" VSPACE="0"><align="right" >
+<img src="{{asset('ConsultaU/image002.png')}}" width="155" height="60"HSPACE="76" VSPACE="0"></div> -->
+
+<div class=WordSection1>
+<div align='center'>	
+
+<form class="form-horizontal" action="{{ 'guardacu' }}" method='POST'>
+{{csrf_field()}}
+<p class=MsoNormal><b><span lang=ES style='font-size:4.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></b></p>
+
+<table class=MsoNormalTable border=2 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-top-alt:solid windowtext .5pt;
+ mso-border-bottom-alt:solid windowtext .5pt;mso-padding-alt:0cm 3.5pt 0cm 3.5pt;
+ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='page-break-inside:avoid'>
+ 		<div >
+ 	 <img src="{{ asset('argon') }}/img/generate/titulo_1.png" width="840" height="77" HSPACE="5" VSPACE="0">
+	<!-- <img src="{{asset('ConsultaU/image002.png')}}" width="155" height="60"HSPACE="226" VSPACE="0"> -->
+
+</div>
+  <td width=712 colspan=11 valign=top style='width:620.95pt;border-top:solid windowtext 3.0pt;
+  border-left:none;border-bottom:solid windowtext 3.0pt;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 3.5pt 0cm 3.5pt'>
+  <h1><span lang=ES>Reporte de muestreo y revenimiento</span></h1>
+  </td>
+ 
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=557 colspan=3 valign=top style='width:417.5pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0cm 3.5pt 0cm 3.5pt'>
+
+
+
+
+
+
+
+
+ 
+ <![if !supportMisalignedColumns]>
+ <tr height=0>
+  <td width=118 style='border:none'></td>
+  <td width=118 style='border:none'></td>
+  <td width=7 style='border:none'></td>
+  <td width=111 style='border:none'></td>
+  <td width=92 style='border:none'></td>
+  <td width=26 style='border:none'></td>
+  <td width=4 style='border:none'></td>
+  <td width=18 style='border:none'></td>
+  <td width=96 style='border:none'></td>
+  <td width=23 style='border:none'></td>
+  <td width=95 style='border:none'></td>
+ </tr>
+ <![endif]>
+</table>
+<table>
+<tr>
+<td width=118 style='border:none'></td>
+  <td width=118 style='border:none'></td>
+  <td width=7 style='border:none'></td>
+  <td width=111 style='border:none'></td>
+  <td width=92 style='border:none'></td>
+  <td width=26 style='border:none'></td>
+  <td width=4 style='border:none'></td>
+  <td width=18 style='border:none'></td>
+  <td width=96 style='border:none'></td>
+  <td width=23 style='border:none'></td>
+  <td width=95 style='border:none'></td>
+  <TD>
+
+  	<div>
+      <p class=MsoNormal><b><span lang=ES style='font-size:8.0pt;mso-bidi-font-size:
+      12.0pt;font-family:"Arial",sans-serif'>208C0101100000-027-19<o:p></o:p></span></b></p>
+      </div>
+
+</TD>
+</tr>
+</table>
+<style type="text/css" media="print">
+.nover {display:none}
+</style>
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1026" type="#_x0000_t202"
+ style='position:absolute;margin-left:450pt;margin-top:106.1pt;width:81pt;
+ height:18pt;z-index:251657216;mso-position-horizontal-relative:text;
+ mso-position-vertical-relative:text' filled="f" stroked="f"/><![endif]--><![if !vml]><span
+style='mso-ignore:vglayout'>
+<p class=MsoNormal style='tab-stops:160.7pt'><span lang=ES><o:p>&nbsp;</o:p></span></p>
+<div align="center">
+<input type='button' onclick='window.print();' value='Imprimir' class="btn btn-success btn-lg nover" id="imprimir" name="imprimir" />
+<a href="{{ route('reporte-muestreos.index') }}"><input name="button" type="button" class="btn btn-danger btn-lg nover" value="Volver" /> </a>
+</div></form>
+<table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=600 height=142></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td width=112 height=28 style='vertical-align:top'><![endif]><![if !mso]><span
+  style='position:absolute;mso-ignore:vglayout;z-index:251657216'>
+  </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><span lang=ES><o:p>&nbsp;</o:p></span></p>
+
+</div>
+</body>
+
+</html>
