@@ -14,7 +14,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
 }
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link rel="icon" type="image/png" href="{{asset('login/images/icons/favicon3.ico')}}"/>
+<link rel="icon" type="image/png" href="{{ asset('argon') }}/img/brand/favicon.png"/>
 <style type="text/css" media="print">
 .nover {display:none}
 </style>
@@ -38,7 +38,7 @@ w\:* {behavior:url(#default#VML);}
 .shape {behavior:url(#default#VML);}
 </style>
 <![endif]-->
-<title>Consulta de Urgencia</title>
+<title>Reporte de Muestreo</title>
 <link rel=themeData
 href="{{asset('ConsultaU/themedata.thmx')}}">
 <link rel=colorSchemeMapping
@@ -190,121 +190,132 @@ p.MsoFooter, li.MsoFooter, div.MsoFooter
 	mso-paper-source:0;}
 div.WordSection1
 	{page:WordSection1;}
+div.rofl
+{background-color: 	#F4A020;}
 -->
 </style>
 </head>
 
 <body lang=ES-MX style='tab-interval:35.4pt'>
-<!-- <div align="left"><img src="{{asset('ConsultaU/image003.png')}}" width="201" height="107"HSPACE="200" VSPACE="0"><align="right" >
-<img src="{{asset('ConsultaU/image002.png')}}" width="155" height="60"HSPACE="76" VSPACE="0"></div> -->
 
-<div class=WordSection1>
-<div align='center'>	
+	<div class=WordSection1>
+		<div align='center'>	
 
-<form class="form-horizontal" action="{{ 'guardacu' }}" method='POST'>
-{{csrf_field()}}
-<p class=MsoNormal><b><span lang=ES style='font-size:4.0pt;mso-bidi-font-size:
-12.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></b></p>
+			<form class="form-horizontal" action="{{ 'guardacu' }}" method='POST'>
+			{{csrf_field()}}
+			<p class=MsoNormal><b><span lang=ES style='font-size:4.0pt;mso-bidi-font-size:
+			12.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></b></p>
 
-<table class=MsoNormalTable border=2 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none;mso-border-top-alt:solid windowtext .5pt;
- mso-border-bottom-alt:solid windowtext .5pt;mso-padding-alt:0cm 3.5pt 0cm 3.5pt;
- mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
- <tr style='page-break-inside:avoid'>
- 		<div >
- 	 <img src="{{ asset('argon') }}/img/generate/titulo_1.png" width="840" height="77" HSPACE="5" VSPACE="0">
-	<!-- <img src="{{asset('ConsultaU/image002.png')}}" width="155" height="60"HSPACE="226" VSPACE="0"> -->
+			<table class=MsoNormalTable border=2 cellspacing=0 cellpadding=0
+			style='border-collapse:collapse;border:none;mso-border-top-alt:solid windowtext .5pt;
+			mso-border-bottom-alt:solid windowtext .5pt;mso-padding-alt:0cm 3.5pt 0cm 3.5pt;
+			mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+			<tr style='page-break-inside:avoid'>
+				<div >
+				<![if !vml]><img width=860 height=60 src="{{ asset('argon') }}/img/generate/titulo_0.png" v:shapes="_x0000_s1089 _x0000_s1090 _x0000_s1091"><![endif]>
+				<![if !vml]><span style='left:0px;position:relative;
+					left:2px;top:-0px;width:69px;height:23px'><img width=100 height=100
+					src="{{ asset('argon') }}/img/generate/logo.png"><![endif]></span></p>
+				</div>
 
-</div>
-  <td width=712 colspan=11 valign=top style='width:620.95pt;border-top:solid windowtext 3.0pt;
-  border-left:none;border-bottom:solid windowtext 3.0pt;border-right:none;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-  <h1><span lang=ES>Reporte de muestreo y revenimiento</span></h1>
-  </td>
- 
- </tr>
- <tr style='page-break-inside:avoid'>
-  <td width=557 colspan=3 valign=top style='width:417.5pt;border:solid windowtext 1.0pt;
-  border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
-  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
-  0cm 3.5pt 0cm 3.5pt'>
+			<td width=712 colspan=11 valign=top style='width:620.95pt;border-top:solid windowtext 3.0pt;
+			border-left:none;border-bottom:solid windowtext 3.0pt;border-right:none;
+			mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+			padding:0cm 3.5pt 0cm 3.5pt'>
+			<h1><span lang=ES>Reporte de muestreo y revenimiento</span></h1>
+			</td>
+			
+			</tr>
+			<tr style='page-break-inside:avoid'>
+			<td width=557 colspan=3 valign=top style='width:417.5pt;border:solid windowtext 1.0pt;
+			border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
+			solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+			0cm 3.5pt 0cm 3.5pt'>
+			
+					<div class="rofl">
+						<strong>Cliente:</strong>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+						{{ $reporteMuestreo->cliente }}
+						<br>
+						<strong>Atencion A:</strong>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						{{ $reporteMuestreo->atencion_a }}
+						<br>
+						<strong>Obra:</strong>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						{{ $reporteMuestreo->obra }}
+						<br>
+						<strong>Ubicación:</strong>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						{{ $reporteMuestreo->ubicación }}
+						<br>
+						<strong>Clave Obra:</strong>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						{{ $reporteMuestreo->clave_obra }}
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<strong>Fecha Muestreo:</strong>
+						{{ $reporteMuestreo->fecha_muestreo }}
+						<br>
+						<strong>Orden Servicio:</strong>
+						&nbsp;&nbsp;&nbsp;
+						{{ $reporteMuestreo->orden_servicio }}
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<strong>Muestreador Asignado:</strong>
+						{{ $reporteMuestreo->muestreador_asignado }}
+					</div>
 
 
 
 
 
 
+			
+			<![if !supportMisalignedColumns]>
+			<tr height=0>
+			<td width=118 style='border:none'></td>
+			<td width=118 style='border:none'></td>
+			<td width=7 style='border:none'></td>
+			<td width=111 style='border:none'></td>
+			<td width=92 style='border:none'></td>
+			<td width=26 style='border:none'></td>
+			<td width=4 style='border:none'></td>
+			<td width=18 style='border:none'></td>
+			<td width=96 style='border:none'></td>
+			<td width=23 style='border:none'></td>
+			<td width=95 style='border:none'></td>
+			</tr>
+			<![endif]>
+			</table>
 
+			
+			<style type="text/css" media="print">
+			.nover {display:none}
+			</style>
+			<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1026" type="#_x0000_t202"
+			style='position:absolute;margin-left:450pt;margin-top:106.1pt;width:81pt;
+			height:18pt;z-index:251657216;mso-position-horizontal-relative:text;
+			mso-position-vertical-relative:text' filled="f" stroked="f"/><![endif]--><![if !vml]><span
+			style='mso-ignore:vglayout'>
+			<p class=MsoNormal style='tab-stops:160.7pt'><span lang=ES><o:p>&nbsp;</o:p></span></p>
+			<div align="center">
+			<input type='button' onclick='window.print();' value='Imprimir' class="btn btn-success btn-lg nover" id="imprimir" name="imprimir" />
+			<a href="{{ route('reporte-muestreos.index') }}"><input name="button" type="button" class="btn btn-danger btn-lg nover" value="Volver" /> </a>
+			</div></form>
+			<table cellpadding=0 cellspacing=0 align=left>
+			<tr>
+			<td width=600 height=142></td>
+			</tr>
+			<tr>
+			<td></td>
+			<td width=112 height=28 style='vertical-align:top'><![endif]><![if !mso]><span
+			style='position:absolute;mso-ignore:vglayout;z-index:251657216'>
+			</span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+			</tr>
+			</table>
 
- 
- <![if !supportMisalignedColumns]>
- <tr height=0>
-  <td width=118 style='border:none'></td>
-  <td width=118 style='border:none'></td>
-  <td width=7 style='border:none'></td>
-  <td width=111 style='border:none'></td>
-  <td width=92 style='border:none'></td>
-  <td width=26 style='border:none'></td>
-  <td width=4 style='border:none'></td>
-  <td width=18 style='border:none'></td>
-  <td width=96 style='border:none'></td>
-  <td width=23 style='border:none'></td>
-  <td width=95 style='border:none'></td>
- </tr>
- <![endif]>
-</table>
-<table>
-<tr>
-<td width=118 style='border:none'></td>
-  <td width=118 style='border:none'></td>
-  <td width=7 style='border:none'></td>
-  <td width=111 style='border:none'></td>
-  <td width=92 style='border:none'></td>
-  <td width=26 style='border:none'></td>
-  <td width=4 style='border:none'></td>
-  <td width=18 style='border:none'></td>
-  <td width=96 style='border:none'></td>
-  <td width=23 style='border:none'></td>
-  <td width=95 style='border:none'></td>
-  <TD>
+	</span><![endif]><span lang=ES><o:p>&nbsp;</o:p></span></p>
 
-  	<div>
-      <p class=MsoNormal><b><span lang=ES style='font-size:8.0pt;mso-bidi-font-size:
-      12.0pt;font-family:"Arial",sans-serif'>208C0101100000-027-19<o:p></o:p></span></b></p>
-      </div>
-
-</TD>
-</tr>
-</table>
-<style type="text/css" media="print">
-.nover {display:none}
-</style>
-<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1026" type="#_x0000_t202"
- style='position:absolute;margin-left:450pt;margin-top:106.1pt;width:81pt;
- height:18pt;z-index:251657216;mso-position-horizontal-relative:text;
- mso-position-vertical-relative:text' filled="f" stroked="f"/><![endif]--><![if !vml]><span
-style='mso-ignore:vglayout'>
-<p class=MsoNormal style='tab-stops:160.7pt'><span lang=ES><o:p>&nbsp;</o:p></span></p>
-<div align="center">
-<input type='button' onclick='window.print();' value='Imprimir' class="btn btn-success btn-lg nover" id="imprimir" name="imprimir" />
-<a href="{{ route('reporte-muestreos.index') }}"><input name="button" type="button" class="btn btn-danger btn-lg nover" value="Volver" /> </a>
-</div></form>
-<table cellpadding=0 cellspacing=0 align=left>
- <tr>
-  <td width=600 height=142></td>
- </tr>
- <tr>
-  <td></td>
-  <td width=112 height=28 style='vertical-align:top'><![endif]><![if !mso]><span
-  style='position:absolute;mso-ignore:vglayout;z-index:251657216'>
-  </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
- </tr>
-</table>
-
-</span><![endif]><span lang=ES><o:p>&nbsp;</o:p></span></p>
-
-</div>
+	</div>
 </body>
 
 </html>

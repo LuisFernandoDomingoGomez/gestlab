@@ -18,8 +18,9 @@
 :root
 {
     --blue: #4b001d;
-    --indigo: #5603ad;
-    --purple: #8965e0;
+    --indigo: #7a000d;
+    --purple: #c20317;
+    --button_active: #c20317;
     --pink: #f3a4b5;
     --red: #f5365c;
     --orange: #fb6340;
@@ -3001,8 +3002,9 @@ fieldset:disabled a.btn
 .show > .btn-primary.dropdown-toggle
 {
     color: #fff;
-    border-color: #000000; 
-    background-color: #5f55f0;
+    border-color: #000000;
+    /*Color button active*/
+    background-color: #c20317;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -6209,7 +6211,7 @@ input[type='button'].btn-block
     text-decoration: none;
 
     color: #fff;
-    background-color: #324cdd;
+    background-color: #c20317;
 }
 
 .badge-secondary
@@ -6438,7 +6440,7 @@ input[type='button'].btn-block
 }
 .alert-primary .alert-link
 {
-    color: #324cdd;
+    color: #c20317;
 }
 
 .alert-secondary
@@ -7935,7 +7937,7 @@ a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus
 {
-    background-color: #324cdd !important;
+    background-color: #c20317 !important;
 }
 
 .bg-secondary
@@ -14567,7 +14569,7 @@ button.bg-darker:focus
 a.text-primary:hover,
 a.text-primary:focus
 {
-    color: #324cdd !important;
+    color: #c20317 !important;
 }
 
 .text-secondary
@@ -14859,12 +14861,12 @@ a.bg-blue:focus,
 button.bg-blue:hover,
 button.bg-blue:focus
 {
-    background-color: #324cdd !important;
+    background-color: #c20317 !important;
 }
 
 .bg-indigo
 {
-    background-color: #5603ad !important;
+    background-color: #7a000d !important;
 }
 
 a.bg-indigo:hover,
@@ -14877,7 +14879,7 @@ button.bg-indigo:focus
 
 .bg-purple
 {
-    background-color: #8965e0 !important;
+    background-color: #c20317 !important;
 }
 
 a.bg-purple:hover,
@@ -15111,12 +15113,12 @@ button.bg-lighter:focus
 
 .bg-gradient-indigo
 {
-    background: linear-gradient(87deg, #5603ad 0, #9d03ad 100%) !important;
+    background: linear-gradient(87deg, #7a000d 0, #9d03ad 100%) !important;
 }
 
 .bg-gradient-purple
 {
-    background: linear-gradient(87deg, #8965e0 0, #bc65e0 100%) !important;
+    background: linear-gradient(87deg, #c20317 0, #bc65e0 100%) !important;
 }
 
 .bg-gradient-pink
@@ -16408,7 +16410,7 @@ a.text-blue:focus
 
 .text-indigo
 {
-    color: #5603ad !important;
+    color: #7a000d !important;
 }
 
 a.text-indigo:hover,
@@ -16419,7 +16421,7 @@ a.text-indigo:focus
 
 .text-purple
 {
-    color: #8965e0 !important;
+    color: #c20317 !important;
 }
 
 a.text-purple:hover,
@@ -21231,7 +21233,7 @@ article h5 + figure
 .datepicker table tr td.range.day.disabled:hover
 {
     color: #8a98eb; 
-    background: #324cdd;
+    background: #c20317;
 }
 .datepicker table tr td.range.highlighted.focused
 {
