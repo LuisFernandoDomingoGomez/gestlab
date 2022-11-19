@@ -231,7 +231,7 @@
         <div class="form-group">
             {{ Form::label('condicion_ambiental_muestreo') }}
             <br>
-            {{ Form::select('condicion_ambiental_muestreo', array('vientos_fuertes'=>'vientos fuertes','lluvia'=>'lluvia','ninguna_que_afecte'=>'ninguna que afecte'), ['class' => 'form-control' . ($errors->has('condicion_ambiental_muestreo') ? ' is-invalid' : ''), 'placeholder' => 'Condicion Ambiental Muestreo']) }}
+            {{ Form::select('condicion_ambiental_muestreo', array('vientos fuertes'=>'Vientos fuertes','lluvia'=>'Lluvia','ninguna que afecte'=>'Ninguna que afecte'), ['class' => 'form-control' . ($errors->has('condicion_ambiental_muestreo') ? ' is-invalid' : ''), 'placeholder' => 'Condicion Ambiental Muestreo']) }}
             {!! $errors->first('condicion_ambiental_muestreo', '<div class="invalid-feedback">:message</div>') !!}
         </div>
 
