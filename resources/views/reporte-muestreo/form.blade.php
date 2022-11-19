@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <title>Listado de Muestreos</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="{{asset('HistoriaCG/jquery/bootstrap.min.css')}}" rel="stylesheet">
+</head>
+
+<body>
 <div class="box box-info padding-1">
     <div class="box-body">
         
@@ -33,7 +45,7 @@
         </div>
         <div class="form-group">
             {{ Form::label('fecha_muestreo') }}
-            {{ Form::text('fecha_muestreo', $reporteMuestreo->fecha_muestreo, ['class' => 'form-control' . ($errors->has('fecha_muestreo') ? ' is-invalid' : ''), 'placeholder' => 'Fecha Muestreo']) }}
+            {{ Form::date('fecha_muestreo', $reporteMuestreo->fecha_muestreo, ['class' => 'form-control' . ($errors->has('fecha_muestreo') ? ' is-invalid' : ''), 'placeholder' => 'Fecha Muestreo']) }}
             {!! $errors->first('fecha_muestreo', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
@@ -108,17 +120,17 @@
         </div>
         <div class="form-group">
             {{ Form::label('hora_salida_planta') }}
-            {{ Form::text('hora_salida_planta', $reporteMuestreo->hora_salida_planta, ['class' => 'form-control' . ($errors->has('hora_salida_planta') ? ' is-invalid' : ''), 'placeholder' => 'Hora Salida Planta']) }}
+            {{ Form::time('hora_salida_planta', $reporteMuestreo->hora_salida_planta, ['class' => 'form-control' . ($errors->has('hora_salida_planta') ? ' is-invalid' : ''), 'placeholder' => 'Hora Salida Planta']) }}
             {!! $errors->first('hora_salida_planta', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
             {{ Form::label('hora_entrega_obra') }}
-            {{ Form::text('hora_entrega_obra', $reporteMuestreo->hora_entrega_obra, ['class' => 'form-control' . ($errors->has('hora_entrega_obra') ? ' is-invalid' : ''), 'placeholder' => 'Hora Entrega Obra']) }}
+            {{ Form::time('hora_entrega_obra', $reporteMuestreo->hora_entrega_obra, ['class' => 'form-control' . ($errors->has('hora_entrega_obra') ? ' is-invalid' : ''), 'placeholder' => 'Hora Entrega Obra']) }}
             {!! $errors->first('hora_entrega_obra', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
             {{ Form::label('hora_toma_muestra') }}
-            {{ Form::text('hora_toma_muestra', $reporteMuestreo->hora_toma_muestra, ['class' => 'form-control' . ($errors->has('hora_toma_muestra') ? ' is-invalid' : ''), 'placeholder' => 'Hora Toma Muestra']) }}
+            {{ Form::time('hora_toma_muestra', $reporteMuestreo->hora_toma_muestra, ['class' => 'form-control' . ($errors->has('hora_toma_muestra') ? ' is-invalid' : ''), 'placeholder' => 'Hora Toma Muestra']) }}
             {!! $errors->first('hora_toma_muestra', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
@@ -128,7 +140,7 @@
         </div>
         <div class="form-group">
             {{ Form::label('hora_termino_descarga') }}
-            {{ Form::text('hora_termino_descarga', $reporteMuestreo->hora_termino_descarga, ['class' => 'form-control' . ($errors->has('hora_termino_descarga') ? ' is-invalid' : ''), 'placeholder' => 'Hora Termino Descarga']) }}
+            {{ Form::time('hora_termino_descarga', $reporteMuestreo->hora_termino_descarga, ['class' => 'form-control' . ($errors->has('hora_termino_descarga') ? ' is-invalid' : ''), 'placeholder' => 'Hora Termino Descarga']) }}
             {!! $errors->first('hora_termino_descarga', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
@@ -178,7 +190,7 @@
         </div>
         <div class="form-group">
             {{ Form::label('hora_llegada_muestreador') }}
-            {{ Form::text('hora_llegada_muestreador', $reporteMuestreo->hora_llegada_muestreador, ['class' => 'form-control' . ($errors->has('hora_llegada_muestreador') ? ' is-invalid' : ''), 'placeholder' => 'Hora Llegada Muestreador']) }}
+            {{ Form::time('hora_llegada_muestreador', $reporteMuestreo->hora_llegada_muestreador, ['class' => 'form-control' . ($errors->has('hora_llegada_muestreador') ? ' is-invalid' : ''), 'placeholder' => 'Hora Llegada Muestreador']) }}
             {!! $errors->first('hora_llegada_muestreador', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
@@ -198,7 +210,7 @@
         </div>
         <div class="form-group">
             {{ Form::label('hora_salida_muestreador') }}
-            {{ Form::text('hora_salida_muestreador', $reporteMuestreo->hora_salida_muestreador, ['class' => 'form-control' . ($errors->has('hora_salida_muestreador') ? ' is-invalid' : ''), 'placeholder' => 'Hora Salida Muestreador']) }}
+            {{ Form::time('hora_salida_muestreador', $reporteMuestreo->hora_salida_muestreador, ['class' => 'form-control' . ($errors->has('hora_salida_muestreador') ? ' is-invalid' : ''), 'placeholder' => 'Hora Salida Muestreador']) }}
             {!! $errors->first('hora_salida_muestreador', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
@@ -218,7 +230,8 @@
         </div>
         <div class="form-group">
             {{ Form::label('condicion_ambiental_muestreo') }}
-            {{ Form::text('condicion_ambiental_muestreo', $reporteMuestreo->condicion_ambiental_muestreo, ['class' => 'form-control' . ($errors->has('condicion_ambiental_muestreo') ? ' is-invalid' : ''), 'placeholder' => 'Condicion Ambiental Muestreo']) }}
+            <br>
+            {{ Form::select('condicion_ambiental_muestreo', array('vientos_fuertes'=>'vientos fuertes','lluvia'=>'lluvia','ninguna_que_afecte'=>'ninguna que afecte'), ['class' => 'form-control' . ($errors->has('condicion_ambiental_muestreo') ? ' is-invalid' : ''), 'placeholder' => 'Condicion Ambiental Muestreo']) }}
             {!! $errors->first('condicion_ambiental_muestreo', '<div class="invalid-feedback">:message</div>') !!}
         </div>
 
@@ -227,3 +240,6 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 </div>
+</body>
+
+</html>
