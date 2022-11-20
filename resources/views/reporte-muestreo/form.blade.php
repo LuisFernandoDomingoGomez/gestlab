@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-with, initial-scale=1.0">
-    <title>Listado de Muestreos</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="{{asset('HistoriaCG/jquery/bootstrap.min.css')}}" rel="stylesheet">
-</head>
-
-<body>
 <div class="box box-info padding-1">
     <div class="box-body">
         
@@ -229,17 +217,30 @@
             {!! $errors->first('laboratorista', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('condicion_ambiental_muestreo') }}
+            {{ Form::label('Condicion ambiental de Muestreo') }}
             <br>
-            {{ Form::select('condicion_ambiental_muestreo', array('vientos fuertes'=>'Vientos fuertes','lluvia'=>'Lluvia','ninguna que afecte'=>'Ninguna que afecte'), ['class' => 'form-control' . ($errors->has('condicion_ambiental_muestreo') ? ' is-invalid' : ''), 'placeholder' => 'Condicion Ambiental Muestreo']) }}
-            {!! $errors->first('condicion_ambiental_muestreo', '<div class="invalid-feedback">:message</div>') !!}
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="condicion_ambiental_muestreo" id="exampleRadios1" value="vientos fuertes">
+                <label class="form-check-label" for="exampleRadios1">
+                    Vientos Fuertes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="condicion_ambiental_muestreo" id="exampleRadios2" value="lluvia">
+                <label class="form-check-label" for="exampleRadios2">
+                    Lluvia
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="condicion_ambiental_muestreo" id="exampleRadios3" value="ninguna que afecte">
+                <label class="form-check-label" for="exampleRadios3">
+                    Ninguna que afecte
+                </label>
+            </div>
         </div>
 
     </div>
     <div class="box-footer mt20">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Guardar</button>
     </div>
 </div>
-</body>
-
-</html>
