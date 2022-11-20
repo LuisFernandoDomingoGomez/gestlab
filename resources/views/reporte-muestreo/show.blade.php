@@ -21,15 +21,15 @@ xmlns="http://www.w3.org/TR/REC-html40">
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <!-- Bootstrap Core CSS -->
-<link href="{{asset('HistoriaCG/jquery/bootstrap.min.css')}}" rel="stylesheet">
+<link href="{{asset('ReporteMR/jquery/bootstrap.min.css')}}" rel="stylesheet">
 <!-- Custom CSS -->
-<script type="text/javascript" src="{{asset('HistoriaCG/jquery/jquery-3.2.1.js')}}"></script> 
+<script type="text/javascript" src="{{asset('ReporteMR/jquery/jquery-3.2.1.js')}}"></script> 
 
-<link rel=File-List href="{{asset('ConsultaU/filelist.xml')}}">
+<link rel=File-List href="{{asset('ReporteTRA/filelist.xml')}}">
 <link rel=Edit-Time-Data
-href="{{asset('ConsultaU/editdata.mso')}}">
+href="{{asset('ReporteTRA/editdata.mso')}}">
 <link rel=OLE-Object-Data
-href="{{asset('ConsultaU/oledata.mso')}}">
+href="{{asset('ReporteTRA/oledata.mso')}}">
 <!--[if !mso]>
 <style>
 v\:* {behavior:url(#default#VML);}
@@ -40,9 +40,9 @@ w\:* {behavior:url(#default#VML);}
 <![endif]-->
 <title>Reporte de Muestreo</title>
 <link rel=themeData
-href="{{asset('ConsultaU/themedata.thmx')}}">
+href="{{asset('ReporteTRA/themedata.thmx')}}">
 <link rel=colorSchemeMapping
-href="{{asset('ConsultaU/colorschememapping.xml')}}">
+href="{{asset('ReporteTRA/colorschememapping.xml')}}">
 <style>
 <!--
  /* Font Definitions */
@@ -177,16 +177,16 @@ p.MsoFooter, li.MsoFooter, div.MsoFooter
 	mso-fareast-language:ES;}
  /* Page Definitions */
  @page
-	{mso-footnote-separator:url("027%20Consulta%20de%20Urgencia_archivos/header.htm") fs;
-	mso-footnote-continuation-separator:url("027%20Consulta%20de%20Urgencia_archivos/header.htm") fcs;
-	mso-endnote-separator:url("027%20Consulta%20de%20Urgencia_archivos/header.htm") es;
-	mso-endnote-continuation-separator:url("027%20Consulta%20de%20Urgencia_archivos/header.htm") ecs;}
+	{mso-footnote-separator:url("027%20Reporte%20de%20Transporte_archivos/header.htm") fs;
+	mso-footnote-continuation-separator:url("027%20Reporte%20de%20Transporte_archivos/header.htm") fcs;
+	mso-endnote-separator:url("027%20Reporte%20de%20Transporte_archivos/header.htm") es;
+	mso-endnote-continuation-separator:url("027%20Reporte%20de%20Transporte_archivos/header.htm") ecs;}
 @page WordSection1
 	{size:612.0pt 792.0pt;
 	margin:14.2pt 1.0cm 1.0cm 2.0cm;
 	mso-header-margin:35.45pt;
 	mso-footer-margin:35.45pt;
-	mso-header:url("027%20Consulta%20de%20Urgencia_archivos/header.htm") h1;
+	mso-header:url("027%20Reporte%20de%20Transporte_archivos/header.htm") h1;
 	mso-paper-source:0;}
 div.WordSection1
 	{page:WordSection1;}
@@ -211,10 +211,11 @@ div.rofl
 			mso-border-bottom-alt:solid windowtext .5pt;mso-padding-alt:0cm 3.5pt 0cm 3.5pt;
 			mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
 			<tr style='page-break-inside:avoid'>
+			<!--Encabezado de Archivo-->
 				<div >
-				<![if !vml]><img width=860 height=60 src="{{ asset('argon') }}/img/generate/titulo_0.png" v:shapes="_x0000_s1089 _x0000_s1090 _x0000_s1091"><![endif]>
+				<![if !vml]><img width=875 height=60 src="{{ asset('argon') }}/img/generate/titulo_0.png" v:shapes="_x0000_s1089 _x0000_s1090 _x0000_s1091"><![endif]>
 				<![if !vml]><span style='left:0px;position:relative;
-					left:2px;top:-0px;width:69px;height:23px'><img width=100 height=100
+					left:5px;top:-0px;width:69px;height:23px'><img width=90 height=90
 					src="{{ asset('argon') }}/img/generate/logo.png"><![endif]></span></p>
 				</div>
 
