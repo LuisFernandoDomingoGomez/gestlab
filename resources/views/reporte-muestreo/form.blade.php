@@ -217,26 +217,14 @@
             {!! $errors->first('laboratorista', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('Condicion ambiental de Muestreo') }}
-            <br>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="condicion_ambiental_muestreo" id="exampleRadios1" value="vientos fuertes">
-                <label class="form-check-label" for="exampleRadios1">
-                    Vientos Fuertes
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="condicion_ambiental_muestreo" id="exampleRadios2" value="lluvia">
-                <label class="form-check-label" for="exampleRadios2">
-                    Lluvia
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="condicion_ambiental_muestreo" id="exampleRadios3" value="ninguna que afecte">
-                <label class="form-check-label" for="exampleRadios3">
-                    Ninguna que afecte
-                </label>
-            </div>
+        {{ Form::label('Condicion Ambiental de Muestreo:') }}
+        <br>
+          <input type="radio" id="1" name="condicion_ambiental_muestreo" value="1">
+          <label for="1">Vientos Fuertes</label><br>
+          <input type="radio" id="2" name="condicion_ambiental_muestreo" value="2">
+          <label for="2">Lluvia</label><br>
+          <input type="radio" id="3" name="condicion_ambiental_muestreo" value="3">
+          <label for="3">Ninguna que Afecte</label>
         </div>
 
     </div>

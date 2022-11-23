@@ -68,7 +68,7 @@ return new class extends Migration
             $table->string('transportista_2', 255)->nullable();
             $table->string('laboratorista', 255)->nullable();
             //Observaciones del Laboratorio
-            $table->enum('condicion_ambiental_muestreo', ['vientos fuertes','lluvia', 'ninguna que afecte']);
+            $table->string('condicion_ambiental_muestreo');
             $table->timestamps();
         });
     }
