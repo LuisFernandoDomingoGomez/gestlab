@@ -116,7 +116,12 @@ class ReporteMuestreo extends Model
         'entrega_laboratorista',
         'transportista_2',
         'laboratorista',
-        'condicion_ambiental_muestreo'];
+        'condicion_ambiental_muestreo',
+        'desviaciones_exclusiones',
+        'nombre_firma_revision',
+        'nombre_firma_encargado',
+        'observaciones_considerar',
+        'desviaciones_adicionales'];
 
 
 }

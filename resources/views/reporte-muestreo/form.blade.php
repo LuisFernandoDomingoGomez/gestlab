@@ -226,7 +226,31 @@
           <input type="radio" id="3" name="condicion_ambiental_muestreo" value="3">
           <label for="3">Ninguna que Afecte</label>
         </div>
-
+        <div class="form-group">
+            {{ Form::label('Desviaciones y exclusiones que se presentaron') }}
+            {{ Form::text('desviaciones_exclusiones', $reporteMuestreo->desviaciones_exclusiones, ['class' => 'form-control' . ($errors->has('desviaciones_exclusiones') ? ' is-invalid' : ''), 'placeholder' => 'Desviaciones y exclusiones que presentaron: Ninguna']) }}
+            {!! $errors->first('desviaciones_exclusiones', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('Nombre o firma de revision') }}
+            {{ Form::text('nombre_firma_revision', $reporteMuestreo->nombre_firma_revision, ['class' => 'form-control' . ($errors->has('nombre_firma_revision') ? ' is-invalid' : ''), 'placeholder' => 'Nombre y/o firma de revisión']) }}
+            {!! $errors->first('nombre_firma_revision', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('Nombre del encargado de la Obra') }}
+            {{ Form::text('nombre_firma_encargado', $reporteMuestreo->nombre_firma_encargado, ['class' => 'form-control' . ($errors->has('nombre_firma_encargado') ? ' is-invalid' : ''), 'placeholder' => 'Nombre del encargado de la revision']) }}
+            {!! $errors->first('nombre_firma_encargado', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('Observaciones a considerar') }}
+            {{ Form::text('observaciones_considerar', $reporteMuestreo->observaciones_considerar, ['class' => 'form-control' . ($errors->has('observaciones_considerar') ? ' is-invalid' : ''), 'placeholder' => 'Observaciones a considerar (registrar aquí)']) }}
+            {!! $errors->first('observaciones_considerar', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('Desviaciones, adisiones o exclusiones') }}
+            {{ Form::text('desviaciones_adicionales', $reporteMuestreo->desviaciones_adicionales, ['class' => 'form-control' . ($errors->has('desviaciones_adicionales') ? ' is-invalid' : ''), 'placeholder' => 'Desviaciones, adisiones o exclusiones (registrar aquí)']) }}
+            {!! $errors->first('desviaciones_adicionales', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
     </div>
     <div class="box-footer mt20">
         <button type="submit" class="btn btn-primary">Guardar</button>

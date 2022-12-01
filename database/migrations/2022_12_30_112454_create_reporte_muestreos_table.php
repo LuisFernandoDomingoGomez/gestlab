@@ -57,6 +57,7 @@ return new class extends Migration
             $table->string('elemento', 255)->nullable();
             $table->string('nivel', 255)->nullable();
             $table->string('ejes', 255)->nullable();
+            
             //Manipulacion de las muestras
             $table->time('hora_llegada_muestreador')->nullable();
             $table->string('entrega_transportista', 255)->nullable();
@@ -69,6 +70,13 @@ return new class extends Migration
             $table->string('laboratorista', 255)->nullable();
             //Observaciones del Laboratorio
             $table->string('condicion_ambiental_muestreo');
+
+            //Firmas 
+            $table->text('desviaciones_exclusiones', 255)->nullable();
+            $table->string('nombre_firma_revision', 255)->nullable();
+            $table->string('nombre_firma_encargado', 255)->nullable();
+            $table->text('observaciones_considerar', 255)->nullable();
+            $table->text('desviaciones_adicionales', 255)->nullable();
             $table->timestamps();
         });
     }
