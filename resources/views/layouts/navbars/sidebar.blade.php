@@ -99,6 +99,13 @@
                         </ul>
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
+                                <a class="nav-link" href="{{ route('reporte-muestreos.index') }}">
+                                    {{ __('Reporte de Transporte') }}
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('blogs.index') }}">
                                     {{ __('Reporte de Ensayo') }}
                                 </a>
