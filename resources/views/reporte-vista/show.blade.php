@@ -230,7 +230,7 @@ div.WordSection1
 <div>
 	<!--Encabezado de Archivo-->
 	<div >
-	<![if !vml]><img width=700 height=50 src="{{ asset('argon') }}/img/generate/titulo_0.png" v:shapes="_x0000_s1089 _x0000_s1090 _x0000_s1091"><![endif]>
+	<![if !vml]><img width=770 height=55 src="{{ asset('argon') }}/img/generate/titulo_0.png" v:shapes="_x0000_s1089 _x0000_s1090 _x0000_s1091"><![endif]>
 	<![if !vml]><span style='left:0px;position:relative;
 		left:5px;top:-0px;width:65px;height:20px'><img width=80 height=80
 		src="{{ asset('argon') }}/img/generate/logo.png"><![endif]></span></p>
@@ -248,12 +248,15 @@ div.WordSection1
  
  </tr>
  <tr style='page-break-inside:avoid'>
-  <td width=657 colspan=3 valign=top style='width:517.5pt;border:solid windowtext 1.0pt;
+
+  <!--Tamano de margen 1-->
+
+  <td width=697 colspan=3 valign=top style='width:567.5pt;border:solid windowtext 1.0pt;
   border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0cm 3.5pt 0cm 3.5pt'>
   <h2 style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=ES>Programacion de Servicio</span></h2>
-  <div class="card-header">
+  <div>
 	<h3>Cliente: {{ $reporteVista->cliente }}</h3>  
 	<h3>Atencion A: {{ $reporteVista->atencion_a }}</h3>
 	<h3>Obra: {{ $reporteVista->obra }}</h3>
@@ -339,7 +342,10 @@ div.WordSection1
   </td>
  </tr>
  <tr style='page-break-inside:avoid'>
-  <td width=497 colspan=8 valign=top style='width:372.5pt;border-top:none;
+ 
+ <!--Tamano de margen 2-->
+ 
+  <td width=657 colspan=8 valign=top style='width:532.5pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
@@ -820,16 +826,27 @@ C.P.:<input type="number" style="WIDTH: 60px; HEIGHT:20px " id="cp"  name="cp"  
   <td width=96 style='border:none'></td>
   <td width=23 style='border:none'></td>
   <td width=95 style='border:none'></td>
+  <br>
   <TD>
 
   	<div>
       <p class=MsoNormal><b><span lang=ES style='font-size:8.0pt;mso-bidi-font-size:
       12.0pt;font-family:"Arial",sans-serif'>208C0101100000-027-19<o:p></o:p></span></b></p>
-      </div>
+    </div>
 
 </TD>
 </tr>
 </table>
+  <div>
+    <p class=MsoNormal><span lang=ES style='font-size:6.0pt;mso-bidi-font-size:
+    12.0pt;font-family:"Arial",sans-serif'>
+    NOTA: EL LABORATORIO DE ESTA EMPRESA CUENTA CON UN SISTEMA DE CALIDAD BASADO EN LA NORMA ISO-IEC-17025-2017 ; SI TIENE ALGUNA SUGERENCIA O QUEJA, POR FAVOR HAGALO A LOS TEL(S):
+    <o:p></o:p></span></p>
+  </div>
+  <div>
+    <p class=MsoNormal><span lang=ES style='font-size:11.0pt;mso-bidi-font-size:
+    12.0pt;font-family:"Arial",sans-serif'>Tiziano No. 149 Col. Alfonso XIII, CDMX, Alcaldia: Alvaro obregon C.P. 01460<o:p></o:p></span></p>
+  </div>
 <style type="text/css" media="print">
 .nover {display:none}
 </style>
