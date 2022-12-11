@@ -29,10 +29,10 @@ class ReporteMuestreoController extends Controller
     public function index(Request $request)
     {
         $busqueda = $request->busqueda;
-        $reporteMuestreos = ReporteMuestreo::where('clave_obra','LIKE','&'.$busqueda.'%')
+        $reporteMuestreos = ReporteMuestreo::where('clave_obra','LIKE','%'.$busqueda.'%')
                           ->orWhere('orden_servicio','LIKE','%'.$busqueda.'%')
                           ->latest('id')
-                          ->paginate(2);
+                          ->paginate(50);
         $data = [
             'reporteMuestreos'=>$reporteMuestreos,
             'busqueda'=>$busqueda,
