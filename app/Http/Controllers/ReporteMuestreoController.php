@@ -26,12 +26,20 @@ class ReporteMuestreoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $reporteMuestreos = ReporteMuestreo::paginate();
-
-        return view('reporte-muestreo.index', compact('reporteMuestreos'))
-            ->with('i', (request()->input('page', 1) - 1) * $reporteMuestreos->perPage());
+        $busqueda = $request->busqueda;
+        $reporteMuestreos = ReporteMuestreo::where('clave_obra','LIKE','&'.$busqueda.'%')
+                          ->orWhere('orden_servicio','LIKE','%'.$busqueda.'%')
+                          ->latest('id')
+                          ->paginate(2);
+        $data = [
+            'reporteMuestreos'=>$reporteMuestreos,
+            'busqueda'=>$busqueda,
+        ];
+ 
+        return view('reporte-muestreo.index', $data)
+        ->with('i', (request()->input('page', 1) - 1) * $reporteMuestreos->perPage());
     }
 
     public function pdf()

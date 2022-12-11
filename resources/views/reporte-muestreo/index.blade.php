@@ -37,7 +37,7 @@
 
 								<div class="float-right">
 									<a href="{{ route('reporte-muestreo.pdf') }}" class="btn btn-primary btn-sm"  data-placement="left">
-									{{ __('PDF') }}
+									<i class="fas fa-file-pdf"></i>{{ __(' Lista PDF') }}
 									</a>
 									&nbsp;
 									<a href="{{ route('reporte-muestreos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
@@ -45,7 +45,13 @@
 									</a>
 								</div>
 							</div>
+							<br>
+								<form class="d-flex" action="{{ route('reporte-muestreos.index') }}" method="GET">
+									<input class="form-control me-2" type="text" name="busqueda" placeholder="Busqueda" aria-label="Search">
+									<button class="btn btn-outline-success" type="submit" value="enviar">Buscar</button>
+								</form>
 						</div>
+						
 						@if ($message = Session::get('success'))
 							<div class="alert alert-success">
 								<p>{{ $message }}</p>
@@ -94,8 +100,8 @@
 								</table>
 							</div>
 						</div>
-					</div>
 					{!! $reporteMuestreos->links() !!}
+					</div>
 				</div>
 			</div>
 		</div>

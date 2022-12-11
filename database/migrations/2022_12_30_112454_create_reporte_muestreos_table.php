@@ -69,7 +69,7 @@ return new class extends Migration
             $table->string('transportista_2', 255)->nullable();
             $table->string('laboratorista', 255)->nullable();
             //Observaciones del Laboratorio
-            $table->string('condicion_ambiental_muestreo');
+            $table->string('condicion_ambiental_muestreo', 255)->nullable();
 
             //Firmas 
             $table->text('desviaciones_exclusiones', 255)->nullable();

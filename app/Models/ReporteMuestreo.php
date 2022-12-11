@@ -62,7 +62,7 @@ class ReporteMuestreo extends Model
 {
     
     static $rules = [
-		'condicion_ambiental_muestreo' => 'required',
+
     ];
 
     protected $perPage = 20;

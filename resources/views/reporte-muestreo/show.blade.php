@@ -33,11 +33,15 @@
                                 <span class="card-title">Detalles de Reporte</span>
                             </div>
                             <div class="float-right">
-								<a href="{{ route('reporte-vistas.show',$reporteMuestreo->id) }}" class="btn btn-primary"  data-placement="left">
-								{{ __('Ver') }}
+                                <a href="{{ route('reporte-vistas.show',$reporteMuestreo->id) }}" class="btn btn-sm btn-primary"  data-placement="left">
+								<i class="fas fa-plus"></i> ADD 
 								</a>
 								&nbsp;
-                                <a class="btn btn-primary" href="{{ route('reporte-muestreos.index') }}"> Atras</a>
+                                <a href="{{ route('reporte-vistas.show',$reporteMuestreo->id) }}" class="btn btn-sm btn-primary"  data-placement="left">
+								<i class="fas fa-file-pdf"></i>{{ __(' PDF') }}
+								</a>
+								&nbsp;
+                                <a class="btn btn-sm btn-primary" href="{{ route('reporte-muestreos.index') }}"> <i class="ni ni-bold-left"></i></a>
                             </div>
                         </div>
 
@@ -118,70 +122,6 @@
                             <div class="form-group">
                                 <strong>Volumen Colado:</strong>
                                 {{ $reporteMuestreo->volumen_colado }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Numero Olla:</strong>
-                                {{ $reporteMuestreo->numero_olla }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Numero Remision:</strong>
-                                {{ $reporteMuestreo->numero_remision }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Hora Salida Planta:</strong>
-                                {{ $reporteMuestreo->hora_salida_planta }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Hora Entrega Obra:</strong>
-                                {{ $reporteMuestreo->hora_entrega_obra }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Hora Toma Muestra:</strong>
-                                {{ $reporteMuestreo->hora_toma_muestra }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Temperatura Ambiental Muestra:</strong>
-                                {{ $reporteMuestreo->temperatura_ambiental_muestra }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Hora Termino Descarga:</strong>
-                                {{ $reporteMuestreo->hora_termino_descarga }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Volumen M3:</strong>
-                                {{ $reporteMuestreo->volumen_m3 }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Uno Cm:</strong>
-                                {{ $reporteMuestreo->uno_cm }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Tiempo Empleado:</strong>
-                                {{ $reporteMuestreo->tiempo_empleado }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Dos Cm:</strong>
-                                {{ $reporteMuestreo->dos_cm }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Numero Muestra:</strong>
-                                {{ $reporteMuestreo->numero_muestra }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Numero Molde:</strong>
-                                {{ $reporteMuestreo->numero_molde }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Elemento:</strong>
-                                {{ $reporteMuestreo->elemento }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Nivel:</strong>
-                                {{ $reporteMuestreo->nivel }}
-                            </div>
-                            <div class="form-group">
-                                <strong>Ejes:</strong>
-                                {{ $reporteMuestreo->ejes }}
                             </div>
                             <div class="form-group">
                                 <strong>Hora Llegada Muestreador:</strong>
