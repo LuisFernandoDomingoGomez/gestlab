@@ -292,7 +292,6 @@
                     <th scope="col" class="sort" data-sort="name">Cliente</th>
                     <th scope="col" class="sort" data-sort="status">Status</th>
                     <th scope="col">Documentos</th>
-                    <th scope="col" class="sort" data-sort="completion">Completion</th>
                     <th scope="col"></th>
                   </tr>
                 </thead>
@@ -324,16 +323,6 @@
                         </a>
                       </div>
                     </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="completion mr-2">60%</span>
-                        <div>
-                          <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
                   </tr>
                   <tr>
                     <th scope="row">
@@ -360,16 +349,6 @@
                         <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Reporte de Transporte, recepcion y almacenaje">
                           <img alt="Image placeholder" src="../assets/img/theme/pdf.png">
                         </a>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="completion mr-2">100%</span>
-                        <div>
-                          <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
-                          </div>
-                        </div>
                       </div>
                     </td>
                   </tr>
@@ -400,16 +379,6 @@
                         </a>
                       </div>
                     </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="completion mr-2">72%</span>
-                        <div>
-                          <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%;"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
                   </tr>
                   <tr>
                     <th scope="row">
@@ -438,16 +407,6 @@
                         </a>
                       </div>
                     </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="completion mr-2">90%</span>
-                        <div>
-                          <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
                   </tr>
                   <tr>
                     <th scope="row">
@@ -474,16 +433,6 @@
                         <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Reporte de Transporte, recepcion y almacenaje">
                           <img alt="Image placeholder" src="../assets/img/theme/pdf.png">
                         </a>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="completion mr-2">100%</span>
-                        <div>
-                          <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
-                          </div>
-                        </div>
                       </div>
                     </td>
                   </tr>

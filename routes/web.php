@@ -42,8 +42,9 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('users', App\Http\Controllers\UserController::class);
 	Route::resource('blogs', App\Http\Controllers\BlogController::class);
 	Route::resource('reporte-muestreos', App\Http\Controllers\ReporteMuestreoController::class);
+	Route::resource('reporte-vistas', App\Http\Controllers\ReporteVistaController::class);
 
-	//Generacion de listado de PDF
+	//Generacion de vistas PDF
 	Route::get('reporte-muestreo/pdf', 'App\Http\Controllers\ReporteMuestreoController@pdf')->name('reporte-muestreo.pdf');
 });
 
