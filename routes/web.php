@@ -41,10 +41,12 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('roles', App\Http\Controllers\RolController::class);
 	Route::resource('users', App\Http\Controllers\UserController::class);
 	Route::resource('blogs', App\Http\Controllers\BlogController::class);
+	Route::resource('orden-servicios', App\Http\Controllers\OrdenServicioController::class);
 	Route::resource('reporte-muestreos', App\Http\Controllers\ReporteMuestreoController::class);
 	Route::resource('reporte-vistas', App\Http\Controllers\ReporteVistaController::class);
 
 	//Generacion de vistas PDF
+	Route::get('orden-servicio/pdf', 'App\Http\Controllers\OrdenServicioController@pdf')->name('orden-servicio.pdf');
 	Route::get('reporte-muestreo/pdf', 'App\Http\Controllers\ReporteMuestreoController@pdf')->name('reporte-muestreo.pdf');
 });
 

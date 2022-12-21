@@ -92,6 +92,13 @@
                     <div class="collapse show" id="navbar-reports">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
+                                <a class="nav-link" href="{{ route('orden-servicios.index') }}">
+                                    {{ __('Orden de Servicio') }}
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('reporte-muestreos.index') }}">
                                     {{ __('Reporte de Muestreo') }}
                                 </a>

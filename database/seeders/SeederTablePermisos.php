@@ -42,6 +42,13 @@ class SeederTablePermisos extends Seeder
             'editar-reporte-muestreo',
             'borrar-reporte-muestreo',
             'generar-pdf-reporte-muestreo',
+
+            //Operacions sobre tabla reporte de muestreos
+            'ver-orden-servicio',
+            'crear-orden-servicio',
+            'editar-orden-servicio',
+            'borrar-orden-servicio',
+            'generar-pdf-orden-servicio',
         ];
 
         foreach($permisos as $permiso) {

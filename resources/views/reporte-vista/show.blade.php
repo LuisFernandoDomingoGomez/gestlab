@@ -535,54 +535,6 @@ C.P.:<input type="number" style="WIDTH: 60px; HEIGHT:20px " id="cp"  name="cp"  
   <input type="text" style="WIDTH:120px; HEIGHT:22px " id="T_A" name="T_A" class='sinborde' placeholder="T/A" value=''>
  
   </td>
-  <td width=119 valign=top style='width:89.0pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt'>
-  <h4><span lang=ES>TEMP</span></h4>
-<p class=MsoNormal>
-      <input type="text" style="WIDTH:100px; HEIGHT:22px " id="Temp" name="Temp" class='sinborde' placeholder="TEMP" value=''>
-  
-  </td>
-  <td width=119 colspan=2 valign=top style='width:89.0pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt'>
-  <h4><span lang=ES>FREC. C.</span></h4>
-<p class=MsoNormal>
-     <input type="text" style="WIDTH:100px; HEIGHT:22px " id="Frec_C" name="Frec_C" class='sinborde' placeholder="FREC. C" value='' >
-  
-  </td>
-  <td width=119 colspan=2 valign=top style='width:89.0pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt'>
-  <h4><span lang=ES>FREC R.</span></h4>
-<p class=MsoNormal>
- <input type="text" style="WIDTH:100px; HEIGHT:22px " id="Frec_R" name="Frec_R" class='sinborde' placeholder="FREC. R" value=''>
-   
- </td>
-  <td width=119 colspan=3 valign=top style='width:89.0pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt'>
-  <h4><span lang=ES>PESO</span></h4>
-<p class=MsoNormal>
-   <input type="text" style="WIDTH:100px; HEIGHT:22px " id="Peso" name="Peso" class='sinborde' placeholder="PESO" value=''>
-  
-  </td>
-  <td width=119 colspan=2 valign=top style='width:89.0pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-  <h4><span lang=ES>TALLA</span></h4>
-<p class=MsoNormal>
-   <input type="text" style="WIDTH:100px; HEIGHT:22px " id="Talla" name="Talla" class='sinborde' placeholder="TALLA" value=''>
-  
-  <p class=MsoNormal><span lang=ES style='font-size:10.0pt;mso-bidi-font-size:
-  12.0pt'><o:p>&nbsp;</o:p></span></p>
-  </td>
  </tr>
  <tr style='page-break-inside:avoid'>
   <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
@@ -829,10 +781,6 @@ C.P.:<input type="number" style="WIDTH: 60px; HEIGHT:20px " id="cp"  name="cp"  
   <br>
   <TD>
 
-  	<div>
-      <p class=MsoNormal><b><span lang=ES style='font-size:8.0pt;mso-bidi-font-size:
-      12.0pt;font-family:"Arial",sans-serif'>208C0101100000-027-19<o:p></o:p></span></b></p>
-    </div>
 
 </TD>
 </tr>
@@ -843,6 +791,7 @@ C.P.:<input type="number" style="WIDTH: 60px; HEIGHT:20px " id="cp"  name="cp"  
     NOTA: EL LABORATORIO DE ESTA EMPRESA CUENTA CON UN SISTEMA DE CALIDAD BASADO EN LA NORMA ISO-IEC-17025-2017 ; SI TIENE ALGUNA SUGERENCIA O QUEJA, POR FAVOR HAGALO A LOS TEL(S):
     <o:p></o:p></span></p>
   </div>
+  <br>
   <div>
     <p class=MsoNormal><span lang=ES style='font-size:11.0pt;mso-bidi-font-size:
     12.0pt;font-family:"Arial",sans-serif'>Tiziano No. 149 Col. Alfonso XIII, CDMX, Alcaldia: Alvaro obregon C.P. 01460<o:p></o:p></span></p>

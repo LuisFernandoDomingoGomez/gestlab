@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-with, initial-scale=1.0">
-    <title>Listado de Muestreos</title>
+    <title>Listado de Reporte de Muestreos</title>
     <link type="text/css" href="{{ public_path('argon') }}/css/argon.css?v=1.0.0" rel="stylesheet">
 </head>
 
 <body>
-    <h2>Listado de Muestreos</h2>
+    <h2>Listado de Reporte de Muestreos</h2>
     <table class="table table-striped table-hover">
         <thead class="thead">
             <tr>
