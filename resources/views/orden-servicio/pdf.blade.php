@@ -19,9 +19,9 @@
                 <th>Obra</th>
                 <th>Ubicacion</th>
                 <th>Clave de Obra</th>
-                <th>Orden Servicio</th>
+                <th>Orden de Servicio</th>
                 <th>Fecha Muestreo</th>
-                <th>Muestreador Asignado</th>
+                <th>Muestreador a.</th>
 
             </tr>
         </thead>

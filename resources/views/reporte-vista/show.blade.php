@@ -260,7 +260,7 @@ div.WordSection1
 	<h3>Cliente: {{ $reporteVista->cliente }}</h3>  
 	<h3>Atencion A: {{ $reporteVista->atencion_a }}</h3>
 	<h3>Obra: {{ $reporteVista->obra }}</h3>
-	<h3>Ubicación: {{ $reporteVista->ubicación }}</h3>
+	<h3>Ubicacion: {{ $reporteVista->ubicacion }}</h3>
 	<h3>Clave Obra: {{ $reporteVista->clave_obra }}</h3>
 	<h3>Fecha Muestreo: {{ $reporteVista->fecha_muestreo }}</h3>
 	<h3>Orden Servicio: {{ $reporteVista->orden_servicio }}</h3>

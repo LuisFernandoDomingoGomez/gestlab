@@ -15,7 +15,7 @@
                 <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                     <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                         <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="fas fa-home"></i></a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('orden-servicios.index') }}">Reporte de Muestreo</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('orden-servicios.index') }}">Orden de Servicio</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Registro</li>
                     </ol>
                 </nav>
@@ -32,7 +32,7 @@
 
                     <div class="card card-default">
                         <div class="card-header">
-                            <span class="card-title">Create Orden Servicio</span>
+                            <span class="card-title">Generar Orden de Servicio</span>
                         </div>
                         <div class="card-body">
                             <form method="POST" action="{{ route('orden-servicios.store') }}"  role="form" enctype="multipart/form-data">

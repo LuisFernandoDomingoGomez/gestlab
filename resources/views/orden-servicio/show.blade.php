@@ -30,7 +30,7 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="float-left">
-                                <span class="card-title">Show Orden Servicio</span>
+                                <span class="card-title">Detalles de la Orden</span>
                             </div>
                             <div class="float-right">
                                 <a class="btn btn-primary" href="{{ route('orden-servicios.index') }}"> Atras</a>
@@ -52,8 +52,8 @@
                                 {{ $ordenServicio->obra }}
                             </div>
                             <div class="form-group">
-                                <strong>Ubicación:</strong>
-                                {{ $ordenServicio->ubicación }}
+                                <strong>Ubicacion:</strong>
+                                {{ $ordenServicio->ubicacion }}
                             </div>
                             <div class="form-group">
                                 <strong>Clave Obra:</strong>

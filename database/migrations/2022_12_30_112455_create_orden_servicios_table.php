@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('cliente', 255)->nullable();
             $table->string('atencion_a', 255)->nullable();
             $table->string('obra', 255)->nullable();
-            $table->string('ubicación', 255)->nullable();
+            $table->string('ubicacion', 255)->nullable();
             $table->string('clave_obra', 255)->nullable();
             $table->string('orden_servicio', 255)->nullable();
             $table->date('fecha_muestreo')->nullable();

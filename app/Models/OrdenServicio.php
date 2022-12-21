@@ -35,7 +35,7 @@ class OrdenServicio extends Model
      *
      * @var array
      */
-    protected $fillable = ['cliente','atencion_a','obra','ubicación','clave_obra','orden_servicio','fecha_muestreo','muestreador_asignado'];
+    protected $fillable = ['cliente','atencion_a','obra','ubicacion','clave_obra','orden_servicio','fecha_muestreo','muestreador_asignado'];
 
 
 

@@ -17,9 +17,9 @@
             {!! $errors->first('obra', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('ubicación') }}
-            {{ Form::text('ubicación', $reporteMuestreo->ubicación, ['class' => 'form-control' . ($errors->has('ubicación') ? ' is-invalid' : ''), 'placeholder' => 'Ubicación']) }}
-            {!! $errors->first('ubicación', '<div class="invalid-feedback">:message</div>') !!}
+            {{ Form::label('ubicacion') }}
+            {{ Form::text('ubicacion', $reporteMuestreo->ubicacion, ['class' => 'form-control' . ($errors->has('ubicacion') ? ' is-invalid' : ''), 'placeholder' => 'Ubicacion']) }}
+            {!! $errors->first('ubicacion', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
             {{ Form::label('clave_obra') }}

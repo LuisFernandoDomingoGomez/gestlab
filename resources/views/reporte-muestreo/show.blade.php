@@ -60,8 +60,8 @@
                                 {{ $reporteMuestreo->obra }}
                             </div>
                             <div class="form-group">
-                                <strong>Ubicación:</strong>
-                                {{ $reporteMuestreo->ubicación }}
+                                <strong>Ubicacion:</strong>
+                                {{ $reporteMuestreo->ubicacion }}
                             </div>
                             <div class="form-group">
                                 <strong>Clave Obra:</strong>

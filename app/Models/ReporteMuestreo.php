@@ -76,7 +76,7 @@ class ReporteMuestreo extends Model
         ['cliente',
         'atencion_a',
         'obra',
-        'ubicación',
+        'ubicacion',
         'clave_obra',
         'orden_servicio',
         'fecha_muestreo',
