@@ -40,7 +40,7 @@ return new class extends Migration
             $table->string('marca_cemento', 255)->nullable();
             $table->string('volumen_colado', 255)->nullable();
 
-            //Para ser llenado por el laboratorista
+            /*Para ser llenado por el laboratorista
             $table->string('numero_olla', 255)->nullable();
             $table->string('numero_remision', 255)->nullable();
             $table->time('hora_salida_planta')->nullable();
@@ -56,7 +56,7 @@ return new class extends Migration
             $table->string('numero_molde', 255)->nullable();
             $table->string('elemento', 255)->nullable();
             $table->string('nivel', 255)->nullable();
-            $table->string('ejes', 255)->nullable();
+            $table->string('ejes', 255)->nullable();*/
             
             //Manipulacion de las muestras
             $table->time('hora_llegada_muestreador')->nullable();

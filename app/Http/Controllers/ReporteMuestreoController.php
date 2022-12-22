@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ReporteMuestreo;
+use App\Models\Muestra;
 use Illuminate\Http\Request;
 use PDF;
 
@@ -87,7 +88,9 @@ class ReporteMuestreoController extends Controller
     {
         $reporteMuestreo = ReporteMuestreo::find($id);
 
-        return view('reporte-muestreo.show', compact('reporteMuestreo'));
+        $muestras = Muestra::orderBy('numero_muestra', 'DESC')->get();
+
+        return view('reporte-muestreo.show', compact('reporteMuestreo', 'muestras'));
     }
 
     /**

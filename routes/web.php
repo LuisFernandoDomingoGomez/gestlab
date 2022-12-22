@@ -44,6 +44,8 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('orden-servicios', App\Http\Controllers\OrdenServicioController::class);
 	Route::resource('reporte-muestreos', App\Http\Controllers\ReporteMuestreoController::class);
 	Route::resource('reporte-vistas', App\Http\Controllers\ReporteVistaController::class);
+	Route::resource('muestras', App\Http\Controllers\MuestraController::class);
+
 
 	//Generacion de vistas PDF
 	Route::get('orden-servicio/pdf', 'App\Http\Controllers\OrdenServicioController@pdf')->name('orden-servicio.pdf');

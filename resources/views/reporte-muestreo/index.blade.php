@@ -39,10 +39,6 @@
 									<a href="{{ route('reporte-muestreo.pdf') }}" class="btn btn-primary btn-sm"  data-placement="left">
 									<i class="fas fa-file-pdf"></i>{{ __(' Lista PDF') }}
 									</a>
-									&nbsp;
-									<a href="{{ route('reporte-muestreos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-									{{ __('Crear Nuevo') }}
-									</a>
 								</div>
 							</div>
 							<br>
