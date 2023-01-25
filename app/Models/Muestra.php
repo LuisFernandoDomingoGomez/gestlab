@@ -44,8 +44,11 @@ class Muestra extends Model
      *
      * @var array
      */
-    protected $fillable = ['clave_obra','numero_olla','numero_remision','hora_salida_planta','hora_entrega_obra','hora_toma_muestra','temperatura_ambiental_muestra','hora_termino_descarga','volumen_m3','uno_cm','tiempo_empleado','dos_cm','numero_muestra','numero_molde','elemento','nivel','ejes'];
-
-
+    protected $fillable = ['clave_obra','numero_olla','numero_remision',
+                           'hora_salida_planta','hora_entrega_obra',
+                           'hora_toma_muestra','temperatura_ambiental_muestra',
+                           'hora_termino_descarga','volumen_m3','uno_cm',
+                           'tiempo_empleado','dos_cm','numero_muestra',
+                           'numero_molde','ejes'];
 
 }
