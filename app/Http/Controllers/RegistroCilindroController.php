@@ -25,12 +25,21 @@ class RegistroCilindroController extends Controller
         $this->middleware('permission:borrar-registro-cilindro', ['only' => ['destroy']]);
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $registroCilindros = RegistroCilindro::paginate();
-
-        return view('registro-cilindro.index', compact('registroCilindros'))
-            ->with('i', (request()->input('page', 1) - 1) * $registroCilindros->perPage());
+        $busqueda = $request->busqueda;
+        $registroCilindros = RegistroCilindro::where('orden_laboratorio','LIKE','%'.$busqueda.'%')
+                          ->orWhere('cliente','LIKE','%'.$busqueda.'%')
+                          ->orWhere('obra','LIKE','%'.$busqueda.'%')
+                          ->latest('id')
+                          ->paginate(50);
+        $data = [
+            'registroCilindros'=>$registroCilindros,
+            'busqueda'=>$busqueda,
+        ];
+ 
+        return view('registro-cilindro.index', $data)
+        ->with('i', (request()->input('page', 1) - 1) * $registroCilindros->perPage());
     }
 
     /**

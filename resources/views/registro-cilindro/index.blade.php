@@ -41,6 +41,11 @@
                                 </a>
                               </div>
                         </div>
+                        <br>
+                            <form class="d-flex" action="{{ route('registro-cilindros.index') }}" method="GET">
+                                <input class="form-control me-2" type="text" name="busqueda" placeholder="Busqueda" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit" value="enviar">Buscar</button>
+                            </form>
                     </div>
                     @if ($message = Session::get('success'))
                         <div class="alert alert-success">
@@ -64,7 +69,7 @@
 										<th>Rev Obt</th>
 										<th>Ejes</th>
 
-                                        <th></th>
+                                        <th>Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
