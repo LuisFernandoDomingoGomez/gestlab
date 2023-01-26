@@ -18,9 +18,9 @@
                 <th>Atencion a</th>
                 <th>Obra</th>
                 <th>Ubicacion</th>
-                <th>Clave de Obra</th>
-                <th>Orden de Servicio</th>
-                <th>Fecha Muestreo</th>
+                <th>Clave Obra</th>
+                <th>Orden Serv</th>
+                <th>F. Muestreo</th>
                 <th>Muestreador a.</th>
 
             </tr>

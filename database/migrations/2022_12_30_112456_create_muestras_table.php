@@ -31,7 +31,7 @@ return new class extends Migration
             $table->string('dos_cm', 255)->nullable();
             $table->string('numero_muestra', 255)->nullable();
             $table->string('numero_molde', 255)->nullable();
-            $table->string('ejes', 255)->nullable();
+            $table->text('ejes', 255)->nullable();
 
             $table->timestamps();
         });

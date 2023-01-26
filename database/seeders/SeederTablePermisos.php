@@ -49,6 +49,12 @@ class SeederTablePermisos extends Seeder
             'editar-orden-servicio',
             'borrar-orden-servicio',
             'generar-pdf-orden-servicio',
+
+            //Operacions sobre tabla registro de cilindros
+            'ver-registro-cilindro',
+            'crear-registro-cilindro',
+            'editar-registro-cilindro',
+            'borrar-registro-cilindro',
         ];
 
         foreach($permisos as $permiso) {

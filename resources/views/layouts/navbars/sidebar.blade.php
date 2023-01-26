@@ -130,15 +130,15 @@
                     <div class="collapse show" id="navbar-records">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('blogs.index') }}">
-                                    {{ __('Manipulación de ITEMS') }}
+                                <a class="nav-link" href="{{ route('registro-cilindros.index') }}">
+                                    {{ __('Registro de Cilindros') }}
                                 </a>
                             </li>
                         </ul>
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('blogs.index') }}">
-                                    {{ __('Condiciones Ambientales') }}
+                                    {{ __('Informe de resultados') }}
                                 </a>
                             </li>
                         </ul>

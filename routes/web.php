@@ -45,6 +45,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('reporte-muestreos', App\Http\Controllers\ReporteMuestreoController::class);
 	Route::resource('reporte-vistas', App\Http\Controllers\ReporteVistaController::class);
 	Route::resource('muestras', App\Http\Controllers\MuestraController::class);
+	Route::resource('registro-cilindros', App\Http\Controllers\RegistroCilindroController::class);
 
 
 	//Generacion de vistas PDF
