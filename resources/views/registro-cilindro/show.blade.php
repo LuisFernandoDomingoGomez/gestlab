@@ -38,40 +38,119 @@
                     </div>
 
                     <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Orden de Laboratorio: <p class="card-text">{{ $registroCilindro->orden_laboratorio }}</p></h3>
+                                        <h3 class="card-title">Cliente: <p class="card-text">{{ $registroCilindro->cliente }}</p></h3>
+                                        <h3 class="card-title">Obra: <p class="card-text">{{ $registroCilindro->obra }}</p></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <h3 class="card-title">Fecha de Muestreo: <p class="card-text">{{ $registroCilindro->fecha_muestreo }}</p></h3>
+                                                <h3 class="card-title">Tipo de Concreto: <p class="card-text">{{ $registroCilindro->tipo_concreto }}</p></h3>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="card-title">FcProy: <p class="card-text">{{ $registroCilindro->fcproy }}</p></h3>
+                                                <h3 class="card-title">Revenimiento Obt: <p class="card-text">{{ $registroCilindro->rev_obt }}</p></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <strong>Ejes:</strong>
+                                        {{ $registroCilindro->ejes }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         
-                        <div class="form-group">
-                            <strong>Orden Laboratorio:</strong>
-                            {{ $registroCilindro->orden_laboratorio }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Cliente:</strong>
-                            {{ $registroCilindro->cliente }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Obra:</strong>
-                            {{ $registroCilindro->obra }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Fecha Muestreo:</strong>
-                            {{ $registroCilindro->fecha_muestreo }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Tipo Concreto:</strong>
-                            {{ $registroCilindro->tipo_concreto }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Fcproy:</strong>
-                            {{ $registroCilindro->fcproy }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Rev Obt:</strong>
-                            {{ $registroCilindro->rev_obt }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Ejes:</strong>
-                            {{ $registroCilindro->ejes }}
-                        </div>
+                        <div class="card-header">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <strong>Registro de Cilindros:</strong>
 
+                                <div class="float-right">
+                                <a href="{{ route('muestras.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                  {{ __('+ ADD') }}
+                                </a>
+
+                              </div>
+                            </div>
+                        </div>
+                        @if ($message = Session::get('success'))
+                            <div class="alert alert-success">
+                                <p>{{ $message }}</p>
+                            </div>
+                        @endif
+
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="thead">
+                                    <tr>
+                                        
+                                        <th>No Muestra</th>
+                                        <th>Clave de Ensayo</th>
+                                        <th>Diametro 1 cm</th>
+                                        <th>Diametro 2 cm</th>
+                                        <th>Diametro Promedio cm</th>
+                                        <th>Altura 1 cm</th>
+                                        <th>Altura 2 cm</th>
+                                        <th>Altura Promedio cm</th>
+                                        <th>Peso kg</th>
+                                        <th>Fecha Prueba a compresion</th>
+                                        <th>Carga Ruptura tf</th>
+                                        <th>Edad Dias</th>
+                                        <th>Hora de ensaye</th>
+                                        <th>Tipo de Falla</th>
+                                        <th>Resp</th>
+                                        <th>Acciones</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($muestras as $muestra)
+                                        <tr>
+
+                                            <td>{{ $muestra->numero_muestra }}</td>
+                                            <td>{{ $muestra->numero_muestra }} - {{ $muestra->numero_molde }}</td>
+                                            <td>15.10</td>
+                                            <td>15.00</td>
+                                            <td>15.05</td>
+                                            <td>29.90</td>
+                                            <td>29.90</td>
+                                            <td>29.90</td>
+                                            <td>12.30</td>
+                                            <td> </td>
+                                            <td>50315</td>
+                                            <td>7</td>
+                                            <td> </td>
+                                            <td>1</td>
+                                            <td> </td>
+                                            <td>
+                                                <form action="{{ route('muestras.destroy',$muestra->id) }}" method="POST">
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('muestras.show',$muestra->id) }}"><i class="fa fa-fw fa-eye"></i></a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('muestras.edit',$muestra->id) }}"><i class="fa fa-fw fa-edit"></i></a>
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i></button>
+                                                </form>
+                                            </td>
+
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

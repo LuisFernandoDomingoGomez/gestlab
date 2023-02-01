@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\RegistroCilindro;
+use App\Models\Muestra;
 use Illuminate\Http\Request;
 
 /**
@@ -79,7 +80,9 @@ class RegistroCilindroController extends Controller
     {
         $registroCilindro = RegistroCilindro::find($id);
 
-        return view('registro-cilindro.show', compact('registroCilindro'));
+        $muestras = Muestra::orderBy('numero_muestra', 'DESC')->get();
+
+        return view('registro-cilindro.show', compact('registroCilindro', 'muestras'));
     }
 
     /**

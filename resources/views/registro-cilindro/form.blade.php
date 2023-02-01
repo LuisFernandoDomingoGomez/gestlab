@@ -18,7 +18,7 @@
         </div>
         <div class="form-group">
             {{ Form::label('fecha_muestreo') }}
-            {{ Form::text('fecha_muestreo', $registroCilindro->fecha_muestreo, ['class' => 'form-control' . ($errors->has('fecha_muestreo') ? ' is-invalid' : ''), 'placeholder' => 'Fecha Muestreo']) }}
+            {{ Form::date('fecha_muestreo', $registroCilindro->fecha_muestreo, ['class' => 'form-control' . ($errors->has('fecha_muestreo') ? ' is-invalid' : ''), 'placeholder' => 'Fecha Muestreo']) }}
             {!! $errors->first('fecha_muestreo', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">

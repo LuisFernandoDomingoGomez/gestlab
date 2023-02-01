@@ -64,10 +64,6 @@
 										<th>Cliente</th>
 										<th>Obra</th>
 										<th>Fecha Muestreo</th>
-										<th>Tipo Concreto</th>
-										<th>Fcproy</th>
-										<th>Rev Obt</th>
-										<th>Ejes</th>
 
                                         <th>Acciones</th>
                                     </tr>
@@ -81,10 +77,6 @@
 											<td>{{ $registroCilindro->cliente }}</td>
 											<td>{{ $registroCilindro->obra }}</td>
 											<td>{{ $registroCilindro->fecha_muestreo }}</td>
-											<td>{{ $registroCilindro->tipo_concreto }}</td>
-											<td>{{ $registroCilindro->fcproy }}</td>
-											<td>{{ $registroCilindro->rev_obt }}</td>
-											<td>{{ $registroCilindro->ejes }}</td>
 
                                             <td>
                                                 <form action="{{ route('registro-cilindros.destroy',$registroCilindro->id) }}" method="POST">
