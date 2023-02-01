@@ -137,8 +137,8 @@
                         </ul>
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('blogs.index') }}">
-                                    {{ __('Informe de resultados') }}
+                                <a class="nav-link" href="{{ route('informe-ensayos.index') }}">
+                                    {{ __('Informe de Ensayos') }}
                                 </a>
                             </li>
                         </ul>
