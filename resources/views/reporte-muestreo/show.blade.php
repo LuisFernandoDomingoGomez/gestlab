@@ -139,7 +139,7 @@
                                         <th>Hora Salida Planta</th>
                                         <th>Hora Entrega Obra</th>
                                         <th>Hora Toma Muestra</th>
-                                        <th>Temperatura Ambiental Muestra</th>
+                                        <th>TEMP °C</th>
                                         <th>Hora Termino Descarga</th>
                                         <th>Volumen M3</th>
                                         <th>Uno Cm</th>
@@ -147,8 +147,6 @@
                                         <th>Dos Cm</th>
                                         <th>Numero Muestra</th>
                                         <th>Numero Molde</th>
-                                        <th>Elemento</th>
-                                        <th>Nivel</th>
                                         <th>Ejes</th>
 
                                         <th></th>
@@ -171,8 +169,6 @@
                                             <td>{{ $muestra->dos_cm }}</td>
                                             <td>{{ $muestra->numero_muestra }}</td>
                                             <td>{{ $muestra->numero_molde }}</td>
-                                            <td>{{ $muestra->elemento }}</td>
-                                            <td>{{ $muestra->nivel }}</td>
                                             <td>{{ $muestra->ejes }}</td>
 
                                             <td>
@@ -207,7 +203,29 @@
                                             <div class="card text-center">
                                                 <img src="{{ asset('argon') }}/img/generate/firma.jpg" class="card-img-top" alt="..." width=430 height=160>
                                                 <div class="card-body">
-                                                    <a href="#" class="btn btn-primary">Firmar</a>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                    Firma
+                                                    </button>
+
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    ...
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Understood</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
