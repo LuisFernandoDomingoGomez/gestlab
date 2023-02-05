@@ -30,7 +30,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Detalles de Cilindro</span>
+                            <span class="card-title">Detalles de Especimen</span>
                         </div>
                         <div class="float-right">
                             <a class="btn btn-primary" href="{{ route('registro-cilindros.index') }}"> Atras</a>
@@ -77,7 +77,7 @@
                         
                         <div class="card-header">
                             <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <strong>Registro de Cilindros:</strong>
+                                <strong>Especimenes:</strong>
 
                                 <div class="float-right">
                                 <a href="{{ route('muestras.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">

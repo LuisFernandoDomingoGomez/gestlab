@@ -78,16 +78,6 @@
                                 {{ __('Reporte de Muestreo') }}
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('blogs.index') }}">
-                                {{ __('Reporte de Transporte') }}
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('blogs.index') }}">
-                                {{ __('Reporte de Ensayo') }}
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </li>

@@ -32,7 +32,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Generar Registro de Cilindro</span>
+                        <span class="card-title">Generar Especimenes</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('registro-cilindros.store') }}"  role="form" enctype="multipart/form-data">

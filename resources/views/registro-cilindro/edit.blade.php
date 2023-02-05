@@ -31,7 +31,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Modificar Registro de Cilindros</span>
+                        <span class="card-title">Modificar Especimen</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('registro-cilindros.update', $registroCilindro->id) }}"  role="form" enctype="multipart/form-data">

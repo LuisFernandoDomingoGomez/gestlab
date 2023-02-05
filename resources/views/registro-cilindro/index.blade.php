@@ -32,7 +32,7 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Registro de Cilindro') }}
+                                {{ __('Especimenes') }}
                             </span>
 
                              <div class="float-right">
