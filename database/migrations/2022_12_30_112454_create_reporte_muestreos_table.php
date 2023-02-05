@@ -29,13 +29,14 @@ return new class extends Migration
             //Caracteristicas del concreto solicitado
             $table->string('resistencia', 255)->nullable();
             $table->string('tipo_aditivo', 255)->nullable();
-            $table->string('tamano_agregado_maximo', 255)->nullable();
+            $table->string('tipo_concreto', 255)->nullable();
             $table->string('tipo_agregado', 255)->nullable();
             $table->string('premezcadora', 255)->nullable();
             $table->string('edad_ensayo', 255)->nullable();
             //Modulo de ruptura
             $table->string('revenimiento', 255)->nullable();
             $table->string('tipo_cemento', 255)->nullable();
+            $table->string('tamano_agregado_maximo', 255)->nullable();
             $table->string('dosificacion', 255)->nullable();
             $table->string('marca_cemento', 255)->nullable();
             $table->string('volumen_colado', 255)->nullable();
@@ -60,23 +61,32 @@ return new class extends Migration
             
             //Manipulacion de las muestras
             $table->time('hora_llegada_muestreador')->nullable();
-            $table->string('entrega_transportista', 255)->nullable();
+            $table->text('entrega_transportista', 255)->nullable();
             $table->string('muestreador', 255)->nullable();
+            $table->string('firma_muestreador', 255)->nullable();
             $table->string('transportista_1', 255)->nullable();
+            $table->string('firma_transportista_1', 255)->nullable();
 
             $table->time('hora_salida_muestreador')->nullable();
-            $table->string('entrega_laboratorista', 255)->nullable();
+            $table->text('entrega_laboratorista', 255)->nullable();
             $table->string('transportista_2', 255)->nullable();
+            $table->string('firma_transportista_2', 255)->nullable();
             $table->string('laboratorista', 255)->nullable();
+            $table->string('firma_laboratorista', 255)->nullable();
             //Observaciones del Laboratorio
+
+            $table->string('temperatura_humedad', 255)->nullable();
+            $table->string('id_termometro', 255)->nullable();
+            $table->string('id_varilla', 255)->nullable();
+            $table->string('id_cono', 255)->nullable();
+
             $table->string('condicion_ambiental_muestreo', 255)->nullable();
 
             //Firmas 
             $table->text('desviaciones_exclusiones', 255)->nullable();
-            $table->string('nombre_firma_revision', 255)->nullable();
-            $table->string('nombre_firma_encargado', 255)->nullable();
+            $table->text('nombre_firma_revision', 255)->nullable();
+            $table->text('nombre_firma_encargado', 255)->nullable();
             $table->text('observaciones_considerar', 255)->nullable();
-            $table->text('desviaciones_adicionales', 255)->nullable();
             $table->timestamps();
         });
     }

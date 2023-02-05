@@ -67,15 +67,14 @@
                                                 <h3 class="mb-0">Caracteristicas del concreto solicitado</h3>
                                             </div>
                                             <div class="col text-right">
-                                                <a href="{{ route('reporte-muestreos.create') }}" class="btn btn-sm btn-primary">Registrar</a>
+                                                <a href="{{ route('reporte-muestreos.edit',$reporteMuestreo->id) }}" class="btn btn-sm btn-primary">Registrar</a>
                                             </div>
                                         </div>
                                     <div class="table-responsive">
                                         <table class="table table-striped table-hover">
                                             <thead class="thead">
                                                 <tr>
-                                                    <th></th>
-                                                    <th></th>
+                                                    <th></th><th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -88,8 +87,8 @@
                                                         <td>Tipo de Cemento: {{ $reporteMuestreo->tipo_cemento }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Tamaño de agregado maximo (mm): </td>
-                                                        <td>{{ $reporteMuestreo->tipo_agregado_maximo }}</td>
+                                                        <td>Tipo de Concreto: {{ $reporteMuestreo->tipo_concreto }}</td>
+                                                        <td>T.A.M (mm): {{ $reporteMuestreo->tamano_agregado_maximo }}</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Tipo de Agregado: {{ $reporteMuestreo->tipo_agregado }}</td>
@@ -199,35 +198,6 @@
                                         <div class="card-body">
                                             <h4 class="card-title">Entrega a Transportista</h4>
                                             <p class="card-text">{{ $reporteMuestreo->entrega_transportista }}</p>
-                                            <br>
-                                            <div class="card text-center">
-                                                <img src="{{ asset('argon') }}/img/generate/firma.jpg" class="card-img-top" alt="..." width=430 height=160>
-                                                <div class="card-body">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                                    Firma
-                                                    </button>
-
-                                                    <!-- Modal -->
-                                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                                        <div class="modal-dialog">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    ...
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                    <button type="button" class="btn btn-primary">Understood</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
 
                                         <div class="table-responsive">
@@ -236,6 +206,10 @@
                                                     <tr></tr>
                                                 </thead>
                                                 <tbody>
+                                                        <tr>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma.jpg" class="card-img-top" alt="..." width=100 height=35></td>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma2.png" class="card-img-top" alt="..." width=100 height=35></td>
+                                                        </tr>
                                                         <tr>
                                                             <td>{{ $reporteMuestreo->muestreador }}</td>
                                                             <td>{{ $reporteMuestreo->transportista_1 }}</td>
@@ -267,13 +241,6 @@
                                         <div class="card-body">
                                             <h4 class="card-title">Entrega a Laboratorista</h4>
                                             <p class="card-text">{{ $reporteMuestreo->entrega_laboratorista }}</p>
-                                            <br>
-                                            <div class="card text-center">
-                                                <img src="{{ asset('argon') }}/img/generate/firma2.png" class="card-img-top" alt="..." width=430 height=160>
-                                                <div class="card-body">
-                                                    <a href="#" class="btn btn-primary">Firmar</a>
-                                                </div>
-                                            </div>
                                         </div>
 
                                         <div class="table-responsive">
@@ -281,7 +248,11 @@
                                                 <thead class="thead">
                                                     <tr></tr>
                                                 </thead>
-                                                <tbody>
+                                                <tbody> 
+                                                        <tr>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma2.png" class="card-img-top" alt="..." width=100 height=35></td>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma3.png" class="card-img-top" alt="..." width=100 height=35></td>
+                                                        </tr>
                                                         <tr>
                                                             <td>{{ $reporteMuestreo->transportista_2 }}</td>
                                                             <td>{{ $reporteMuestreo->laboratorista }}</td>
@@ -301,6 +272,19 @@
                                 </div>
                             </div>
                         </div>
+
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col">
+                                            <a href="{{ route('reporte-v2stas.edit',$reporteMuestreo->id) }}" class="btn btn-primary">Llenar Datos de Recepcion</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="{{ route('reporte-v3stas.edit',$reporteMuestreo->id) }}" class="btn btn-primary">Llenar Datos de Recepcion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="form-group">
                                 <strong>Condicion Ambiental Muestreo:</strong>
