@@ -45,6 +45,8 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('reporte-muestreos', App\Http\Controllers\ReporteMuestreoController::class);
 	Route::resource('informe-ensayos', App\Http\Controllers\InformeEnsayoController::class);
 	Route::resource('reporte-vistas', App\Http\Controllers\ReporteVistaController::class);
+	Route::resource('reporte-v2stas', App\Http\Controllers\ReporteV2staController::class);
+	Route::resource('reporte-v3stas', App\Http\Controllers\ReporteV3staController::class);
 	Route::resource('muestras', App\Http\Controllers\MuestraController::class);
 	Route::resource('registro-cilindros', App\Http\Controllers\RegistroCilindroController::class);
 
