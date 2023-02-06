@@ -48,6 +48,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('reporte-v2stas', App\Http\Controllers\ReporteV2staController::class);
 	Route::resource('reporte-v3stas', App\Http\Controllers\ReporteV3staController::class);
 	Route::resource('reporte-v4stas', App\Http\Controllers\ReporteV4staController::class);
+	Route::resource('reporte-v5stas', App\Http\Controllers\ReporteV5staController::class);
 	Route::resource('muestras', App\Http\Controllers\MuestraController::class);
 	Route::resource('registro-cilindros', App\Http\Controllers\RegistroCilindroController::class);
 

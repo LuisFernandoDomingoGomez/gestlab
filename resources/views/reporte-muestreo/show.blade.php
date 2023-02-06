@@ -321,24 +321,41 @@
                                 </table>
                             </div>
                             <br><br>
+
+                            <div class="card-header">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <strong>Datos de Revision</strong>
+                                    <div class="float-right">
+                                        <a href="{{ route('reporte-v5stas.edit',$reporteMuestreo->id) }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                        {{ __('Llenar') }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                             
                             <div class="card-group">
-                                <div class="card">
+                                <div class="card text-center">
                                     <div class="card-body">
-                                    <h5 class="card-title">Desviaciones y Exclusiones</h5>
+                                    <h5 class="card-title">Desviaciones y Exclusiones que se presentaron</h5>
                                     <p class="card-text">{{ $reporteMuestreo->desviaciones_exclusiones }}</p>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card text-center">
                                     <div class="card-body">
                                     <h5 class="card-title">Nombre y/o Firma de revision</h5>
                                     <p class="card-text"> </p>
                                     </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">{{ $reporteMuestreo->nombre_firma_revision }}</small>
+                                    </div>
                                 </div>
-                                <div class="card">
+                                <div class="card text-center">
                                     <div class="card-body">
                                     <h5 class="card-title">Nombre y Firma del encargado de obra</h5>
                                     <p class="card-text"> </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">{{ $reporteMuestreo->nombre_firma_encargado }}</small>
                                     </div>
                                 </div>
                             </div>
@@ -347,7 +364,7 @@
                             <div class="card mb-3">
                                 <div class="card text-center">
                                     <div class="card-body">
-                                        <h5 class="card-title">Desviaciones a Considerar</h5>
+                                        <h5 class="card-title">Observaciones a Considerar</h5>
                                         <p class="card-text">{{ $reporteMuestreo->observaciones_considerar }}</p>
                                     </div>
                                 </div>
