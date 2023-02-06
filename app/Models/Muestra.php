@@ -49,6 +49,6 @@ class Muestra extends Model
                            'hora_toma_muestra','temperatura_ambiental_muestra',
                            'hora_termino_descarga','volumen_m3','uno_cm',
                            'tiempo_empleado','dos_cm','numero_muestra',
-                           'numero_molde','ejes'];
+                           'numero_molde','numero_cilindro','ejes'];
 
 }

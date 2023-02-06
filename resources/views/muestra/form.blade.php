@@ -84,14 +84,19 @@
                 </div>
                 <div class="col">
                     {{ Form::label('Numero de Molde') }}
-                    {{ Form::text('numero_molde', $muestra->numero_molde, ['class' => 'form-control' . ($errors->has('numero_molde') ? ' is-invalid' : ''), 'placeholder' => 'Numero Molde']) }}
+                    {{ Form::text('numero_molde', $muestra->numero_molde, ['class' => 'form-control' . ($errors->has('numero_molde') ? ' is-invalid' : ''), 'placeholder' => 'Numero de Molde']) }}
                     {!! $errors->first('numero_molde', '<div class="invalid-feedback">:message</div>') !!}
+                </div>
+                <div class="col">
+                    {{ Form::label('Numero de Cilindro') }}
+                    {{ Form::text('numero_cilindro', $muestra->numero_cilindro, ['class' => 'form-control' . ($errors->has('numero_cilindro') ? ' is-invalid' : ''), 'placeholder' => 'Numero de Cilindro']) }}
+                    {!! $errors->first('numero_cilindro', '<div class="invalid-feedback">:message</div>') !!}
                 </div>
             </div>
         </div>
         <div class="form-group">
             {{ Form::label('Localizacion de los Elementos colados segun los planos') }}
-            {{ Form::text('ejes', $muestra->ejes, ['class' => 'form-control' . ($errors->has('ejes') ? ' is-invalid' : ''), 'placeholder' => 'Elemento, Nivel, Ejes']) }}
+            {{ Form::textarea('ejes', $muestra->ejes, ['class' => 'form-control' , 'rows' => '3'. ($errors->has('ejes') ? ' is-invalid' : ''), 'placeholder' => 'Elemento, Nivel, Ejes']) }}
             {!! $errors->first('ejes', '<div class="invalid-feedback">:message</div>') !!}
         </div>
     </div>

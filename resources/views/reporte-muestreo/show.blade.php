@@ -147,6 +147,7 @@
                                         <th>Dos Cm</th>
                                         <th>Numero Muestra</th>
                                         <th>Numero Molde</th>
+                                        <th>Numero Cilindro</th>
                                         <th>Ejes</th>
 
                                         <th>Acciones</th>
@@ -169,6 +170,7 @@
                                             <td>{{ $muestra->dos_cm }}</td>
                                             <td>{{ $muestra->numero_muestra }}</td>
                                             <td>{{ $muestra->numero_molde }}</td>
+                                            <td>{{ $muestra->numero_cilindro }}</td>
                                             <td>{{ $muestra->ejes }}</td>
 
                                             <td>
