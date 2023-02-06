@@ -284,95 +284,9 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
 
                     <!--Tamano de margen 1-->
 
-                    <td width=697 colspan=3 valign=top style='width:567.5pt;border:solid windowtext 1.0pt;
-  border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
-  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
-  0cm 3.5pt 0cm 3.5pt'>
+                    <td width=697 colspan=3 valign=top style='width:697.5pt;border:solid windowtext 0.0pt'>
                       <h2 style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=ES>Programacion de Servicio</span>
                       </h2>
-                      <div>
-                        <h3>Cliente: {{ $reporteVista->cliente }}</h3>
-                        <h3>Atencion A: {{ $reporteVista->atencion_a }}</h3>
-                        <h3>Obra: {{ $reporteVista->obra }}</h3>
-                        <h3>Ubicacion: {{ $reporteVista->ubicacion }}</h3>
-                        <h3>Clave Obra: {{ $reporteVista->clave_obra }}</h3>
-                        <h3>Fecha Muestreo: {{ $reporteVista->fecha_muestreo }}</h3>
-                        <h3>Orden Servicio: {{ $reporteVista->orden_servicio }}</h3>
-                        <h3>Muestreador Asignado: {{ $reporteVista->muestreador_asignado }}</h3>
-                      </div>
-                      <input type="text" style="WIDTH: 400px; HEIGHT:20px " class="sinborde" id="Id_trabajador"
-                        name='Id_trabajador' value="{{Session::get('sesionidt')}}" hidden />
-
-                    </td>
-                    <td width=155 valign=top style='width:116.45pt;border-top:solid windowtext 1.0pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h2 style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=ES>Caracteristicas del concreto
-                          solicitado</span></h2>
-
-                      <p class=MsoNormal><input type="text" style="WIDTH: 150px; HEIGHT:20px " class="sinborde"
-                          name="Id_expediente" id="Id_expediente" value='' placeholder="Id Expediente">
-                        </span></b></p>
-
-
-                    </td>
-                  </tr>
-                  <input type="text" style="WIDTH: 400px; HEIGHT:20px " class="sinborde" id="Id_trabajador"
-                    name='Id_trabajador' value="{{Session::get('sesionidt')}}" hidden />
-                  <tr style='mso-yfti-lastrow:yes;page-break-inside:avoid'>
-                    <td width=285 valign=top style='width:213.55pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal style='margin-top:1.0pt;margin-right:0cm;margin-bottom:
-  2.0pt;margin-left:0cm'><b><span lang=ES style='font-size:6.0pt;mso-bidi-font-size:
-  12.0pt;font-family:"Arial",sans-serif'>FECHA DE ELABORACI&Oacute;N<br>
-                          </span></b>
-                      <p class=MsoNormal><input type="date" id="Fecha_Elaboracion" name="Fecha_Elaboracion" value=''
-                          class='sinborde'></p>
-
-                    </td>
-                    <td width=176 valign=top style='width:131.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal style='margin-top:2.0pt;margin-right:0cm;margin-bottom:
-  2.0pt;margin-left:0cm'><b><span lang=ES style='font-size:6.0pt;mso-bidi-font-size:
-  12.0pt;font-family:"Arial",sans-serif'>HORA DE ELABORACI&Oacute;N<o:p></o:p></span></b>
-                      <p class=MsoNormal><input type="time" value='' class='sinborde' id='Hora_Elaboracion'
-                          name='Hora_Elaboracion'></p>
-
-
-                    </td>
-                    <td width=251 colspan=2 valign=top style='width:188.45pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal style='margin-top:2.0pt;margin-right:0cm;margin-bottom:
-  2.0pt;margin-left:0cm'><b><span lang=ES style='font-size:6.0pt;mso-bidi-font-size:
-  12.0pt;font-family:"Arial",sans-serif'>TIPO DE INTERROGATORIO:<o:p<br></span></b></p>
-
-                    </td>
-                  </tr>
-                  <![if !supportMisalignedColumns]>
-                  <tr height=0>
-                    <td width=283 style='border:none'></td>
-                    <td width=175 style='border:none'></td>
-                    <td width=95 style='border:none'></td>
-                    <td width=155 style='border:none'></td>
-                  </tr>
-                  <![endif]>
-                </table>
-
-                <p class=MsoNormal><b><span lang=ES style='font-size:4.0pt;mso-bidi-font-size:
-12.0pt'>
-                      <o:p>&nbsp;</o:p>
-                    </span></b></p>
-
                 <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
                   style='border-collapse:collapse;mso-padding-alt:0cm 3.5pt 0cm 3.5pt'>
                   <tr style='page-break-inside:avoid'>
