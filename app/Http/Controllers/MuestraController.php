@@ -51,7 +51,7 @@ class MuestraController extends Controller
 
         $muestra = Muestra::create($request->all());
 
-        return redirect()->route('reporte-muestreo.show')
+        return redirect()->route('reporte-muestreos.index')
             ->with('success', 'Muestra creada con exito.');
     }
 
@@ -79,7 +79,7 @@ class MuestraController extends Controller
         $muestra = Muestra::find($id);
         $reporteMuestreo = ReporteMuestreo::pluck('clave_obra', 'clave_obra');
         
-        return view('muestra.edit', compact('muestra', 'clave_obra'));
+        return view('muestra.edit', compact('muestra', 'reporteMuestreo'));
     }
 
     /**
@@ -95,7 +95,7 @@ class MuestraController extends Controller
 
         $muestra->update($request->all());
 
-        return redirect()->route('reporte-muestreo.show')
+        return redirect()->route('reporte-muestreos.index')
             ->with('success', 'Muestra editada con exito');
     }
 
@@ -108,7 +108,7 @@ class MuestraController extends Controller
     {
         $muestra = Muestra::find($id)->delete();
 
-        return redirect()->route('reporte-muestreo.show')
+        return redirect()->route('reporte-muestreos.index')
             ->with('success', 'Muestra eliminada con exito');
     }
 }

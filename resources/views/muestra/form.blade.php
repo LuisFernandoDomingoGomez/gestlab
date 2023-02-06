@@ -48,7 +48,7 @@
                 </div>
                 <div class="col">
                     {{ Form::label('hora termino de descarga') }}
-                    {{ Form::text('hora_termino_descarga', $muestra->hora_termino_descarga, ['class' => 'form-control' . ($errors->has('hora_termino_descarga') ? ' is-invalid' : ''), 'placeholder' => 'Hora Termino Descarga']) }}
+                    {{ Form::time('hora_termino_descarga', $muestra->hora_termino_descarga, ['class' => 'form-control' . ($errors->has('hora_termino_descarga') ? ' is-invalid' : ''), 'placeholder' => 'Hora Termino Descarga']) }}
                     {!! $errors->first('hora_termino_descarga', '<div class="invalid-feedback">:message</div>') !!}
                 </div>
                 <div class="col">

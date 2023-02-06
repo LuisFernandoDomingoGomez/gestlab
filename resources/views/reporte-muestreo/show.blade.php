@@ -111,17 +111,18 @@
 
                         
                         <div class="card-header">
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
 
-                        <strong>Muestras:</strong>
+                            <strong>Muestras:</strong>
 
-                             <div class="float-right">
-                                <a href="{{ route('muestras.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('+ ADD') }}
-                                </a>
-                              </div>
+                                <div class="float-right">
+                                    <a href="{{ route('muestras.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                    {{ __('+ ADD') }}
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        </div>
+                        
                         @if ($message = Session::get('success'))
                             <div class="alert alert-success">
                                 <p>{{ $message }}</p>
@@ -148,7 +149,7 @@
                                         <th>Numero Molde</th>
                                         <th>Ejes</th>
 
-                                        <th></th>
+                                        <th>Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -226,6 +227,15 @@
                                             Nombre y/o Firma
                                         </div>
                                     </div>
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <div class="row g-3">
+                                                <div class="col">
+                                                    <a href="{{ route('reporte-v2stas.edit',$reporteMuestreo->id) }}" class="btn btn-primary">Llenar Datos de Recepcion</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -269,26 +279,76 @@
                                             Nombre y/o Firma
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <div class="row g-3">
-                                        <div class="col">
-                                            <a href="{{ route('reporte-v2stas.edit',$reporteMuestreo->id) }}" class="btn btn-primary">Llenar Datos de Recepcion</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="{{ route('reporte-v3stas.edit',$reporteMuestreo->id) }}" class="btn btn-primary">Llenar Datos de Recepcion</a>
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <div class="row g-3">
+                                                <div class="col">
+                                                    <a href="{{ route('reporte-v3stas.edit',$reporteMuestreo->id) }}" class="btn btn-primary">Llenar Datos de Recepcion</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="form-group">
-                                <strong>Condicion Ambiental Muestreo:</strong>
-                                {{ $reporteMuestreo->condicion_ambiental_muestreo }}
+                            <br><br>
+                            <div class="card-header">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <strong>Observaciones de Laboratorio</strong>
+                                    <div class="float-right">
+                                        <a href="{{ route('reporte-v4stas.edit',$reporteMuestreo->id) }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                        {{ __('Registrar') }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="thead">
+                                        <tr></tr>
+                                    </thead>
+                                    <tbody> 
+                                            <tr>
+                                                <td>Temp Ambiental (°C) y Humedad Relativa (%) a la hora del muestreo: {{ $reporteMuestreo->temperatura_humedad }}</td>
+                                                <td>ID. Termometro: {{ $reporteMuestreo->id_termometro }}</td>
+                                                <td>ID. Varilla: {{ $reporteMuestreo->id_varilla }}</td>
+                                                <td>ID. Cono: {{ $reporteMuestreo->id_cono }}</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br><br>
+                            
+                            <div class="card-group">
+                                <div class="card">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Desviaciones y Exclusiones</h5>
+                                    <p class="card-text">{{ $reporteMuestreo->desviaciones_exclusiones }}</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Nombre y/o Firma de revision</h5>
+                                    <p class="card-text"> </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Nombre y Firma del encargado de obra</h5>
+                                    <p class="card-text"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+
+                            <div class="card mb-3">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Desviaciones a Considerar</h5>
+                                        <p class="card-text">{{ $reporteMuestreo->observaciones_considerar }}</p>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
