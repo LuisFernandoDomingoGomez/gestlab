@@ -260,7 +260,7 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                     <div>
                       <!--Encabezado de Archivo-->
                       <div>
-                        <![if !vml]><img width=770 height=55 src="{{ asset('argon') }}/img/generate/titulo_0.png"
+                        <![if !vml]><img width=800 height=53 src="{{ asset('argon') }}/img/generate/titulo_0.png"
                           v:shapes="_x0000_s1089 _x0000_s1090 _x0000_s1091">
                         <![endif]>
                         <![if !vml]><span style='left:0px;position:relative;
@@ -272,11 +272,14 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                     </div>
 
 
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border-top:solid windowtext 3.0pt;
-  border-left:none;border-bottom:solid windowtext 3.0pt;border-right:none;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h1><span lang=ES>Reporte de Muestreo</span></h1>
+                    <td width=712 colspan=11 valign=top style='width:620.95pt;'>
+                      <![if !vml]>
+                        <img width=555 height=30 src="{{ asset('argon') }}/img/generate/titulo_1.png" v:shapes="_x0000_s1089 _x0000_s1090 _x0000_s1091">
+                        <![endif]>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <![if !vml]><span style='left:0px;position:relative; left:5px;top:-0px;width:60px;height:20px'>
+                        <img width=320 height=28 src="{{ asset('argon') }}/img/generate/titulo_2.png">
+                        <![endif]>
                     </td>
 
                   </tr>
