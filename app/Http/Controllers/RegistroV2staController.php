@@ -10,14 +10,14 @@ use Illuminate\Http\Request;
  * Class RegistroV1staController
  * @package App\Http\Controllers
  */
-class RegistroV1staController extends Controller
+class RegistroV2staController extends Controller
 {
 
     public function edit($id)
     {
         $registroCilindro = RegistroCilindro::find($id);
 
-        return view('registro-v1sta.edit', compact('registroCilindro'));
+        return view('registro-v2sta.edit', compact('registroCilindro'));
     }
 
     /**

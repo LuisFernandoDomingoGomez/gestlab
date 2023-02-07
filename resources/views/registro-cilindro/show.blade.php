@@ -99,6 +99,16 @@
                                     </table>
                                 </div>
                                 <br>
+                                <div class="card-header">
+                                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                                        <strong>Instrumental y Lecturas</strong>
+                                        <div class="float-right">
+                                            <a href="{{ route('registro-v2stas.edit',$registroCilindro->id) }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                            {{ __('Registrar') }}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="table-responsive">
                                     <table class="table table-striped table-hover">
                                         <thead class="thead">
@@ -117,7 +127,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td>Temperatura Ambiental: </td>
-                                                    <td>{{ $registroCilindro->termometro }} </td>
+                                                    <td>{{ $registroCilindro->temperatura_ambiental }} </td>
                                                 </tr>
                                         </tbody>
                                     </table>

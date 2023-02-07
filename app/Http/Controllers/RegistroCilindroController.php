@@ -112,7 +112,7 @@ class RegistroCilindroController extends Controller
         $registroCilindro->update($request->all());
 
         return redirect()->route('registro-cilindros.index')
-            ->with('success', 'Cilindro editado con éxito');
+            ->with('success', 'Datos Registrados con éxito');
     }
 
     /**
