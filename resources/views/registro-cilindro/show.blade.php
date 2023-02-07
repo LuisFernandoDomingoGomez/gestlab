@@ -43,28 +43,18 @@
 
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-sm-6">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h3 class="card-title">Orden de Laboratorio: <p class="card-text">{{ $registroCilindro->orden_laboratorio }}</p></h3>
-                                        <h3 class="card-title">Cliente: <p class="card-text">{{ $registroCilindro->cliente }}</p></h3>
-                                        <h3 class="card-title">Obra: <p class="card-text">{{ $registroCilindro->obra }}</p></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row g-3">
-                                            <div class="col">
-                                                <h3 class="card-title">Fecha de Muestreo: <p class="card-text">{{ $registroCilindro->fecha_muestreo }}</p></h3>
-                                                <h3 class="card-title">Tipo de Concreto: <p class="card-text">{{ $registroCilindro->tipo_concreto }}</p></h3>
-                                            </div>
-                                            <div class="col">
-                                                <h3 class="card-title">FcProy: <p class="card-text">{{ $registroCilindro->fcproy }}</p></h3>
-                                                <h3 class="card-title">Revenimiento Obt: <p class="card-text">{{ $registroCilindro->rev_obt }}</p></h3>
-                                            </div>
-                                        </div>
+                                    <strong>Datos de la Obra</strong>
+                                    <br><br>
+                                        <h3 class="card-title">Orden de Laboratorio: {{ $registroCilindro->orden_laboratorio }}</h3>
+                                        <h3 class="card-title">Cliente: {{ $registroCilindro->cliente }}</h3>
+                                        <h3 class="card-title">Obra: {{ $registroCilindro->obra }}</h3>
+                                        <h3 class="card-title">Fecha de Muestreo: {{ $registroCilindro->fecha_muestreo }}</h3>
+                                        <h3 class="card-title">Tipo de Concreto: {{ $registroCilindro->tipo_concreto }}</h3>
+                                        <h3 class="card-title">FcProy: {{ $registroCilindro->fcproy }}</h3>
+                                        <h3 class="card-title">Revenimiento Obtenido: {{ $registroCilindro->rev_obt }}</h3>
                                     </div>
                                 </div>
                             </div>
