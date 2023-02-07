@@ -32,7 +32,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('upgrade', function () {return view('pages.upgrade');})->name('upgrade'); 
 	Route::get('map', function () {return view('pages.maps');})->name('map');
 	Route::get('icons', function () {return view('pages.icons');})->name('icons'); 
-	 Route::get('icons', function () {return view('pages.icons');})->name('icons'); 
+	Route::get('icons', function () {return view('pages.icons');})->name('icons'); 
 	Route::get('icons', function () {return view('pages.icons');})->name('icons'); 
 	Route::get('table-list', function () {return view('pages.tables');})->name('table');
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\Controllers\ProfileController@password']);
@@ -49,6 +49,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('reporte-v3stas', App\Http\Controllers\ReporteV3staController::class);
 	Route::resource('reporte-v4stas', App\Http\Controllers\ReporteV4staController::class);
 	Route::resource('reporte-v5stas', App\Http\Controllers\ReporteV5staController::class);
+	Route::resource('registro-v1stas', App\Http\Controllers\RegistroV1staController::class);
 	Route::resource('muestras', App\Http\Controllers\MuestraController::class);
 	Route::resource('registro-cilindros', App\Http\Controllers\RegistroCilindroController::class);
 
