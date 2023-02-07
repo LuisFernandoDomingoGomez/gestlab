@@ -341,162 +341,22 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                     </td>
                   </tr>
                   <tr style='page-break-inside:avoid'>
-
                     <!--Tamano de margen 2-->
-
-                    <td width=657 colspan=8 valign=top style='width:532.5pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal style='margin-top:2.0pt;margin-right:0cm;margin-bottom:
-  2.0pt;margin-left:0cm'><b><span lang=ES style='font-size:6.0pt;mso-bidi-font-size:
-  12.0pt;font-family:"Arial",sans-serif'>NOMBRE DEL PACIENTE (APELLIDO PATERNO,
-                            APELLIDO MATERNO Y NOMBRE(S))<o:p></o:p></span></b></p>
-                      <p class=MsoNormal>
-
+                    <td width=657 colspan=8 valign=top style='width:532.5pt;border-top:none;'></td>
+                  </tr>
+                  <tr style='page-break-inside:avoid'></tr>
+                  <tr style='page-break-inside:avoid'>
+                    <td width=478 colspan=7 valign=top style='width:358.7pt;border-top:none;'>
                     </td>
-                    <td width=120 colspan=2 valign=top style='width:90.0pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal style='margin-top:2.0pt;margin-right:0cm;margin-bottom:
-  2.0pt;margin-left:0cm'><b><span lang=ES style='font-size:6.0pt;mso-bidi-font-size:
-  12.0pt;font-family:"Arial",sans-serif'>ESTADO CIVIL</span></b></p>
-                      <p class=MsoNormal> <input type="text" style="WIDTH: 80px; HEIGHT:20px " class="sinborde"
-                          name='Edo_civil' id="Edo_civil" value='' placeholder="Edo_civil:" required />
-
-                    </td>
-                    <td width=95 valign=top style='width:71.45pt;border:none;border-bottom:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h2><span lang=ES>G&Eacute;NERO<br></span></h2>
-
+                    <td width=234 colspan=4 valign=top style='width:175.25pt;border:none;'>
                     </td>
                   </tr>
                   <tr style='page-break-inside:avoid'>
-                    <td width=245 colspan=3 valign=top style='width:183.5pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h2><span lang=ES>FECHA DE NACIMIENTO</span></h2>
-                      <p class=MsoNormal><input type="date" size="25" maxlength="20" name="fechan" id="fechan"
-                          class="sinborde" value=''>
-                        </span> </p>
-
-                    </td>
-                    <td width=234 colspan=4 valign=top style='width:175.2pt;border:none;
-  border-bottom:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h2><span lang=ES>OCUPACI&Oacute;N DEL PACIENTE</span></h2>
-                      <p class=MsoNormal> <input type="text" style="WIDTH: 216px; HEIGHT:20px " class="sinborde"
-                          name="Ocupacion" id="Ocupacion" placeholder="Escriba ocupaci&oacute;n:" value=''>
-
-                    </td>
-                    <td width=234 colspan=4 valign=top style='width:175.25pt;border-top:none;
-  border-left:solid windowtext .5pt;border-bottom:solid windowtext .5pt;
-  border-right:none;mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:
-  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
-  solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h2 style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=ES
-                          style='mso-bidi-font-family:"Times New Roman";text-transform:uppercase'>EN SU
-                          CASO, LUGAR DE TRABAJO</span></h2>
-                      <p class=MsoNormal> <input type="text" style="WIDTH: 216px; HEIGHT:20px " class="sinborde"
-                          name="Lugar_trabajo" id="Lugar_trabajo" placeholder="Escriba lugar de trabajo:" value=''>
-
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=356 colspan=4 valign=top style='width:266.95pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h2><span lang=ES>PROCEDENCIA</span></h2>
-                      <p class=MsoNormal><span lang=ES style='font-size:10.0pt;mso-bidi-font-size:
-  12.0pt;font-family:"Arial",sans-serif'>
-                        </span></p>
-                      <p class=MsoNormal> <input type="text" style="WIDTH: 216px; HEIGHT:20px " class="sinborde"
-                          name="Procedencia" id="Procedencia" placeholder="Escriba su procedencia:" value=''>
-                    </td>
-                    <td width=356 colspan=7 valign=top style='width:267.0pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h2><span lang=ES>EN SU CASO, LUGAR DONDE OCURRIO EL ACCIDENTE</span></h2>
-                      <p class=MsoNormal>
-                        <input type="text" style="WIDTH: 216px; HEIGHT:20px " class="sinborde" name="Lugar_accidente"
-                          id="Lugar_accidente" placeholder="Escriba el lugar del accidente:" value=''>
-
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=478 colspan=7 valign=top style='width:358.7pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h2><span lang=ES>NOMBRE DEL RESPONSABLE DEL PACIENTE</span></h2>
-                      <p class=MsoNormal> <input type="text" style="WIDTH: 450px; HEIGHT:20px " class="sinborde"
-                          name="Nombre_Tutor" id="Nombre_Tutor" placeholder="Escriba nombre completo:" value=''>
-
-                    </td>
                     <td width=234 colspan=4 valign=top style='width:175.25pt;border:none;
   border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
   padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h2><span lang=ES>PARENTESCO CON EL PACIENTE</span></h2>
-                      <p class=MsoNormal> <input type="text" style="WIDTH: 150px; HEIGHT:20px " class="sinborde"
-                          name="Parentesco_Tutor" id="Parentesco_Tutor" placeholder="Escriba parentesco:" value=''>
-
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=478 colspan=7 valign=top style='width:358.7pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h2><span lang=ES>DOMICILIO</span></h2>
-                      <p class=MsoNormal>
-                        <input type="text" style="WIDTH: 60px; HEIGHT:20px " id="tvia" name="tvia" class='sinborde'
-                          placeholder="Tipo Via" value=''>:
-                        <input type="text" style="WIDTH: 140px; HEIGHT:20px " id="via" name="via" class='sinborde'
-                          placeholder="Nombre Via" value=''>,
-                        <input type="text" style="WIDTH: 56px; HEIGHT:20px " id="ta" name="ta" class='sinborde'
-                          placeholder="Tipo A." value=''> :
-                        <input type="text" style="WIDTH: 170px; HEIGHT:20px " id="na" name="na" class='sinborde'
-                          placeholder="Nombre Asentamiento" value=''>,
-                        No.Int.:<input type="number" style="WIDTH: 50px; HEIGHT:20px " id="nint" name="nint"
-                          class='sinborde' value=''>,
-                        No.Ext.:<input type="number" style="WIDTH: 50px; HEIGHT:20px " id="n_ext" name="n_ext"
-                          class='sinborde' value=''>,
-                        C.P.:<input type="number" style="WIDTH: 60px; HEIGHT:20px " id="cp" name="cp" class='sinborde'
-                          value=''>,
-                        <input type="text" style="WIDTH: 140px; HEIGHT:20px " id="loc" name="loc" class='sinborde'
-                          placeholder="Localidad:" value=''>,
-                        <input type="text" style="WIDTH: 140px; HEIGHT:20px " id="mun" name="mun" class='sinborde'
-                          placeholder="Municipio:" value=''>,
-                        <input type="text" style="WIDTH: 140px; HEIGHT:20px " id="edo" name="edo" class='sinborde'
-                          placeholder="Estado:" value=''>
-                    </td>
-                    <td width=234 colspan=4 valign=top style='width:175.25pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h2><span lang=ES>TEL&Eacute;FONO</span></h2>
-                      <p class=MsoNormal>
-                        <input type="text" style="WIDTH: 200px; HEIGHT:20px " class="sinborde" name="tel" id="tel"
-                          placeholder="Escriba tel&eacute;fono:" value=''>
-
                     </td>
                   </tr>
                   <tr style='page-break-inside:avoid'>
