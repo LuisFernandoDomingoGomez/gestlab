@@ -18,7 +18,7 @@
         </div>
         <div class="form-group">
             {{ Form::label('fecha_muestreo') }}
-            {{ Form::date('fecha_muestreo', $registroCilindro->fecha_muestreo, ['class' => 'form-control' . ($errors->has('fecha_muestreo') ? ' is-invalid' : ''), 'placeholder' => 'Fecha Muestreo']) }}
+            {{ Form::text('fecha_muestreo', $registroCilindro->fecha_muestreo, ['class' => 'form-control' . ($errors->has('fecha_muestreo') ? ' is-invalid' : ''), 'placeholder' => 'Fecha Muestreo']) }}
             {!! $errors->first('fecha_muestreo', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
@@ -41,9 +41,54 @@
             {{ Form::text('ejes', $registroCilindro->ejes, ['class' => 'form-control' . ($errors->has('ejes') ? ' is-invalid' : ''), 'placeholder' => 'Ejes']) }}
             {!! $errors->first('ejes', '<div class="invalid-feedback">:message</div>') !!}
         </div>
+        <div class="form-group">
+            {{ Form::label('hora_inicio_cabeceo') }}
+            {{ Form::text('hora_inicio_cabeceo', $registroCilindro->hora_inicio_cabeceo, ['class' => 'form-control' . ($errors->has('hora_inicio_cabeceo') ? ' is-invalid' : ''), 'placeholder' => 'Hora Inicio Cabeceo']) }}
+            {!! $errors->first('hora_inicio_cabeceo', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('hora_final_cabeceo') }}
+            {{ Form::text('hora_final_cabeceo', $registroCilindro->hora_final_cabeceo, ['class' => 'form-control' . ($errors->has('hora_final_cabeceo') ? ' is-invalid' : ''), 'placeholder' => 'Hora Final Cabeceo']) }}
+            {!! $errors->first('hora_final_cabeceo', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('hora_inicio_ensayo') }}
+            {{ Form::text('hora_inicio_ensayo', $registroCilindro->hora_inicio_ensayo, ['class' => 'form-control' . ($errors->has('hora_inicio_ensayo') ? ' is-invalid' : ''), 'placeholder' => 'Hora Inicio Ensayo']) }}
+            {!! $errors->first('hora_inicio_ensayo', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('hora_final_ensayo') }}
+            {{ Form::text('hora_final_ensayo', $registroCilindro->hora_final_ensayo, ['class' => 'form-control' . ($errors->has('hora_final_ensayo') ? ' is-invalid' : ''), 'placeholder' => 'Hora Final Ensayo']) }}
+            {!! $errors->first('hora_final_ensayo', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('prensa') }}
+            {{ Form::text('prensa', $registroCilindro->prensa, ['class' => 'form-control' . ($errors->has('prensa') ? ' is-invalid' : ''), 'placeholder' => 'Prensa']) }}
+            {!! $errors->first('prensa', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('regla') }}
+            {{ Form::text('regla', $registroCilindro->regla, ['class' => 'form-control' . ($errors->has('regla') ? ' is-invalid' : ''), 'placeholder' => 'Regla']) }}
+            {!! $errors->first('regla', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('bascula') }}
+            {{ Form::text('bascula', $registroCilindro->bascula, ['class' => 'form-control' . ($errors->has('bascula') ? ' is-invalid' : ''), 'placeholder' => 'Bascula']) }}
+            {!! $errors->first('bascula', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('termometro') }}
+            {{ Form::text('termometro', $registroCilindro->termometro, ['class' => 'form-control' . ($errors->has('termometro') ? ' is-invalid' : ''), 'placeholder' => 'Termometro']) }}
+            {!! $errors->first('termometro', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('temperatura_ambiental') }}
+            {{ Form::text('temperatura_ambiental', $registroCilindro->temperatura_ambiental, ['class' => 'form-control' . ($errors->has('temperatura_ambiental') ? ' is-invalid' : ''), 'placeholder' => 'Temperatura Ambiental']) }}
+            {!! $errors->first('temperatura_ambiental', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
 
     </div>
     <div class="box-footer mt20">
-        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 </div>

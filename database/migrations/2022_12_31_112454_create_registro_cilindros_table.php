@@ -26,6 +26,15 @@ return new class extends Migration
             $table->string('fcproy', 255)->nullable();
             $table->string('rev_obt', 255)->nullable();
             $table->text('ejes', 255)->nullable();
+            $table->time('hora_inicio_cabeceo')->nullable();
+            $table->time('hora_final_cabeceo')->nullable();
+            $table->time('hora_inicio_ensayo')->nullable();
+            $table->time('hora_final_ensayo')->nullable();
+            $table->string('prensa')->nullable();
+            $table->string('regla')->nullable();
+            $table->string('bascula')->nullable();
+            $table->string('termometro')->nullable();
+            $table->string('temperatura_ambiental', 255)->nullable();
 
             $table->timestamps();
         });
