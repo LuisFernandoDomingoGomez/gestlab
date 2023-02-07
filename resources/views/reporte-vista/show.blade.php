@@ -274,11 +274,11 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
 
                     <td width=712 colspan=11 valign=top style='width:620.95pt;'>
                       <![if !vml]>
-                        <img width=555 height=30 src="{{ asset('argon') }}/img/generate/titulo_1.png" v:shapes="_x0000_s1089 _x0000_s1090 _x0000_s1091">
+                        <img width=520 height=29 src="{{ asset('argon') }}/img/generate/titulo_1.png" v:shapes="_x0000_s1089 _x0000_s1090 _x0000_s1091">
                         <![endif]>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <![if !vml]><span style='left:0px;position:relative; left:5px;top:-0px;width:60px;height:20px'>
-                        <img width=320 height=28 src="{{ asset('argon') }}/img/generate/titulo_2.png">
+                        <img width=369 height=27 src="{{ asset('argon') }}/img/generate/titulo_2.png">
                         <![endif]>
                     </td>
 
@@ -288,16 +288,56 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                     <!--Tamano de margen 1-->
 
                     <td width=697 colspan=3 valign=top style='width:697.5pt;border:solid windowtext 0.0pt'>
-                      <h2 style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=ES>Programacion de Servicio</span>
-                      </h2>
-                <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
-                  style='border-collapse:collapse;mso-padding-alt:0cm 3.5pt 0cm 3.5pt'>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:433.95pt;border-top:solid windowtext 1.0pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h3><span lang=ES>I. FICHA DE IDENTIFICACI&Oacute;N</span></h3>
+                      <h2 style='margin-bottom:0cm;margin-bottom:.0001pt'><span lang=ES></span></h2>
+                    </td>
+                
+                <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;mso-padding-alt:0cm 3.5pt 0cm 3.5pt'>
+                  
+                <tr style='mso-yfti-lastrow:yes;page-break-inside:avoid'>
+                    <td width=475 colspan=4 valign=top style='width:290.95pt;border-top:none'>
+                      <p class=MsoNormal>
+                      <table class="table table-bordered border-primary">
+                        <tr>
+                          <td style="width:50px">
+                              <h3 class="card-text">Cliente: {{ $reporteVista->cliente }}</h3>
+                              <h3 class="card-text">Atencion a: {{ $reporteVista->atencion_a }}</h3>
+                              <h3>Obra: {{ $reporteVista->obra }}</h3>
+                              <h3>Ubicacion: {{ $reporteVista->ubicacion }}</h3>
+                              <h3>Clave de Obra: {{ $reporteVista->clave_obra }}      Fecha de Muestreo: {{ $reporteVista->fecha_muestreo }}</h3>
+                              <h3>Fecha de Muestreo: {{ $reporteVista->fecha_muestreo }}</h3>
+                              <h3>Muestreador Asignado: {{ $reporteVista->muestreador_asignado }}</h3>
+                          </td>
+                        </tr>
+                      </table>
+
+                    </td>
+                    <td width=237 colspan=8 valign=top style='width:308.0pt;border:none;
+  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 3.5pt 0cm 25.5pt'>
+  <p class=MsoNormal>
+                      <table class="table table-bordered border-primary">
+                        <tr>
+                          <td style="width:50px">
+                              <h3 class="card-text">Resistencia: {{ $reporteVista->resistencia }}</h3>
+                              <h3 class="card-text">Tipo de Aditivo: {{ $reporteVista->tipo_aditivo }}</h3>
+                              <h3>Tipo de Concreto: {{ $reporteVista->tipo_concreto }}</h3>
+                              <h3>Tipo de Agregado: {{ $reporteVista->tipo_agregado }}</h3>
+                              <h3>Premezcadora: {{ $reporteVista->premezcadora }}</h3>
+                              <h3>Edad de Ensayo: {{ $reporteVista->edad_ensayo }}</h3>
+                          </td>
+                          <td style="width:50px">
+                              <h3 class="card-text">Revenimiento: {{ $reporteVista->revenimiento }}</h3>
+                              <h3 class="card-text">Tipo de Cemento: {{ $reporteVista->tipo_cemento }}</h3>
+                              <h3>T.A.M (mm): {{ $reporteVista->tamano_agregado_maximo }}</h3>
+                              <h3>Dosificacion: {{ $reporteVista->dosificacion }}</h3>
+                              <h3>Marca de Cemento: {{ $reporteVista->marca_cemento }}</h3>
+                              <h3>Volumen Colado (m³): {{ $reporteVista->marca_cemento }}</h3>
+                          </td>
+                        </tr>
+                      </table>
+
                     </td>
                   </tr>
                   <tr style='page-break-inside:avoid'>
