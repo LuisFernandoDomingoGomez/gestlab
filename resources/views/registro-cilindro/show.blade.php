@@ -33,8 +33,8 @@
                             <span class="card-title">Detalles de Especimen</span>
                         </div>
                         <div class="float-right">
-                            <a href="" class="btn btn-sm btn-primary"  data-placement="left">
-                            <i class="fas fa-file-pdf"></i>{{ __(' PDF') }}
+                            <a href="{{ route('registro-vistas.show', $registroCilindro->id) }}" class="btn btn-sm btn-primary"  data-placement="left">
+								<i class="fas fa-file-pdf"></i>{{ __(' PDF') }}
                             </a>
                             &nbsp;
                             <a class="btn btn-sm btn-primary" href="{{ route('registro-cilindros.index') }}"> Atras</a>
