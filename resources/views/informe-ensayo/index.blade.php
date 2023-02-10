@@ -57,8 +57,6 @@
                                         
 										<th>Numero Informe</th>
 										<th>Obra</th>
-										<th>Ubicacion</th>
-										<th>Propietario</th>
 										<th>Supervicion</th>
 										<th>Fecha Muestreo</th>
 
@@ -72,8 +70,6 @@
                                             
 											<td>{{ $informeEnsayo->numero_informe }}</td>
 											<td>{{ $informeEnsayo->obra }}</td>
-											<td>{{ $informeEnsayo->ubicacion }}</td>
-											<td>{{ $informeEnsayo->propietario }}</td>
 											<td>{{ $informeEnsayo->supervicion }}</td>
 											<td>{{ $informeEnsayo->fecha_muestreo }}</td>
 

@@ -30,100 +30,66 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Informe Ensayo</span>
+                            <span class="card-title">Detalles de Informe de Ensayo</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('informe-ensayos.index') }}"> Back</a>
+                            <a href="{{ route('registro-vistas.show', $informeEnsayo->id) }}" class="btn btn-sm btn-primary"  data-placement="left">
+								<i class="fas fa-file-pdf"></i>{{ __(' PDF') }}
+                            </a>
+                            &nbsp;
+                            <a class="btn btn-sm btn-primary" href="{{ route('informe-ensayos.index') }}"> Atras</a>
                         </div>
                     </div>
 
                     <div class="card-body">
-                        
-                        <div class="form-group">
-                            <strong>Numero Informe:</strong>
-                            {{ $informeEnsayo->numero_informe }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Obra:</strong>
-                            {{ $informeEnsayo->obra }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Ubicacion:</strong>
-                            {{ $informeEnsayo->ubicacion }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Propietario:</strong>
-                            {{ $informeEnsayo->propietario }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Supervicion:</strong>
-                            {{ $informeEnsayo->supervicion }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Fecha Elaboracion:</strong>
-                            {{ $informeEnsayo->fecha_elaboracion }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Localizacion:</strong>
-                            {{ $informeEnsayo->localizacion }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Numero Olla:</strong>
-                            {{ $informeEnsayo->numero_olla }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Numero Remision:</strong>
-                            {{ $informeEnsayo->numero_remision }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Fecha Ensaye:</strong>
-                            {{ $informeEnsayo->fecha_ensaye }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Hora Salida:</strong>
-                            {{ $informeEnsayo->hora_salida }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Hora Llegada:</strong>
-                            {{ $informeEnsayo->hora_llegada }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Mpa 7:</strong>
-                            {{ $informeEnsayo->mpa_7 }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Mpa 14:</strong>
-                            {{ $informeEnsayo->mpa_14 }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Mpa 28:</strong>
-                            {{ $informeEnsayo->mpa_28 }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Kgf 7:</strong>
-                            {{ $informeEnsayo->kgf_7 }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Kgf 14:</strong>
-                            {{ $informeEnsayo->kgf_14 }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Kgf 28:</strong>
-                            {{ $informeEnsayo->kgf_28 }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Observaciones:</strong>
-                            {{ $informeEnsayo->observaciones }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Firma Recibido Cliente:</strong>
-                            {{ $informeEnsayo->firma_recibido_cliente }}
-                        </div>
-
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="card">
+                                    <div class="card-body">
+                                    <strong>Datos de la Obra</strong>
+                                    <br><br>
+                                        <h5 class="card-title">Numero de Informe: {{ $informeEnsayo->numero_informe }}</h5>
+                                        <h5 class="card-title">Obra: {{ $informeEnsayo->obra }}</h5>
+                                        <h5 class="card-title">Ubicacion: {{ $informeEnsayo->ubicacion }}</h5>
+                                        <h5 class="card-title">Propietario: {{ $informeEnsayo->propietario }}</h5>
+                                        <h5 class="card-title">Supervicion: {{ $informeEnsayo->supervicion }}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-header">
+                                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                                        <strong>Datos de Programacion</strong>
+                                        <div class="float-right">
+                                            <a href="" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                            {{ __('Registrar') }}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover">
+                                        <thead class="thead">
+                                            <tr>
+                                                <th></th><th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                    <td>Fecha de Muestreo: {{ $informeEnsayo->fecha_muestreo }}</td>
+                                                    <td>Edad de Diseno: {{ $informeEnsayo->edad_diseno }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Fecha de Recepcion: {{ $informeEnsayo->fecha_muestreo }}</td>
+                                                    <td>Fecha de Informe: {{ $informeEnsayo->fecha_informe }}</td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </div>
 @endsection

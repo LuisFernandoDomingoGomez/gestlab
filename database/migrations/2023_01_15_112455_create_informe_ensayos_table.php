@@ -24,7 +24,11 @@ return new class extends Migration
             $table->string('propietario', 255)->nullable();
             $table->string('supervicion', 255)->nullable();
             $table->date('fecha_muestreo')->nullable();
-            $table->date('edad_diseno')->nullable();
+            $table->string('edad_diseno')->nullable();
+            $table->string('correo')->nullable();
+            $table->string('telefono')->nullable();
+
+            //Tabla de Datos
             $table->string('localizacion', 255)->nullable();
             $table->string('remision', 255)->nullable();
             $table->string('rev_proyecto', 255)->nullable();
@@ -60,7 +64,7 @@ return new class extends Migration
             $table->string('ensayo_esp_nombre', 255)->nullable();
             $table->string('reviso_nombre', 255)->nullable();
 
-            $table->string('firma_recibido_cliente', 255)->nullable();
+            $table->text('firma_recibido_cliente', 255)->nullable();
 
             $table->timestamps();
         });
