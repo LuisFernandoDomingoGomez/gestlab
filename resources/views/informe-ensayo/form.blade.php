@@ -27,9 +27,14 @@
             {!! $errors->first('supervicion', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('fecha_elaboracion') }}
-            {{ Form::text('fecha_elaboracion', $informeEnsayo->fecha_elaboracion, ['class' => 'form-control' . ($errors->has('fecha_elaboracion') ? ' is-invalid' : ''), 'placeholder' => 'Fecha Elaboracion']) }}
-            {!! $errors->first('fecha_elaboracion', '<div class="invalid-feedback">:message</div>') !!}
+            {{ Form::label('fecha_muestreo') }}
+            {{ Form::text('fecha_muestreo', $informeEnsayo->fecha_muestreo, ['class' => 'form-control' . ($errors->has('fecha_muestreo') ? ' is-invalid' : ''), 'placeholder' => 'Fecha Muestreo']) }}
+            {!! $errors->first('fecha_muestreo', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('edad_diseno') }}
+            {{ Form::text('edad_diseno', $informeEnsayo->edad_diseno, ['class' => 'form-control' . ($errors->has('edad_diseno') ? ' is-invalid' : ''), 'placeholder' => 'Edad Diseno']) }}
+            {!! $errors->first('edad_diseno', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
             {{ Form::label('localizacion') }}

@@ -23,7 +23,8 @@ return new class extends Migration
             $table->string('ubicacion', 255)->nullable();
             $table->string('propietario', 255)->nullable();
             $table->string('supervicion', 255)->nullable();
-            $table->date('fecha_elaboracion')->nullable();
+            $table->date('fecha_muestreo')->nullable();
+            $table->date('edad_diseno')->nullable();
             $table->string('localizacion', 255)->nullable();
             $table->string('remision', 255)->nullable();
             $table->string('rev_proyecto', 255)->nullable();

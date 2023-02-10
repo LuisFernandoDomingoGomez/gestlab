@@ -60,23 +60,9 @@
 										<th>Ubicacion</th>
 										<th>Propietario</th>
 										<th>Supervicion</th>
-										<th>Fecha Elaboracion</th>
-										<th>Localizacion</th>
-										<th>Numero Olla</th>
-										<th>Numero Remision</th>
-										<th>Fecha Ensaye</th>
-										<th>Hora Salida</th>
-										<th>Hora Llegada</th>
-										<th>Mpa 7</th>
-										<th>Mpa 14</th>
-										<th>Mpa 28</th>
-										<th>Kgf 7</th>
-										<th>Kgf 14</th>
-										<th>Kgf 28</th>
-										<th>Observaciones</th>
-										<th>Firma Recibido Cliente</th>
+										<th>Fecha Muestreo</th>
 
-                                        <th></th>
+                                        <th>Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -89,21 +75,7 @@
 											<td>{{ $informeEnsayo->ubicacion }}</td>
 											<td>{{ $informeEnsayo->propietario }}</td>
 											<td>{{ $informeEnsayo->supervicion }}</td>
-											<td>{{ $informeEnsayo->fecha_elaboracion }}</td>
-											<td>{{ $informeEnsayo->localizacion }}</td>
-											<td>{{ $informeEnsayo->numero_olla }}</td>
-											<td>{{ $informeEnsayo->numero_remision }}</td>
-											<td>{{ $informeEnsayo->fecha_ensaye }}</td>
-											<td>{{ $informeEnsayo->hora_salida }}</td>
-											<td>{{ $informeEnsayo->hora_llegada }}</td>
-											<td>{{ $informeEnsayo->mpa_7 }}</td>
-											<td>{{ $informeEnsayo->mpa_14 }}</td>
-											<td>{{ $informeEnsayo->mpa_28 }}</td>
-											<td>{{ $informeEnsayo->kgf_7 }}</td>
-											<td>{{ $informeEnsayo->kgf_14 }}</td>
-											<td>{{ $informeEnsayo->kgf_28 }}</td>
-											<td>{{ $informeEnsayo->observaciones }}</td>
-											<td>{{ $informeEnsayo->firma_recibido_cliente }}</td>
+											<td>{{ $informeEnsayo->fecha_muestreo }}</td>
 
                                             <td>
                                                 <form action="{{ route('informe-ensayos.destroy',$informeEnsayo->id) }}" method="POST">
