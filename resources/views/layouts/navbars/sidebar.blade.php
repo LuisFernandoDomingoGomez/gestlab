@@ -104,27 +104,10 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="#navbar-records" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-records">
-                        <i class="ni ni-archive-2" style="color: #000000;"></i>
-                        <span class="nav-link-text" style="color: #000000;">{{ __('Registros') }}</span>
-                    </a>
-
-                    <div class="collapse show" id="navbar-records">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('registro-cilindros.index') }}">
-                                    {{ __('Registro de Cilindros') }}
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('informe-ensayos.index') }}">
-                                    {{ __('Informe de Ensayos') }}
+                                    {{ __('Reporte de Ensayos') }}
                                 </a>
                             </li>
                         </ul>
@@ -132,7 +115,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('table') }}">
+                    <a class="nav-link" href="{{ route('informe-ensayos.index') }}">
                         <i class="ni ni-single-copy-04 text-default"></i>
                         <span class="nav-link-text" style="color: #000000;">{{ __('Informe Final') }}</span>
                     </a>

@@ -107,11 +107,11 @@
 
                                             <td>
                                                 <form action="{{ route('informe-ensayos.destroy',$informeEnsayo->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('informe-ensayos.show',$informeEnsayo->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('informe-ensayos.edit',$informeEnsayo->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('informe-ensayos.show',$informeEnsayo->id) }}"><i class="fa fa-fw fa-eye"></i></a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('informe-ensayos.edit',$informeEnsayo->id) }}"><i class="fa fa-fw fa-edit"></i></a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i></button>
                                                 </form>
                                             </td>
                                         </tr>

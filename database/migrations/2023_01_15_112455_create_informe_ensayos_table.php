@@ -52,6 +52,13 @@ return new class extends Migration
 
 
             $table->string('observaciones', 255)->nullable();
+            $table->string('muestreo_nombre', 255)->nullable();
+            $table->string('elaboro_nombre', 255)->nullable();
+            $table->string('ensayo_rev_nombre', 255)->nullable();
+            $table->string('cabeceo_nombre', 255)->nullable();
+            $table->string('ensayo_esp_nombre', 255)->nullable();
+            $table->string('reviso_nombre', 255)->nullable();
+
             $table->string('firma_recibido_cliente', 255)->nullable();
 
             $table->timestamps();
