@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\InformeEnsayo;
 use App\Models\ReporteMuestreo;
+use App\Models\Muestra;
 use Illuminate\Http\Request;
 
 /**
@@ -64,7 +65,10 @@ class InformeEnsayoController extends Controller
 
         $reporteMuestreo = ReporteMuestreo::find($id);
 
-        return view('informe-ensayo.show', compact('informeEnsayo','reporteMuestreo'));
+        $reporte = ReporteMuestreo::pluck('clave_obra');
+        $muestras = Muestra::where('clave_obra', '=', 'A1')->get();
+
+        return view('informe-ensayo.show', compact('informeEnsayo','reporteMuestreo', 'muestras'));
     }
 
     /**

@@ -128,7 +128,7 @@
                         <div class="card mb-3">
                             <div class="card text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title">Ejes</h5>
+                                    <h5 class="card-title">Localizacion</h5>
                                     <p class="card-text">{{ $registroCilindro->ejes }}</p>
                                 </div>
                             </div>
@@ -207,6 +207,35 @@
                                     @endforeach
                                 </tbody>
                             </table>
+                        </div>
+                        <br><br>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="thead">
+                                    <tr></tr>
+                                </thead>
+                                <tbody> 
+                                        <tr>
+                                            <td> </td>
+                                            <td> </td>
+                                            <td> </td>
+                                            <td> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Peso y Midio</td>
+                                            <td>Ensayo</td>
+                                            <td>Capturo</td>
+                                            <td>Reviso</td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br><br>
+                        <br>
+                        <div class="card mb-3">
+                            <div class="card text-center">
+                                <h5 class="card-title">INGENIEROS CONSULTORES ASOSCIADOS TECNICOS, SA. DE C.V.</h5>
+                            </div>
                         </div>
                     </div>
                 </div>

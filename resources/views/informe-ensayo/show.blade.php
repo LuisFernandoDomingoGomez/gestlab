@@ -86,9 +86,62 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover">
+                                        <thead class="thead">
+                                            <tr>
+                                                <th></th><th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                    <td>Correo: nandodomingogomez@gmail.com</td>
+                                                    <td>Telefono: 7224942848</td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                            
-                    </div>
+                        </div>
+                        <br><br>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="thead">
+                                    <tr>
+                                        
+                                        <th>No de Olla</th>
+                                        <th>Remision</th>
+                                        <th>Hora de salida</th>
+                                        <th>Hora de llegada</th>
+                                        <th>Hora de descarga</th>
+                                        <th>Proyecto</th>
+                                        <th>Medido</th>
+                                        <th>Visualizar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($muestras as $muestra)
+                                        <tr>
+
+                                            <td>{{ $muestra->numero_olla }}</td>
+                                            <td>{{ $muestra->numero_remision }}</td>
+                                            <td>{{ $muestra->hora_salida_planta }}</td>
+                                            <td>{{ $muestra->hora_entrega_obra }}</td>
+                                            <td>{{ $muestra->hora_toma_muestra }}</td>
+                                            <td>{{ $reporteMuestreo->revenimiento }}</td>
+                                            <td>{{ $muestra->uno_cm }}</td>
+                                            <td>
+                                                <form action="{{ route('muestras.destroy',$muestra->id) }}" method="POST">
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('muestras.show',$muestra->id) }}"><i class="fas fa-file-pdf"></i></a>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                         <br><br>
                         <div class="row">
                             <div class="col-sm-6">
@@ -205,23 +258,17 @@
                                                 </thead>
                                                 <tbody> 
                                                         <tr>
-                                                            <td><img src="{{ asset('argon') }}/img/generate/firma2.png" class="card-img-top" alt="..." width=100 height=35></td>
-                                                            <td><img src="{{ asset('argon') }}/img/generate/firma3.png" class="card-img-top" alt="..." width=100 height=35></td>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma_cliente.png" class="card-img-top" alt="..." width=100 height=89></td>
                                                         </tr>
                                                         <tr>
                                                             <td>{{ $reporteMuestreo->transportista_2 }}</td>
-                                                            <td>{{ $reporteMuestreo->laboratorista }}</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Ensayo de Revenimiento</td>
-                                                            <td>Cabeceo de Especimenes</td>
                                                         </tr>
                                                 </tbody>
                                             </table>
                                         </div>
 
                                         <div class="card-footer text-muted">
-                                            Nombre y/o Firma
+                                            Nombre y Firma de Recibido por parte del cliente
                                         </div>
                                     </div>
                                 </div>
