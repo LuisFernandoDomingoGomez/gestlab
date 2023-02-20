@@ -650,7 +650,7 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                     <div align="center">
                       <input type='button' onclick='window.print();' value='Imprimir'
                         class="btn btn-success btn-lg nover" id="imprimir" name="imprimir" />
-                      <a href="{{ route('reporte-muestreos.index')}}"><input name="button" type="button"
+                      <a href="{{ route('reporte-muestreos.show',$reporteVista->id) }}"><input name="button" type="button"
                           class="btn btn-danger btn-lg nover" value="Volver" /> </a>
                     </div>
               </form>
