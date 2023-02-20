@@ -348,7 +348,7 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                     <td width=712 colspan=11;'>
 
                           <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-6">
                                 <div class="card">
                                     <div class="card text-center">
                                         <div class="card-header">
@@ -391,7 +391,7 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                                 </div>
                             </div>
 
-                            <div class="col-sm-6">
+                            <div class="col-6">
                                 <div class="card">
                                     <div class="card text-center">
                                         <div class="card-header">
@@ -442,7 +442,7 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                     <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
   border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
+  padding:0cm 3.5pt 0cm 3.5pt'><br>
                       <h3><span lang=ES>VII. DIAGN&Oacute;STICO(S) PRESUNCIONAL(ES) (PRINCIPAL Y OTROS)</span></h3>
                     </td>
                   </tr>
@@ -523,31 +523,31 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
   mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0cm 3.5pt 0cm 3.5pt;height:28.8pt'>
-                      <h3 align=center style='text-align:center'><span lang=ES style='font-size:
-  7.0pt;mso-bidi-font-size:12.0pt;text-transform:uppercase'>NOMBRE Y FIRMA DEL
-                          PACIENTE O FAMILIAR AL QUE SE LE NOTIFICA QUE ES UN CASO M&Eacute;DICO-LEGAL<o:p></o:p></span>
-                      </h3>
+  <b style='mso-bidi-font-weight:<h3 align=center style='text-align:center'><span lang=ES style='font-size:
+  7.0pt;mso-bidi-font-size:12.0pt;text-transform:uppercase'>Desviaciones y exclusiones que se presentaron<o:p></o:p></span>
+                      </h3></b>
                       <p class=MsoNormal><span lang=ES>
                           <o:p>&nbsp;</o:p>
                         </span></p>
-                      <p class=MsoNormal>
-                        <input type="text" style="WIDTH: 230px; HEIGHT:20px " class="sinborde" name="Fila1" id="Fila1"
-                          placeholder="Escriba nombre completo:" value=''>
-
+                        <p class=MsoNormal><span lang=ES style='font-size:11.0pt;mso-bidi-font-size:
+                          12.0pt;font-family:"Arial",sans-serif'>{{ $reporteVista->desviaciones_exclusiones }}
+                      <o:p></o:p>
+                    </span></p>
                     </td>
                     <td width=237 colspan=4 valign=top style='width:177.95pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
   mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:28.8pt'>
 
-                      <h3 align=center style='text-align:center'><span lang=ES style='font-size:
-  7.0pt;mso-bidi-font-size:12.0pt;text-transform:uppercase'>NOMBRE Y FIRMA DEL
-                          RESPONSABLE EN CASO DE TRATARSE DE UN PACIENTE MENOR DE EDAD O CON
-                          CAPACIDADES DIFERENTES<o:p></o:p></span></h3>
+  <b style='mso-bidi-font-weight:<h3 align=center style='text-align:center'><span lang=ES style='font-size:
+  7.0pt;mso-bidi-font-size:12.0pt;text-transform:uppercase'>NOMBRE Y/O FIRMA DE
+                          REVISION<o:p></o:p></span></h3></b>
 
-                      <p class=MsoNormal>
-                        <input type="text" style="WIDTH: 230px; HEIGHT:20px " class="sinborde" name="Fila2" id="Fila2"
-                          placeholder="Escriba nombre completo:" value=''>
+                          </span></p>
+                        <p class=MsoNormal><span lang=ES style='font-size:11.0pt;mso-bidi-font-size:
+                          12.0pt;font-family:"Arial",sans-serif'>{{ $reporteVista->nombre_firma_revision }}
+                      <o:p></o:p>
+                    </span></p>
 
                     </td>
                     <td width=237 colspan=5 valign=top style='width:177.0pt;border:none;
@@ -583,70 +583,39 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                         <b style='mso-bidi-font-weight:
   normal'><span lang=ES style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
   font-family:"Arial",sans-serif;text-transform:uppercase'>NOMBRE Y FIRMA DEL
-                            RESPONSABLE EN CASO DE ALTA VOLUNTARIA<o:p></o:p></span></b>
+                            ENCARGADO DE LA OBRA<o:p></o:p></span></b>
                       </p><br>
-                      <p class=MsoNormal>
-                        <input type="text" style="WIDTH: 210px; HEIGHT:20px " class="sinborde" name="Fila3" id="Fila3"
-                          placeholder="Escriba nombre completo:" value=''>
+                      <p class=MsoNormal><span lang=ES style='font-size:11.0pt;mso-bidi-font-size:
+                          12.0pt;font-family:"Arial",sans-serif'>{{ $reporteVista->nombre_firma_encargado }}
+                      <o:p></o:p>
+                    </span></p>
+                    <hr>
+
+                    </td>
+                    <tr style='page-break-inside:avoid'>
+                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
+  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 3.5pt 0cm 3.5pt'>
+  <br>
+                    <h5><span lang=ES>
+                      NORMAS DE REFERENCIA NMX-C-161-ONNCE-2013 "MUESTREO DE CONCRETO FRESCO", NMX-C-156-ONNCE-2010 "DETERMINACION DE REVENIMIENTO EN EL CONCRETO FRESCO", NMX-C-156-ONNCE-2016, "ELABORACION Y CURADO EN EL LABORATORIO DE ESPECIMENES DE CONCRETO, PLAN DE MUESTREO DE ACUERDO AL PROCEDIMIENTO INTERNO DE "MUESTREO DE CONCRETO FRESCO"
+                    </span></h5>
+                    <br>
+                    </td>
+                  </tr>
+
+                  <tr style='page-break-inside:avoid'>
+                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
+  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 3.5pt 0cm 3.5pt'><br>
+  <p class=MsoNormal><span lang=ES style='font-size:11.0pt;mso-bidi-font-size:
+                          12.0pt;font-family:"Arial",sans-serif'>Observaciones a considerar: {{ $reporteVista->observaciones_considerar }}
+                      <o:p></o:p><br><br><br>
 
                     </td>
                   </tr>
-                  <tr style='mso-yfti-lastrow:yes;page-break-inside:avoid'>
-                    <td width=475 colspan=6 valign=top style='width:355.95pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h5 align=left style='text-align:left'><span lang=ES>DESTINO:</span></h5>
-                      <p class=MsoNormal>
-                      <table style="width:100%" border=0>
-                        <tr>
-                          <td style="width:60px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="1" />OBSERVACIÓN</h5>
-                          </td>
-                          <td style="width:70px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="2" />HOSPITALIZACIÓN
-                          </td>
-                          <td style="width:50px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="3" />CONSULTA EXTERNA
-                          </td>
-                          <td style="width:50px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="4" />ALTA
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="width:50px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="5" />REFERENCIA
-                          </td>
-                          <td style="width:50px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="6" />TRANSFERENCIA
-                          </td>
-                          <td style="width:50px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="7" />TRASLADO
-                          </td>
-                          <td style="width:50px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="8" />DEFUNCIÓN
-                          </td>
-                        </tr>
-                      </table>
-
-                    </td>
-                    <td width=237 colspan=5 valign=top style='width:178.0pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h5 style='margin-top:2.0pt'><span lang=ES style='font-size:7.0pt;mso-bidi-font-size:
-  12.0pt'>NOMBRE Y FIRMA <BR><span style='mso-spacerun:yes'></span>M&Eacute;DICO TRATANTE<o:p></o:p></span></h5>
-                      <p class=MsoNormal>
-                        <input type="text" style="WIDTH: 80px; HEIGHT:20px " id="Apellido_PU" name="Apellido_PU"
-                          class="sinborde" value="" readonly>
-                        <input type="text" style="WIDTH: 80px; HEIGHT:20px " id="Apellido_MU" name="Apellido_MU"
-                          value="" class="sinborde" readonly><br>
-                        <input type="text" style="WIDTH: 100px; HEIGHT:20px " id="NombreU" name="NombreU"
-                          class="sinborde" value="" readonly>
-
-                    </td>
                   </tr>
                   <![if !supportMisalignedColumns]>
                   <tr height=0>
