@@ -467,24 +467,12 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
 
                     </td>
                   </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'><br>
-                      <h3><span lang=ES>VIII. TRATAMIENTO REALIZADO</span></h3>
-                    </td>
-                  </tr>
 
                   <tr style='page-break-inside:avoid'>
                     <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
   border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal>
-                        <textarea rows="2" cols="86" class="sinborde" name="Tratamiento_realizado"
-                          id="Tratamiento_realizado" placeholder="Escriba tratamiento realizado:">
-</textarea>
+  padding:0cm 3.5pt 0cm 3.5pt'><br>
                     </td>
                   </tr>
                   <tr style='page-break-inside:avoid;height:28.8pt'>
