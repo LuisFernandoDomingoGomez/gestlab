@@ -342,122 +342,102 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                   </tr>
                   <tr style='page-break-inside:avoid'>
                     <!--Tamano de margen 2-->
-                    <td width=657 colspan=8 valign=top style='width:532.5pt;border-top:none;'></td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'></tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=478 colspan=7 valign=top style='width:358.7pt;border-top:none;'>
-                    </td>
-                    <td width=234 colspan=4 valign=top style='width:175.25pt;border:none;'>
-                    </td>
+                    <td width=657 colspan=8 valign=top style='width:532.5pt;'></td>
                   </tr>
                   <tr style='page-break-inside:avoid'>
-                    <td width=234 colspan=4 valign=top style='width:175.25pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h3><span lang=ES>II. ANTECEDENTES RELACIONADOS CON LA URGENCIA</span></h3>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 style='width:620.95pt;border:none;border-bottom:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;
-  height:14.2pt'>
-                      <p class=MsoNormal> <textarea rows="2" cols="86" class="sinborde" name="Antecedentes_RU"
-                          id="Antecedentes_RU" placeholder="Escriba antecedentes relacionados con la urgencia:">
-</textarea>
+                    <td width=712 colspan=11;'>
+
+                          <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card text-center">
+                                        <div class="card-header">
+                                            <h3> Hora de LLegada del Muestreador</h3>
+                                        </div>
+                                        <div class="card-header">
+                                            {{ $reporteVista->hora_llegada_muestreador }}
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Entrega a Transportista</h4>
+                                            <p class="card-text">{{ $reporteVista->entrega_transportista }}</p>
+                                        </div>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead class="thead">
+                                                    <tr></tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma.jpg" class="card-img-top" alt="..." width=100 height=35></td>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma2.png" class="card-img-top" alt="..." width=100 height=35></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>{{ $reporteVista->muestreador }}</td>
+                                                            <td>{{ $reporteVista->transportista_1 }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Muestreador</td>
+                                                            <td>Transportista</td>
+                                                        </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                        <div class="card-footer text-muted">
+                                            Nombre y/o Firma
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card text-center">
+                                        <div class="card-header">
+                                        <h3> Hora de Salida del Muestreador</h3>
+                                        </div>
+                                        <div class="card-header">
+                                            {{ $reporteVista->hora_salida_muestreador }}
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Entrega a Laboratorista</h4>
+                                            <p class="card-text">{{ $reporteVista->entrega_laboratorista }}</p>
+                                        </div>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead class="thead">
+                                                    <tr></tr>
+                                                </thead>
+                                                <tbody> 
+                                                        <tr>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma2.png" class="card-img-top" alt="..." width=100 height=35></td>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma3.png" class="card-img-top" alt="..." width=100 height=35></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>{{ $reporteVista->transportista_2 }}</td>
+                                                            <td>{{ $reporteVista->laboratorista }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Transportista</td>
+                                                            <td>Laboratorista</td>
+                                                        </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="card-footer text-muted">
+                                            Nombre y/o Firma
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+  
                     </td>
                   </tr>
 
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h3><span lang=ES>III. PADECIMIENTO ACTUAL</span></h3>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal> <textarea rows="2" cols="86" class="sinborde" name="Padecimiento_A"
-                          id="Padecimiento_A" placeholder="Escriba padecimiento actual:">
-</textarea>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620
-  .95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h3><span lang=ES>IV. SIGNOS VITALES</span></h3>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=119 valign=top style='width:88.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h4><span lang=ES>T/A</span></h4>
-                      <p class=MsoNormal>
-                        <input type="text" style="WIDTH:120px; HEIGHT:22px " id="T_A" name="T_A" class='sinborde'
-                          placeholder="T/A" value=''>
-
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h3><span lang=ES>V. EXPLORACI&Oacute;N F&Iacute;SICA</span></h3>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal>
-                        <textarea rows="2" cols="86" class="sinborde" name="Exploracion_fisica" id="Exploracion_fisica"
-                          placeholder="Exploración fisica:">
-</textarea>
-
-                    </td>
-                  </tr>
-
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h3><span lang=ES>VI. RESULTADOS DE LABORATORIO, GABINETE Y OTROS</span></h3>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal>
-                        <textarea rows="2" cols="86" class="sinborde" name="Resultados_lab" id="Resultados_lab"
-                          placeholder="Escriba los resultados de laboratorio, gabinete y otros:">
-</textarea>
-                    </td>
-                  </tr>
                   <tr style='page-break-inside:avoid'>
                     <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
   border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
