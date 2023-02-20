@@ -443,7 +443,8 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
   border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
   padding:0cm 3.5pt 0cm 3.5pt'><br>
-                      <h3><span lang=ES>VII. DIAGN&Oacute;STICO(S) PRESUNCIONAL(ES) (PRINCIPAL Y OTROS)</span></h3>
+                      <b style='mso-bidi-font-weight:
+  normal'><h3><span lang=ES>OBSERVACIONES DEL LABORATORIO: </span></h3></b>
                     </td>
                   </tr>
 
@@ -453,9 +454,14 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
   mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
   padding:0cm 3.5pt 0cm 3.5pt'>
                       <p class=MsoNormal>
-                        <textarea rows="2" cols="86" class="sinborde" name="Diagnostico_pre" id="Diagnostico_pre"
-                          placeholder="Escriba diagnostico(s) presuncional(es):">
-</textarea>
+                      <table class="table table-bordered border-primary">
+                        <tr>
+                          <td>Temp Ambiental (°C) y Humedad Relativa (%): {{ $reporteVista->temperatura_humedad }}</td>
+                          <td>ID. Termometro: {{ $reporteVista->id_termometro }}</td>
+                          <td>ID. Varilla: {{ $reporteVista->id_varilla }}</td>
+                          <td>ID. Cono: {{ $reporteVista->id_cono }}</td>
+                        </tr>
+                      </table>
 
                     </td>
                   </tr>
