@@ -449,10 +449,7 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                   </tr>
 
                   <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
+                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;'>
                       <p class=MsoNormal>
                       <table class="table table-bordered border-primary">
                         <tr>
@@ -462,6 +459,11 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                           <td>ID. Cono: {{ $reporteVista->id_cono }}</td>
                         </tr>
                       </table>
+                      <table class="table table-bordered border-primary">
+                        <tr>
+                          <td>Condicion Ambiental durante del Muestreo: {{ $reporteVista->condicion_ambiental_muestreo }}</td>
+                        </tr>
+                      </table>
 
                     </td>
                   </tr>
@@ -469,7 +471,7 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                     <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
   border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
+  padding:0cm 3.5pt 0cm 3.5pt'><br>
                       <h3><span lang=ES>VIII. TRATAMIENTO REALIZADO</span></h3>
                     </td>
                   </tr>
@@ -483,44 +485,6 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                         <textarea rows="2" cols="86" class="sinborde" name="Tratamiento_realizado"
                           id="Tratamiento_realizado" placeholder="Escriba tratamiento realizado:">
 </textarea>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid;height:30.45pt'>
-                    <td width=237 colspan=2 valign=top style='width:177.95pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt;height:30.45pt'>
-                      <h3><span lang=ES>IX. URGENCIA CALIFICADA</span></h3>
-                      <p class=MsoNormal>
-                        <center>
-                          <input type="radio" name="Urgencia_calificada" id="Urgencia_calificada" value="Si" /> Si
-                          <input type="radio" name="Urgencia_calificada" id="Urgencia_calificada" value="No" />No
-
-
-                    </td>
-                    <td width=211 colspan=3 valign=top style='width:158.55pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:30.45pt'>
-                      <h3><span lang=ES>X. CASO M&Eacute;DICO LEGAL</span></h3>
-                      <p class=MsoNormal>
-                        <center><input type="radio" name="Caso_Medico" id="Caso_Medico" value="Si" /> Si
-                          <input type="radio" name="Caso_Medico" id="Caso_Medico" value="No" />No
-
-                    </td>
-                    <td width=263 colspan=6 valign=top style='width:197.45pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt;height:30.45pt'>
-                      <h3><span lang=ES>XI. SE NOTIFIC&Oacute; AL MINISTERIO P&Uacute;BLICO</span></h3>
-                      <p class=MsoNormal>
-                        <center><input type="radio" name="Notificacion_ministerio" id="Notificacion_ministerio"
-                            value="Si" /> Si
-                          <input type="radio" name="Notificacion_ministerio" id="Notificacion_ministerio"
-                            value="No" />No
-
                     </td>
                   </tr>
                   <tr style='page-break-inside:avoid;height:28.8pt'>
