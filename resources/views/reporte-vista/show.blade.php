@@ -345,6 +345,14 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                     <td width=657 colspan=8 valign=top style='width:532.5pt;'></td>
                   </tr>
                   <tr style='page-break-inside:avoid'>
+                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;'>
+  <br>
+                    <!-- Espacio reservado para la tabla de muestras -->
+
+                    <br>
+                    </td>
+                  </tr>
+                  <tr style='page-break-inside:avoid'>
                     <td width=712 colspan=11;'>
 
                           <div class="row">

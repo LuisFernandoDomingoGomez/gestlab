@@ -88,7 +88,8 @@ class ReporteMuestreoController extends Controller
     {
         $reporteMuestreo = ReporteMuestreo::find($id);
 
-        $muestras = Muestra::orderBy('numero_muestra', 'DESC')->get();
+        $reporte = ReporteMuestreo::pluck('clave_obra');
+        $muestras = Muestra::where('clave_obra', '=', 'A1')->get();
 
         return view('reporte-muestreo.show', compact('reporteMuestreo', 'muestras'));
     }
