@@ -62,3 +62,30 @@ BEGIN
 			    rev_obt= NEW.revenimiento			    
     WHERE id= NEW.id;
 END;$$
+
+
+/*Trigger para insercion multiple (Reporte de Muestreo - Informe de Ensayos):*/
+DELIMITER $$
+CREATE OR REPLACE TRIGGER tg_create_informe AFTER INSERT ON reporte_muestreos FOR EACH ROW
+BEGIN
+    INSERT INTO informe_ensayos (id ,numero_informe, obra, ubicacion, supervicion, fecha_muestreo)
+    VALUES (NEW.id,
+	    NEW.clave_obra,
+	    NEW.obra,
+	    NEW.ubicacion,
+	    NEW.cliente, 
+	    NEW.fecha_muestreo);
+END;$$
+
+
+/*Trigger para modificacion en cascada (Reporte de Muestreo - Informe de Ensayos):*/
+DELIMITER $$
+CREATE OR REPLACE TRIGGER tg_edit_informe AFTER UPDATE ON reporte_muestreos FOR EACH ROW
+BEGIN
+    UPDATE informe_ensayos
+    SET cliente= NEW.cliente, atencion_a= NEW.atencion_a,
+			    obra= NEW.obra, ubicacion=NEW.ubicacion, clave_obra=NEW.clave_obra,
+			    orden_servicio= NEW.orden_servicio, fecha_muestreo=NEW.fecha_muestreo,
+			    muestreador_asignado=NEW.muestreador_asignado			    
+    WHERE id= NEW.id;
+END;$$

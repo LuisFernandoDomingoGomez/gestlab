@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\InformeEnsayo;
+use App\Models\ReporteMuestreo;
 use Illuminate\Http\Request;
 
 /**
@@ -61,7 +62,9 @@ class InformeEnsayoController extends Controller
     {
         $informeEnsayo = InformeEnsayo::find($id);
 
-        return view('informe-ensayo.show', compact('informeEnsayo'));
+        $reporteMuestreo = ReporteMuestreo::find($id);
+
+        return view('informe-ensayo.show', compact('informeEnsayo','reporteMuestreo'));
     }
 
     /**

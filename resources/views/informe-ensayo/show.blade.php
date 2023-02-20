@@ -61,7 +61,7 @@
                                     <div style="display: flex; justify-content: space-between; align-items: center;">
                                         <strong>Datos de Programacion</strong>
                                         <div class="float-right">
-                                            <a href="" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                            <a href="{{ route('informe-v1stas.edit',$informeEnsayo->id) }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
                                             {{ __('Registrar') }}
                                             </a>
                                         </div>
@@ -87,7 +87,148 @@
                                     </table>
                                 </div>
                             </div>
+                            
                     </div>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card text-center">
+
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead class="thead">
+                                                    <tr></tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma.jpg" class="card-img-top" alt="..." width=100 height=35></td>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma2.png" class="card-img-top" alt="..." width=100 height=35></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>{{ $reporteMuestreo->muestreador }}</td>
+                                                            <td>{{ $reporteMuestreo->transportista_1 }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Muestreo</td>
+                                                            <td>Elaboro especimenes</td>
+                                                        </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                        <div class="card-footer text-muted">
+                                            Nombre y/o Firma
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card text-center">
+
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead class="thead">
+                                                    <tr></tr>
+                                                </thead>
+                                                <tbody> 
+                                                        <tr>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma2.png" class="card-img-top" alt="..." width=100 height=35></td>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma3.png" class="card-img-top" alt="..." width=100 height=35></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>{{ $reporteMuestreo->transportista_2 }}</td>
+                                                            <td>{{ $reporteMuestreo->laboratorista }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ensayo de Revenimiento</td>
+                                                            <td>Cabeceo de Especimenes</td>
+                                                        </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="card-footer text-muted">
+                                            Nombre y/o Firma
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            
+                        </div>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card text-center">
+
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead class="thead">
+                                                    <tr></tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma.jpg" class="card-img-top" alt="..." width=100 height=35></td>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma2.png" class="card-img-top" alt="..." width=100 height=35></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>{{ $reporteMuestreo->muestreador }}</td>
+                                                            <td>{{ $reporteMuestreo->transportista_1 }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ensayo de Especimenes</td>
+                                                            <td>Reviso y autorizo</td>
+                                                        </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                        <div class="card-footer text-muted">
+                                            Nombre y/o Firma
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card text-center">
+
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead class="thead">
+                                                    <tr></tr>
+                                                </thead>
+                                                <tbody> 
+                                                        <tr>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma2.png" class="card-img-top" alt="..." width=100 height=35></td>
+                                                            <td><img src="{{ asset('argon') }}/img/generate/firma3.png" class="card-img-top" alt="..." width=100 height=35></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>{{ $reporteMuestreo->transportista_2 }}</td>
+                                                            <td>{{ $reporteMuestreo->laboratorista }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ensayo de Revenimiento</td>
+                                                            <td>Cabeceo de Especimenes</td>
+                                                        </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="card-footer text-muted">
+                                            Nombre y/o Firma
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+
+                        </div>
                 </div>
             </div>
         </section>

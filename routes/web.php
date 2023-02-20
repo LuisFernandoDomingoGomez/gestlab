@@ -58,6 +58,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('reporte-v5stas', App\Http\Controllers\ReporteV5staController::class);
 	Route::resource('registro-v1stas', App\Http\Controllers\RegistroV1staController::class);
 	Route::resource('registro-v2stas', App\Http\Controllers\RegistroV2staController::class);
+	Route::resource('informe-v1stas', App\Http\Controllers\InformeV1staController::class);
 
 
 	//Generacion de vistas PDF

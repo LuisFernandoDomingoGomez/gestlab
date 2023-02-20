@@ -88,7 +88,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td>Tipo de Concreto: {{ $reporteMuestreo->tipo_concreto }}</td>
-                                                        <td>T.A.M (mm): {{ $reporteMuestreo->tamano_agregado_maximo }}</td>
+                                                        <td>T.M.A (mm): {{ $reporteMuestreo->tamano_agregado_maximo }}</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Tipo de Agregado: {{ $reporteMuestreo->tipo_agregado }}</td>
@@ -100,7 +100,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td>Edad de Ensayo: {{ $reporteMuestreo->edad_ensayo }}</td>
-                                                        <td>Volumen Colado (m³): {{ $reporteMuestreo->marca_cemento }}</td>
+                                                        <td>Volumen Colado (m³): {{ $reporteMuestreo->volumen_colado }}</td>
                                                     </tr>
                                             </tbody>
                                         </table>

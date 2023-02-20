@@ -2,21 +2,6 @@
     <div class="box-body">
         
         <div class="form-group">
-            {{ Form::label('numero_informe') }}
-            {{ Form::text('numero_informe', $informeEnsayo->numero_informe, ['class' => 'form-control' . ($errors->has('numero_informe') ? ' is-invalid' : ''), 'placeholder' => 'Numero Informe']) }}
-            {!! $errors->first('numero_informe', '<div class="invalid-feedback">:message</div>') !!}
-        </div>
-        <div class="form-group">
-            {{ Form::label('obra') }}
-            {{ Form::text('obra', $informeEnsayo->obra, ['class' => 'form-control' . ($errors->has('obra') ? ' is-invalid' : ''), 'placeholder' => 'Obra']) }}
-            {!! $errors->first('obra', '<div class="invalid-feedback">:message</div>') !!}
-        </div>
-        <div class="form-group">
-            {{ Form::label('ubicacion') }}
-            {{ Form::text('ubicacion', $informeEnsayo->ubicacion, ['class' => 'form-control' . ($errors->has('ubicacion') ? ' is-invalid' : ''), 'placeholder' => 'Ubicacion']) }}
-            {!! $errors->first('ubicacion', '<div class="invalid-feedback">:message</div>') !!}
-        </div>
-        <div class="form-group">
             {{ Form::label('propietario') }}
             {{ Form::text('propietario', $informeEnsayo->propietario, ['class' => 'form-control' . ($errors->has('propietario') ? ' is-invalid' : ''), 'placeholder' => 'Propietario']) }}
             {!! $errors->first('propietario', '<div class="invalid-feedback">:message</div>') !!}
@@ -25,11 +10,6 @@
             {{ Form::label('supervicion') }}
             {{ Form::text('supervicion', $informeEnsayo->supervicion, ['class' => 'form-control' . ($errors->has('supervicion') ? ' is-invalid' : ''), 'placeholder' => 'Supervicion']) }}
             {!! $errors->first('supervicion', '<div class="invalid-feedback">:message</div>') !!}
-        </div>
-        <div class="form-group">
-            {{ Form::label('fecha_muestreo') }}
-            {{ Form::text('fecha_muestreo', $informeEnsayo->fecha_muestreo, ['class' => 'form-control' . ($errors->has('fecha_muestreo') ? ' is-invalid' : ''), 'placeholder' => 'Fecha Muestreo']) }}
-            {!! $errors->first('fecha_muestreo', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
             {{ Form::label('edad_diseno') }}

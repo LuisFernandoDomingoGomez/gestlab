@@ -24,6 +24,8 @@ return new class extends Migration
             $table->string('propietario', 255)->nullable();
             $table->string('supervicion', 255)->nullable();
             $table->date('fecha_muestreo')->nullable();
+            $table->date('fecha_recepcion')->nullable();
+            $table->date('fecha_informe')->nullable();
             $table->string('edad_diseno')->nullable();
             $table->string('correo')->nullable();
             $table->string('telefono')->nullable();

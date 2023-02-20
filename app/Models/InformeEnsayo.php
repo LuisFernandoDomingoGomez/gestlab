@@ -18,7 +18,8 @@ class InformeEnsayo extends Model
      * @var array
      */
     protected $fillable = ['numero_informe','obra','ubicacion','propietario',
-                        'supervicion','fecha_muestreo','edad_diseno','correo',
+                        'supervicion','fecha_muestreo','fecha_recepcion',
+                        'fecha_informe','edad_diseno','correo',
                         'telefono','localizacion','remision','rev_proyecto',
                         'rev_medido','numero_olla','numero_remision','fecha_ensaye',
                         'hora_salida','hora_llegada','mpa_7','mpa_14','mpa_28',

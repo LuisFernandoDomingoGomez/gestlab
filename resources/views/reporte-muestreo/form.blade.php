@@ -47,7 +47,7 @@
                     {!! $errors->first('tipo_cemento', '<div class="invalid-feedback">:message</div>') !!}
                 </div>
                 <div class="col">
-                    {{ Form::text('tamano_agregado_maximo', $reporteMuestreo->tamano_agregado_maximo, ['class' => 'form-control' . ($errors->has('tamano_agregado_maximo') ? ' is-invalid' : ''), 'placeholder' => 'T.A.M (mm)']) }}
+                    {{ Form::text('tamano_agregado_maximo', $reporteMuestreo->tamano_agregado_maximo, ['class' => 'form-control' . ($errors->has('tamano_agregado_maximo') ? ' is-invalid' : ''), 'placeholder' => 'T.M.A (mm)']) }}
                     {!! $errors->first('tamano_agregado_maximo', '<div class="invalid-feedback">:message</div>') !!}
                 </div>
             </div>

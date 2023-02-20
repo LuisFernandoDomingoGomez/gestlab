@@ -15,7 +15,7 @@
                 <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                     <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="fas fa-home"></i></a></li>
-                    <li class="breadcrumb-item"><a href="{{ route('reporte-muestreos.index') }}">Reporte de Ensayos</a></li>
+                    <li class="breadcrumb-item"><a href="{{ route('reporte-muestreos.index') }}">Informe de Ensayos</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Programacion</li>
                 </ol>
                 </nav>
@@ -32,14 +32,14 @@
 
                     <div class="card card-default">
                         <div class="card-header">
-                            <span class="card-title">Datos de Programacion de Ensayo</span>
+                            <span class="card-title">Datos de Programacion</span>
                         </div>
                         <div class="card-body">
-                            <form method="POST" action="{{ route('registro-cilindros.update', $registroCilindro->id) }}"  role="form" enctype="multipart/form-data">
+                            <form method="POST" action="{{ route('informe-v1stas.update', $informeEnsayo->id) }}"  role="form" enctype="multipart/form-data">
                                 {{ method_field('PATCH') }}
                                 @csrf
 
-                                @include('registro-v1sta.form')
+                                @include('informe-v1sta.form')
 
                             </form>
                         </div>
