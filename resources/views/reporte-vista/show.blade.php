@@ -366,7 +366,7 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                                     @foreach ($muestras as $muestra)
                                         <tr>
 
-                                            <td style="width:10px">{{ $muestra->numero_olla }}</td>
+                                            <td><h5>{{ $muestra->numero_olla }}</h5></td>
                                             <td><h5>{{ $muestra->numero_remision }}</h5></td>
                                             <td><h5>{{ $muestra->hora_salida_planta }}</h5></td>
                                             <td><h5>{{ $muestra->hora_entrega_obra }}</h5></td>
