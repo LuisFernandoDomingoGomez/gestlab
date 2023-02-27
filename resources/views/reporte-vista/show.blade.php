@@ -312,9 +312,6 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
 
                     </td>
                     <td width=237 colspan=8 valign=top style='width:308.0pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
   padding:0cm 3.5pt 0cm 25.5pt'>
   <p class=MsoNormal>
                       <table class="table table-bordered border-primary">
