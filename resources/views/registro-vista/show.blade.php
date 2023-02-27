@@ -343,136 +343,18 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                     </td>
                   </tr>
                   <tr style='page-break-inside:avoid'>
-                    <td width=234 colspan=4 valign=top style='width:175.25pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h3><span lang=ES>II. ANTECEDENTES RELACIONADOS CON LA URGENCIA</span></h3>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 style='width:620.95pt;border:none;border-bottom:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;
-  height:14.2pt'>
-                      <p class=MsoNormal> <textarea rows="2" cols="86" class="sinborde" name="Antecedentes_RU"
-                          id="Antecedentes_RU" placeholder="Escriba antecedentes relacionados con la urgencia:">
-</textarea>
+                    <td width=234 colspan=4 valign=top style='width:175.25pt;border:none;'>
                     </td>
                   </tr>
 
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h3><span lang=ES>III. PADECIMIENTO ACTUAL</span></h3>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal> <textarea rows="2" cols="86" class="sinborde" name="Padecimiento_A"
-                          id="Padecimiento_A" placeholder="Escriba padecimiento actual:">
-</textarea>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620
-  .95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h3><span lang=ES>IV. SIGNOS VITALES</span></h3>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=119 valign=top style='width:88.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h4><span lang=ES>T/A</span></h4>
-                      <p class=MsoNormal>
-                        <input type="text" style="WIDTH:120px; HEIGHT:22px " id="T_A" name="T_A" class='sinborde'
-                          placeholder="T/A" value=''>
-
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h3><span lang=ES>V. EXPLORACI&Oacute;N F&Iacute;SICA</span></h3>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal>
-                        <textarea rows="2" cols="86" class="sinborde" name="Exploracion_fisica" id="Exploracion_fisica"
-                          placeholder="Exploración fisica:">
-</textarea>
-
-                    </td>
-                  </tr>
-
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h3><span lang=ES>VI. RESULTADOS DE LABORATORIO, GABINETE Y OTROS</span></h3>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal>
-                        <textarea rows="2" cols="86" class="sinborde" name="Resultados_lab" id="Resultados_lab"
-                          placeholder="Escriba los resultados de laboratorio, gabinete y otros:">
-</textarea>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h3><span lang=ES>VII. DIAGN&Oacute;STICO(S) PRESUNCIONAL(ES) (PRINCIPAL Y OTROS)</span></h3>
-                    </td>
-                  </tr>
-
-                  <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal>
-                        <textarea rows="2" cols="86" class="sinborde" name="Diagnostico_pre" id="Diagnostico_pre"
-                          placeholder="Escriba diagnostico(s) presuncional(es):">
-</textarea>
-
-                    </td>
-                  </tr>
+                  
+                  
                   <tr style='page-break-inside:avoid'>
                     <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;'>
-  <br>
+                    <br>
+                    
+                    <!--Apartado de Notas de Laboratorio-->
+
                     <h2><span lang=ES>
                       LOS RESULTADOS SE OBTUVIERON CON LA UTILIZACION DE UNA MAQUINA DE ENSAYE CON UNA FACTOR DE COBERTURA K=2 QUE REPRESENTA UN NIVEL DE CONFIANZA DE 95.45%
                     </span></h2>
@@ -510,47 +392,46 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
 
                   <tr style='page-break-inside:avoid'>
                     <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;'><br>
-  <p class=MsoNormal><span lang=ES style='font-size:11.0pt;mso-bidi-font-size:
-                          12.0pt;font-family:"Arial",sans-serif'>
-                      
-                          
-<p class=MsoNormal><span lang=ES style='font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
+                    <p class=MsoNormal><span lang=ES style='font-size:11.0pt;mso-bidi-font-size: 12.0pt;font-family:"Arial",sans-serif'>
+                                          
+                                              
+                    <p class=MsoNormal><span lang=ES style='font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal><span lang=ES style='font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
+                    <p class=MsoNormal><span lang=ES style='font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal><span lang=ES style='font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
+                    <p class=MsoNormal><span lang=ES style='font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal align=center style='text-align:center;mso-outline-level:
-1'><b style='mso-bidi-font-weight:normal'><span lang=ES style='font-size:8.0pt;
-font-family:"Gill Sans MT",sans-serif'>REALIZ&Oacute;<o:p></o:p></span></b></p>
+                    <p class=MsoNormal align=center style='text-align:center;mso-outline-level:
+                    1'><b style='mso-bidi-font-weight:normal'><span lang=ES style='font-size:8.0pt;
+                    font-family:"Gill Sans MT",sans-serif'>REALIZ&Oacute;<o:p></o:p></span></b></p>
 
-<p class=MsoNormal align=center style='text-align:center'><span lang=ES
-style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
+                    <p class=MsoNormal align=center style='text-align:center'><span lang=ES
+                    style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal align=center style='text-align:center'><span lang=ES
-style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
+                    <p class=MsoNormal align=center style='text-align:center'><span lang=ES
+                    style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal align=center style='text-align:center'><span lang=ES
-style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
+                    <p class=MsoNormal align=center style='text-align:center'><span lang=ES
+                    style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal align=center style='text-align:center'> <div align='center'><span lang=ES
-style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p>
-<input type="text" style="WIDTH: 60px; HEIGHT:20px " id="Apellido_PU" name="Apellido_PU" class="sinborde"  value=""  > 
-  <input type="text" style="WIDTH: 60px; HEIGHT:20px " id="Apellido_MU" name="Apellido_MU" value="" class="sinborde">
-<input type="text" style="WIDTH: 100px; HEIGHT:20px " id="NombreU" name="NombreU"class="sinborde" value=""  ></span></p>
-  </span></p></div>
+                    <p class=MsoNormal align=center style='text-align:center'> <div align='center'><span lang=ES
+                    style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p>
+                    <input type="text" style="WIDTH: 60px; HEIGHT:20px " id="Apellido_PU" name="Apellido_PU" class="sinborde"  value=""  > 
+                      <input type="text" style="WIDTH: 60px; HEIGHT:20px " id="Apellido_MU" name="Apellido_MU" value="" class="sinborde">
+                    <input type="text" style="WIDTH: 100px; HEIGHT:20px " id="NombreU" name="NombreU"class="sinborde" value=""  ></span></p>
+                      </span></p></div>
 
-<p class=MsoNormal align=center style='text-align:center'><span lang=ES
-style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'>____________________________________________________<o:p></o:p></span></p>
-<style type="text/css" media="print">
-.nover {display:none}
-</style>
-<p class=MsoNormal align=right style='margin-right:9.6pt;text-align:right'><span
-class=GramE><DIV ALIGN='CENTER'><span lang=ES style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'>NOMBRE
-<span style='mso-spacerun:yes'></span> COMPLETO</span></span><span lang=ES
-style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'> Y FIRMA <br><span
-style='mso-spacerun:yes'></span><span
-style='mso-spacerun:yes'></span></span></DIV>
+                    <p class=MsoNormal align=center style='text-align:center'><span lang=ES
+                    style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'>____________________________________________________<o:p></o:p></span></p>
+                    <style type="text/css" media="print">
+                    .nover {display:none}
+                    </style>
+                    <p class=MsoNormal align=right style='margin-right:9.6pt;text-align:right'><span
+                    class=GramE><DIV ALIGN='CENTER'><span lang=ES style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'>NOMBRE
+                    <span style='mso-spacerun:yes'></span> COMPLETO</span></span><span lang=ES
+                    style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'> Y FIRMA <br><span
+                    style='mso-spacerun:yes'></span><span
+                    style='mso-spacerun:yes'></span></span></DIV>
 
                       <o:p></o:p><br><br><br>
 
