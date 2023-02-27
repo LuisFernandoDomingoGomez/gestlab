@@ -260,28 +260,21 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                     <div>
                       <!--Encabezado de Archivo-->
                       <div>
-                        <![if !vml]><img width=800 height=53 src="{{ asset('argon') }}/img/generate/titulo_0.png"
+                        <![if !vml]><img width=935 height=30 src="{{ asset('argon') }}/img/generate/titulo_3.png"
                           v:shapes="_x0000_s1089 _x0000_s1090 _x0000_s1091">
                         <![endif]>
-                        <![if !vml]><span style='left:0px;position:relative;
-		left:5px;top:-0px;width:65px;height:20px'><img width=80 height=80 src="{{ asset('argon') }}/img/generate/logo.png">
-                          <![endif]>
                         </span></p>
                       </div>
-
                     </div>
-
-
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;'>
-                      <![if !vml]>
-                        <img width=520 height=29 src="{{ asset('argon') }}/img/generate/titulo_1.png" v:shapes="_x0000_s1089 _x0000_s1090 _x0000_s1091">
-                        <![endif]>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <![if !vml]><span style='left:0px;position:relative; left:5px;top:-0px;width:60px;height:20px'>
-                        <img width=369 height=27 src="{{ asset('argon') }}/img/generate/titulo_2.png">
-                        <![endif]>
+                    <td width=712 colspan=11 valign=top style='width:580.95pt;'>
+                    <h1><span lang=ES>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Informe de Ensayo a Compresion Simple
+                    </span></h1>
                     </td>
-
+                  
                   </tr>
                   <tr style='page-break-inside:avoid'>
 
@@ -293,46 +286,50 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                 
                 <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;mso-padding-alt:0cm 3.5pt 0cm 3.5pt'>
                   
-                <tr style='mso-yfti-lastrow:yes;page-break-inside:avoid'>
-                    <td width=475 colspan=4 valign=top style='width:290.95pt;border-top:none'>
+                <tr style='page-break-inside:avoid'>
+                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
+  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 3.5pt 0cm 3.5pt'><br>
+                      <b style='mso-bidi-font-weight:
+  normal'><h3><span lang=ES>Revisión: 01 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fecha de entrada en vigor: </span></h3></b>
+                    </td>
+                  </tr>
+
+                  <tr style='page-break-inside:avoid'>
+                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;'>
                       <p class=MsoNormal>
                       <table class="table table-bordered border-primary">
                         <tr>
-                          <td style="width:50px">
-                              <h3 class="card-text">Orden de laboratorio: {{ $registroVista->orden_laboratorio }}</h3>
-                              <h3 class="card-text">Cliente: {{ $registroVista->cliente }}</h3>
-                              <h3>Obra: {{ $registroVista->obra }}</h3>
-                              <h3>Fecha de Muestreo: {{ $registroVista->fecha_muestreo }}</h3>
-                              <h3>Tipo de concreto: {{ $registroVista->tipo_comcreto }}</h3>
-                              <h3>Fcproy: {{ $registroVista->fcproy }}</h3>
-                          </td>
+                          <td><h3>Obra: {{ $registroVista->obra }}</h3></td>
+                          <td><h3>Fecha de Muestreo: {{ $registroVista->fecha_muestreo }}</h3></td>
+                          <td><h3>Edad de diseño (Dias)</h3></td>
+                        </tr>
+                        <tr>
+                          <td><h3>Ubicacion: {{ $registroVista->ubicacion }}</h3></td>
+                          <td><h3>Fecha de Recepcion: {{ $registroVista->fecha_muestreo }}</h3></td>
+                          <td><h3>{{ $registroVista->edad_diseno }}</h3></td>
                         </tr>
                       </table>
-
-                    </td>
-                    <td width=237 colspan=8 valign=top style='width:308.0pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 25.5pt'>
-  <p class=MsoNormal>
                       <table class="table table-bordered border-primary">
                         <tr>
-                          <td style="width:50px">
-                              <h3 class="card-text">Orden de laboratorio: {{ $registroVista->orden_laboratorio }}</h3>
-                              <h3 class="card-text">Cliente: {{ $registroVista->cliente }}</h3>
-                              <h3>Obra: {{ $registroVista->obra }}</h3>
-                              <h3>Fecha de Muestreo: {{ $registroVista->fecha_muestreo }}</h3>
-                              <h3>Tipo de concreto: {{ $registroVista->tipo_comcreto }}</h3>
-                              <h3>Fcproy: {{ $registroVista->fcproy }}</h3>
-                          </td>
-                          <td style="width:50px">
-                              <h3 class="card-text">Rev Obt: {{ $registroVista->rev_obt }}</h3>
-                          </td>
+                          <td><h3>Correo: {{ $registroVista->correo }}</h3></td>
+                          <td><h3>Telefono: {{ $registroVista->telefono }}</h3></td>
+                          <td><h3>Fecha Informe: {{ $registroVista->fecha_informe }}</h3></td>
+                          <td><h3>No de Informe: {{ $registroVista->id_cono }}</h3></td>
                         </tr>
                       </table>
 
                     </td>
+                  </tr>
                   </tr>
                   <tr style='page-break-inside:avoid'>
                     <!--Tamano de margen 2-->
@@ -474,193 +471,91 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                     </td>
                   </tr>
                   <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h3><span lang=ES>VIII. TRATAMIENTO REALIZADO</span></h3>
+                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;'>
+  <br>
+                    <h2><span lang=ES>
+                      LOS RESULTADOS SE OBTUVIERON CON LA UTILIZACION DE UNA MAQUINA DE ENSAYE CON UNA FACTOR DE COBERTURA K=2 QUE REPRESENTA UN NIVEL DE CONFIANZA DE 95.45%
+                    </span></h2>
+                    <h2><span lang=ES>
+                      LOS EQUIPOS DE MEDICIÓN UTILIZADOS EN LAS PRUEBAS Y PARA VERIFICACIÓN INTERNA, FUERON CALIBRADOS EN LABORATORIOS ACREDITADOS POR LA ema, Y CUENTAN CON TRAZABILIDAD AL CENTRO NACIONAL DE METROLOGÍA.
+                    </span></h2>
+                    <h2><span lang=ES>
+                      LOS MÉTODOS DE PRUEBA UTILIZADOS POR EL LABORATORIO ESTÁN BASADOS EN LAS NORMAS MEXICANAS  NMX-C-161 -ONNCCE-2013 "MUESTREO DE CONCRETO FRESCO",   NMX-C-156-ONNCCE-2010 "DETERMINACIÓN DE REVENIMIENTO EN EL CONCRETO FRESCO ",    NMX-C-159-ONNCCE-2016,   "ELABORACIÓN Y CURADO EN EL LABORATORIO DE ESPECÍMENES DE CONCRETO  ,   NMX-C-109-ONNCCE-2013    " CABECEO DE ESPECÍMENES  CILÍNDRICOS DE CONCRETO (Unicamente con compuesto de mortero)"  Y   NMX-C-083-ONNCCE-2014  " DETERMINACIÓN DE LA RESISTENCIA A LA COMPRESIÓN DE CILINDROS DE CONCRETO "  
+                    </span></h2>
+                    <h2><span lang=ES>
+                      El método de prueba  NMX-C-435-ONNCCE-2010 "Determinación de la temperatura del concreto fresco" no está dentro del alcance del Sistema de Gestión de calidad.
+                    </span></h2>
+                    <h2><span lang=ES>
+                      PT-ISC-01 PROCEDIMIENTO DE MUESTREO DE CONCRETO (Plan de muestreo y frecuencia de muestreo indicado en el presente procedimiento)
+                    </span></h2>
+                    <h2><span lang=ES>
+                      EL LABORATORIO DE ESTA EMPRESA CUENTA CON UN SISTEMA DE CALIDAD BASADO EN LA  ISO-IEC-17025-2017. SI TIENEN ALGUNA QUEJA O RECOMENDACIÓN DE MEJORA POR EL SERVICIO, FAVOR DE ENVIARLA POR ESCRITO.
+                    </span></h2><br>
+                      <div><center>
+                          <b><p class=MsoNormal><span lang=ES style='font-size:6.0pt;mso-bidi-font-size:
+                            12.0pt;font-family:"Arial",sans-serif'>
+                              Los resultados obtenidos cuentan con una estimación de la incertidumbre expandida con factor de cobertura K=2 si desea conocer la incertidumbre  obtenida favor de solicitarla por escrito a al e-mail:  XXXXXXXX, los resultados obtenidos no indican conformidad con ningun requisito, las especificaciones expresadas en el informe unicamente son de caracter informativo, los valores obtenidos por el laboratorio
+                            <o:p></o:p></b>
+                          </span></p></center>
+                      </div><br>
+                    <h2><span lang=ES>
+                      AVISO IMPORTANTE. XXXXXX. ( en lo sucesivo el Prestador) a través de este medio hace entrega de los resultados de los ensayos practicados. El Prestador NO se hace responsable por cualquier modificación o alteración que los resultados aquí ofrecidos pudieran sufrir por actos del Usuario o de terceros, por lo que, en caso de duda, es responsabilidad del Usuario y del usuario final en compañia del titular del informe confrontar la información, solicitando la impresión de sus resultados en en las instalaciones del laboratorio en un período no mayor a los 30 días de practicado los ensayos o solicitada la orden.Este informe se refiere exclusivamente a las muestras especificadas y no puede ser reproducido ni total ni parcialmente
+                    </span></h2>
+                    <h2><span lang=ES>
+                      El Prestador por cuestión de confidencialidad, NO revelará, dará, venderá, donará o transmitirá ningún tipo de información personal del Usuario relacionada con los resultados de la prueba practicada, excepto cuando esta información sea solicitada por autoridad competente. Lo anterior en términos de nuestro aviso de privacidad.
+                    </span></h2>
+
                     </td>
                   </tr>
 
                   <tr style='page-break-inside:avoid'>
-                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <p class=MsoNormal>
-                        <textarea rows="2" cols="86" class="sinborde" name="Tratamiento_realizado"
-                          id="Tratamiento_realizado" placeholder="Escriba tratamiento realizado:">
-</textarea>
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid;height:30.45pt'>
-                    <td width=237 colspan=2 valign=top style='width:177.95pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt;height:30.45pt'>
-                      <h3><span lang=ES>IX. URGENCIA CALIFICADA</span></h3>
-                      <p class=MsoNormal>
-                        <center>
-                          <input type="radio" name="Urgencia_calificada" id="Urgencia_calificada" value="Si" /> Si
-                          <input type="radio" name="Urgencia_calificada" id="Urgencia_calificada" value="No" />No
+                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;'><br>
+  <p class=MsoNormal><span lang=ES style='font-size:11.0pt;mso-bidi-font-size:
+                          12.0pt;font-family:"Arial",sans-serif'>
+                      
+                          
+<p class=MsoNormal><span lang=ES style='font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
+<p class=MsoNormal><span lang=ES style='font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
-                    </td>
-                    <td width=211 colspan=3 valign=top style='width:158.55pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:30.45pt'>
-                      <h3><span lang=ES>X. CASO M&Eacute;DICO LEGAL</span></h3>
-                      <p class=MsoNormal>
-                        <center><input type="radio" name="Caso_Medico" id="Caso_Medico" value="Si" /> Si
-                          <input type="radio" name="Caso_Medico" id="Caso_Medico" value="No" />No
+<p class=MsoNormal><span lang=ES style='font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
-                    </td>
-                    <td width=263 colspan=6 valign=top style='width:197.45pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt;height:30.45pt'>
-                      <h3><span lang=ES>XI. SE NOTIFIC&Oacute; AL MINISTERIO P&Uacute;BLICO</span></h3>
-                      <p class=MsoNormal>
-                        <center><input type="radio" name="Notificacion_ministerio" id="Notificacion_ministerio"
-                            value="Si" /> Si
-                          <input type="radio" name="Notificacion_ministerio" id="Notificacion_ministerio"
-                            value="No" />No
+<p class=MsoNormal align=center style='text-align:center;mso-outline-level:
+1'><b style='mso-bidi-font-weight:normal'><span lang=ES style='font-size:8.0pt;
+font-family:"Gill Sans MT",sans-serif'>REALIZ&Oacute;<o:p></o:p></span></b></p>
 
-                    </td>
-                  </tr>
-                  <tr style='page-break-inside:avoid;height:28.8pt'>
-                    <td width=237 colspan=2 valign=top style='width:177.95pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt;height:28.8pt'>
-                      <h3 align=center style='text-align:center'><span lang=ES style='font-size:
-  7.0pt;mso-bidi-font-size:12.0pt;text-transform:uppercase'>NOMBRE Y FIRMA DEL
-                          PACIENTE O FAMILIAR AL QUE SE LE NOTIFICA QUE ES UN CASO M&Eacute;DICO-LEGAL<o:p></o:p></span>
-                      </h3>
-                      <p class=MsoNormal><span lang=ES>
-                          <o:p>&nbsp;</o:p>
-                        </span></p>
-                      <p class=MsoNormal>
-                        <input type="text" style="WIDTH: 230px; HEIGHT:20px " class="sinborde" name="Fila1" id="Fila1"
-                          placeholder="Escriba nombre completo:" value=''>
+<p class=MsoNormal align=center style='text-align:center'><span lang=ES
+style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
-                    </td>
-                    <td width=237 colspan=4 valign=top style='width:177.95pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:28.8pt'>
+<p class=MsoNormal align=center style='text-align:center'><span lang=ES
+style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
-                      <h3 align=center style='text-align:center'><span lang=ES style='font-size:
-  7.0pt;mso-bidi-font-size:12.0pt;text-transform:uppercase'>NOMBRE Y FIRMA DEL
-                          RESPONSABLE EN CASO DE TRATARSE DE UN PACIENTE MENOR DE EDAD O CON
-                          CAPACIDADES DIFERENTES<o:p></o:p></span></h3>
+<p class=MsoNormal align=center style='text-align:center'><span lang=ES
+style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
-                      <p class=MsoNormal>
-                        <input type="text" style="WIDTH: 230px; HEIGHT:20px " class="sinborde" name="Fila2" id="Fila2"
-                          placeholder="Escriba nombre completo:" value=''>
+<p class=MsoNormal align=center style='text-align:center'> <div align='center'><span lang=ES
+style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'><o:p>&nbsp;</o:p>
+<input type="text" style="WIDTH: 60px; HEIGHT:20px " id="Apellido_PU" name="Apellido_PU" class="sinborde"  value=""  > 
+  <input type="text" style="WIDTH: 60px; HEIGHT:20px " id="Apellido_MU" name="Apellido_MU" value="" class="sinborde">
+<input type="text" style="WIDTH: 100px; HEIGHT:20px " id="NombreU" name="NombreU"class="sinborde" value=""  ></span></p>
+  </span></p></div>
 
-                    </td>
-                    <td width=237 colspan=5 valign=top style='width:177.0pt;border:none;
-  border-bottom:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt;height:28.8pt'>
-                      <p class=MsoNormal align=center style='margin-top:2.0pt;text-align:center'><!--[if gte vml 1]><v:shapetype
-   id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
-   <v:stroke joinstyle="miter"/>
-   <v:path gradientshapeok="t" o:connecttype="rect"/>
-  </v:shapetype><v:shape id="_x0000_s1027" type="#_x0000_t202" style='position:absolute;
-   left:0;text-align:left;margin-left:166.05pt;margin-top:11.6pt;width:22pt;
-   height:90.35pt;z-index:251658240;mso-position-horizontal-relative:text;
-   mso-position-vertical-relative:text' filled="f" stroked="f">
-   <v:textbox style='layout-flow:vertical;mso-layout-flow-alt:bottom-to-top'>
-    <![if RotText]><![if !mso]>
-    <table cellpadding=0 cellspacing=0 width="100%">
-     <tr>
-      <td><![endif]>
-      <div>
-      <p class=MsoNormal><b><span lang=ES style='font-size:8.0pt;mso-bidi-font-size:
-      12.0pt;font-family:"Arial",sans-serif'>217B20000-027-06<o:p></o:p></span></b></p>
-      </div>
-      <![if !mso]></td>
-     </tr>
-    </table>
-    <![endif]><![endif]></v:textbox>
-  </v:shape><![endif]-->
-                        <![if !vml]>
-                        <![endif]>
+<p class=MsoNormal align=center style='text-align:center'><span lang=ES
+style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'>____________________________________________________<o:p></o:p></span></p>
+<style type="text/css" media="print">
+.nover {display:none}
+</style>
+<p class=MsoNormal align=right style='margin-right:9.6pt;text-align:right'><span
+class=GramE><DIV ALIGN='CENTER'><span lang=ES style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'>NOMBRE
+<span style='mso-spacerun:yes'></span> COMPLETO</span></span><span lang=ES
+style='font-size:8.0pt;font-family:"Gill Sans MT",sans-serif'> Y FIRMA <br><span
+style='mso-spacerun:yes'></span><span
+style='mso-spacerun:yes'></span></span></DIV>
 
-                        <b style='mso-bidi-font-weight:
-  normal'><span lang=ES style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
-  font-family:"Arial",sans-serif;text-transform:uppercase'>NOMBRE Y FIRMA DEL
-                            RESPONSABLE EN CASO DE ALTA VOLUNTARIA<o:p></o:p></span></b>
-                      </p><br>
-                      <p class=MsoNormal>
-                        <input type="text" style="WIDTH: 210px; HEIGHT:20px " class="sinborde" name="Fila3" id="Fila3"
-                          placeholder="Escriba nombre completo:" value=''>
+                      <o:p></o:p><br><br><br>
 
                     </td>
                   </tr>
-                  <tr style='mso-yfti-lastrow:yes;page-break-inside:avoid'>
-                    <td width=475 colspan=6 valign=top style='width:355.95pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h5 align=left style='text-align:left'><span lang=ES>DESTINO:</span></h5>
-                      <p class=MsoNormal>
-                      <table style="width:100%" border=0>
-                        <tr>
-                          <td style="width:60px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="1" />OBSERVACIÓN</h5>
-                          </td>
-                          <td style="width:70px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="2" />HOSPITALIZACIÓN
-                          </td>
-                          <td style="width:50px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="3" />CONSULTA EXTERNA
-                          </td>
-                          <td style="width:50px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="4" />ALTA
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="width:50px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="5" />REFERENCIA
-                          </td>
-                          <td style="width:50px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="6" />TRANSFERENCIA
-                          </td>
-                          <td style="width:50px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="7" />TRASLADO
-                          </td>
-                          <td style="width:50px">
-                            <h5><input type="radio" name="Destino" id="Destino" value="8" />DEFUNCIÓN
-                          </td>
-                        </tr>
-                      </table>
-
-                    </td>
-                    <td width=237 colspan=5 valign=top style='width:178.0pt;border:none;
-  border-bottom:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
-  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
-  padding:0cm 3.5pt 0cm 3.5pt'>
-                      <h5 style='margin-top:2.0pt'><span lang=ES style='font-size:7.0pt;mso-bidi-font-size:
-  12.0pt'>NOMBRE Y FIRMA <BR><span style='mso-spacerun:yes'></span>M&Eacute;DICO TRATANTE<o:p></o:p></span></h5>
-                      <p class=MsoNormal>
-                        <input type="text" style="WIDTH: 80px; HEIGHT:20px " id="Apellido_PU" name="Apellido_PU"
-                          class="sinborde" value="" readonly>
-                        <input type="text" style="WIDTH: 80px; HEIGHT:20px " id="Apellido_MU" name="Apellido_MU"
-                          value="" class="sinborde" readonly><br>
-                        <input type="text" style="WIDTH: 100px; HEIGHT:20px " id="NombreU" name="NombreU"
-                          class="sinborde" value="" readonly>
-
-                    </td>
                   </tr>
                   <![if !supportMisalignedColumns]>
                   <tr height=0>
@@ -699,17 +594,8 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                   </tr>
                 </table>
                 <div>
-                  <p class=MsoNormal><span lang=ES style='font-size:6.0pt;mso-bidi-font-size:
-    12.0pt;font-family:"Arial",sans-serif'>
-                      NOTA: EL LABORATORIO DE ESTA EMPRESA CUENTA CON UN SISTEMA DE CALIDAD BASADO EN LA NORMA
-                      ISO-IEC-17025-2017 ; SI TIENE ALGUNA SUGERENCIA O QUEJA, POR FAVOR HAGALO A LOS TEL(S):
-                      <o:p></o:p>
-                    </span></p>
-                </div>
-                <br>
-                <div>
-                  <p class=MsoNormal><span lang=ES style='font-size:11.0pt;mso-bidi-font-size:
-    12.0pt;font-family:"Arial",sans-serif'>Tiziano No. 149 Col. Alfonso XIII, CDMX, Alcaldia: Alvaro obregon C.P. 01460
+                  <p class=MsoNormal><span lang=ES style='font-size:8.0pt;mso-bidi-font-size:
+    8.0pt;font-family:"Arial",sans-serif'>FIN DEL DOCUMENTO
                       <o:p></o:p>
                     </span></p>
                 </div>

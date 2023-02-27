@@ -33,10 +33,6 @@
                             <span class="card-title">Detalles de Informe de Ensayo</span>
                         </div>
                         <div class="float-right">
-                            <a href="{{ route('registro-vistas.show', $informeEnsayo->id) }}" class="btn btn-sm btn-primary"  data-placement="left">
-								<i class="fas fa-file-pdf"></i>{{ __(' PDF') }}
-                            </a>
-                            &nbsp;
                             <a class="btn btn-sm btn-primary" href="{{ route('informe-ensayos.index') }}"> Atras</a>
                         </div>
                     </div>
