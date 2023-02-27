@@ -134,7 +134,7 @@
                                             <td>{{ $muestra->uno_cm }}</td>
                                             <td>
                                                 <form action="{{ route('muestras.destroy',$muestra->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('muestras.show',$muestra->id) }}"><i class="fas fa-file-pdf"></i></a>
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('registro-vistas.show', $informeEnsayo->id) }}"><i class="fas fa-file-pdf"></i></a>
                                                 </form>
                                             </td>
                                         </tr>

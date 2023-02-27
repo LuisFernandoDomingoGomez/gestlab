@@ -117,7 +117,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('informe-ensayos.index') }}">
                         <i class="ni ni-single-copy-04 text-default"></i>
-                        <span class="nav-link-text" style="color: #000000;">{{ __('Informe Final') }}</span>
+                        <span class="nav-link-text" style="color: #000000;">{{ __('Informe') }}</span>
                     </a>
                 </li>
             </ul>

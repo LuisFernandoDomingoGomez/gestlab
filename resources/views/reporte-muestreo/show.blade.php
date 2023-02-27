@@ -141,10 +141,10 @@
                                         <th>Hora Toma Muestra</th>
                                         <th>TEMP °C</th>
                                         <th>Hora Termino Descarga</th>
-                                        <th>Volumen M3</th>
-                                        <th>Uno Cm</th>
+                                        <th>Volumen m³</th>
+                                        <th>Uno cm</th>
                                         <th>Tiempo Empleado</th>
-                                        <th>Dos Cm</th>
+                                        <th>Dos cm</th>
                                         <th>Numero Muestra</th>
                                         <th>Numero Molde</th>
                                         <th>Numero Cilindro</th>

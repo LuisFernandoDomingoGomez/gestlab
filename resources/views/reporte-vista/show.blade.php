@@ -347,7 +347,45 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                   <tr style='page-break-inside:avoid'>
                     <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;'>
   <br>
-                    <!-- Espacio reservado para la tabla de muestras -->
+  <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="thead">
+                                    <tr>
+                                        <th><h5>Numero Olla</h5></th>
+                                        <th><h5>Numero Remision</h5></th>
+                                        <th><h5>Hora Salida Planta</h5></th>
+                                        <th><h5>Hora Entrega Obra</h5></th>
+                                        <th><h5>Hora Toma Muestra</h5></th>
+                                        <th><h5>TEMP °C</h5></th>
+                                        <th><h5>Hora Termino Descarga</h5></th>
+                                        <th><h5>Volumen m³</h5></th>
+                                        <th><h5>Numero Muestra</h5></th>
+                                        <th><h5>Numero Molde</h5></th>
+                                        <th><h5>Numero Cilindro</h5></th>
+                                        <th><h5>Localizacion</h5></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($muestras as $muestra)
+                                        <tr>
+
+                                            <td style="width:10px">{{ $muestra->numero_olla }}</td>
+                                            <td><h5>{{ $muestra->numero_remision }}</h5></td>
+                                            <td><h5>{{ $muestra->hora_salida_planta }}</h5></td>
+                                            <td><h5>{{ $muestra->hora_entrega_obra }}</h5></td>
+                                            <td><h5>{{ $muestra->hora_toma_muestra }}</h5></td>
+                                            <td><h5>{{ $muestra->temperatura_ambiental_muestra }}</h5></td>
+                                            <td><h5>{{ $muestra->hora_termino_descarga }}</h5></td>
+                                            <td><h5>{{ $muestra->volumen_m3 }}</h5></td>
+                                            <td><h5>{{ $muestra->numero_muestra }}</h5></td>
+                                            <td><h5>{{ $muestra->numero_molde }}</h5></td>
+                                            <td><h5>{{ $muestra->numero_cilindro }}</h5></td>
+                                            <td><h5>{{ $muestra->ejes }}</h5></td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
 
                     <br>
                     </td>
@@ -363,11 +401,11 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                                             <h3> Hora de LLegada del Muestreador</h3>
                                         </div>
                                         <div class="card-header">
-                                            {{ $reporteVista->hora_llegada_muestreador }}
+                                          <h3>{{ $reporteVista->hora_llegada_muestreador }}</h3>
                                         </div>
                                         <div class="card-body">
                                             <h4 class="card-title">Entrega a Transportista</h4>
-                                            <p class="card-text">{{ $reporteVista->entrega_transportista }}</p>
+                                            <h3 class="card-text">{{ $reporteVista->entrega_transportista }}</h3>
                                         </div>
 
                                         <div class="table-responsive">
@@ -381,19 +419,19 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                                                             <td><img src="{{ asset('argon') }}/img/generate/firma2.png" class="card-img-top" alt="..." width=100 height=35></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>{{ $reporteVista->muestreador }}</td>
-                                                            <td>{{ $reporteVista->transportista_1 }}</td>
+                                                            <td><h5>{{ $reporteVista->muestreador }}</h5></td>
+                                                            <td><h5>{{ $reporteVista->transportista_1 }}</h5></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Muestreador</td>
-                                                            <td>Transportista</td>
+                                                            <td><h5>Muestreador</h5></td>
+                                                            <td><h5>Transportista</h5></td>
                                                         </tr>
                                                 </tbody>
                                             </table>
                                         </div>
                                         
                                         <div class="card-footer text-muted">
-                                            Nombre y/o Firma
+                                          <h4>Nombre y/o Firma</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -406,11 +444,11 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                                         <h3> Hora de Salida del Muestreador</h3>
                                         </div>
                                         <div class="card-header">
-                                            {{ $reporteVista->hora_salida_muestreador }}
+                                          <h3>{{ $reporteVista->hora_salida_muestreador }}</h3>
                                         </div>
                                         <div class="card-body">
                                             <h4 class="card-title">Entrega a Laboratorista</h4>
-                                            <p class="card-text">{{ $reporteVista->entrega_laboratorista }}</p>
+                                            <h3 class="card-text">{{ $reporteVista->entrega_laboratorista }}</h3>
                                         </div>
 
                                         <div class="table-responsive">
@@ -424,19 +462,19 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                                                             <td><img src="{{ asset('argon') }}/img/generate/firma3.png" class="card-img-top" alt="..." width=100 height=35></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>{{ $reporteVista->transportista_2 }}</td>
-                                                            <td>{{ $reporteVista->laboratorista }}</td>
+                                                            <td><h5>{{ $reporteVista->transportista_2 }}</h5></td>
+                                                            <td><h5>{{ $reporteVista->laboratorista }}</h5></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Transportista</td>
-                                                            <td>Laboratorista</td>
+                                                            <td><h5>Transportista</h5></td>
+                                                            <td><h5>Laboratorista</h5></td>
                                                         </tr>
                                                 </tbody>
                                             </table>
                                         </div>
 
                                         <div class="card-footer text-muted">
-                                            Nombre y/o Firma
+                                          <h4>Nombre y/o Firma</h4>
                                         </div>
                                     </div>
                                 </div>
