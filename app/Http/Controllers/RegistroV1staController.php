@@ -33,7 +33,7 @@ class RegistroV1staController extends Controller
 
         $registroCilindro->update($request->all());
 
-        return redirect()->route('registro-cilindros.index')
+        return redirect()->route('registro-cilindros.show')
             ->with('success', 'Datos Registrados con éxito');
     }
 

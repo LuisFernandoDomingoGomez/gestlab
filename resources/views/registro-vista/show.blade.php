@@ -347,7 +347,46 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
                     </td>
                   </tr>
 
-                  
+                  <tr style='page-break-inside:avoid'>
+                    <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;'>
+                    <br>
+
+                    <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="thead">
+                                    <tr>
+                                        
+                                        <th><h5>No de Olla</h5></th>
+                                        <th><h5>Remision</h5></th>
+                                        <th><h5>Hora de salida</h5></th>
+                                        <th><h5>Hora de llegada</h5></th>
+                                        <th><h5>Hora de descarga</h5></th>
+                                        <th><h5>Proyecto</h5></th>
+                                        <th><h5>Medido</h5></th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($muestras as $muestra)
+                                        <tr>
+
+                                            <td><h5>{{ $muestra->numero_olla }}</h5></td>
+                                            <td><h5>{{ $muestra->numero_remision }}</h5></td>
+                                            <td><h5>{{ $muestra->hora_salida_planta }}</h5></td>
+                                            <td><h5>{{ $muestra->hora_entrega_obra }}</h5></td>
+                                            <td><h5>{{ $muestra->hora_toma_muestra }}</h5></td>
+                                            <td><h5>{{ $registroVista->rev_obt }}</h5></td>
+                                            <td><h5>{{ $muestra->uno_cm }}</h5></td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+  
+                    </td>
+                  </tr>
+
+
                   
                   <tr style='page-break-inside:avoid'>
                     <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;'>
@@ -392,6 +431,9 @@ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtex
 
                   <tr style='page-break-inside:avoid'>
                     <td width=712 colspan=11 valign=top style='width:620.95pt;border:none;'><br>
+
+                    <!--Apartado de Firmas-->
+
                     <p class=MsoNormal><span lang=ES style='font-size:11.0pt;mso-bidi-font-size: 12.0pt;font-family:"Arial",sans-serif'>
                                           
                                               

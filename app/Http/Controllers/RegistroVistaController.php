@@ -18,7 +18,9 @@ class RegistroVistaController extends Controller
     {
         $registroVista = InformeEnsayo::find($id);
 
-        return view('registro-vista.show', compact('registroVista'));
+        $muestras = Muestra::where('clave_obra', '=', 'A1')->get();
+
+        return view('registro-vista.show', compact('registroVista', 'muestras'));
     }
 
 }
